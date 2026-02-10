@@ -1,0 +1,41 @@
+# ─── Heurística de rutas para el pre-filtro (Etapa 1) ────────
+#
+# Estas rutas se usan para decidir si un `fix` es potencialmente
+# user-facing basándose en los archivos modificados por la PR.
+#
+# Si ALGÚN archivo de la PR coincide con user_facing_paths Y
+# NINGUNO coincide SOLO con internal_paths → el fix pasa el filtro.
+#
+# Personalizar según la estructura del repo SaaS.
+
+# Rutas que indican cambio potencialmente visible al usuario
+user_facing_paths:
+  - src/components/
+  - src/pages/
+  - src/views/
+  - src/routes/
+  - src/api/
+  - src/i18n/
+  - src/locales/
+  - src/layouts/
+  - src/features/
+  - src/modules/
+  - prisma/migrations/
+  - public/
+
+# Rutas que NUNCA son user-facing (exclusión explícita)
+internal_paths:
+  - src/workers/
+  - src/cron/
+  - src/jobs/
+  - src/utils/internal/
+  - src/lib/internal/
+  - src/scripts/
+  - tests/
+  - test/
+  - __tests__/
+  - __mocks__/
+  - scripts/
+  - .github/
+  - .husky/
+  - docs/internal/

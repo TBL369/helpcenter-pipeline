@@ -1,0 +1,65 @@
+# ─── Mapeo área de cambio → artículos del helpcenter ─────────
+#
+# Cada clave es un "área" que el clasificador LLM puede reportar.
+# - articles: ficheros .md en articles/ que se ven afectados
+# - keywords: palabras clave que refuerzan la asociación
+#
+# El mapper usa affected_areas del LLM + keywords para resolver
+# a qué artículos aplicar cada change brief.
+
+mappings:
+  dashboard:
+    articles: [dashboard.md]
+    keywords: [dashboard, home, overview, widget, metric]
+
+  activity:
+    articles: [activity.md]
+    keywords: [activity, log, history, timeline, event]
+
+  ai-finder:
+    articles: [ai-finder.md, credits.md]
+    keywords: [finder, search, filter, lead, prospect, enrichment, credits]
+
+  ai-playbook:
+    articles: [ai-playbook.md]
+    keywords: [playbook, automation, workflow, trigger, action, ai agent]
+
+  analytics:
+    articles: [analytics.md]
+    keywords: [analytics, report, chart, graph, conversion, funnel]
+
+  blocklist:
+    articles: [blocklist.md]
+    keywords: [blocklist, block, blacklist, domain, suppress]
+
+  campaigns:
+    articles: [campaigns.md]
+    keywords: [campaign, sequence, step, email, schedule, template, outreach]
+
+  credits:
+    articles: [credits.md]
+    keywords: [credit, balance, usage, consumption, plan, billing]
+
+  identities:
+    articles: [identities.md]
+    keywords: [identity, sender, email account, smtp, warmup, deliverability]
+
+  inbox:
+    articles: [inbox.md, tasks.md]
+    keywords: [inbox, conversation, reply, thread, message, email]
+
+  integrations:
+    articles: [integrations.md]
+    keywords: [integration, connect, webhook, api, crm, hubspot, salesforce, zapier]
+
+  lists:
+    articles: [lists.md]
+    keywords: [list, segment, contact, import, csv, export]
+
+  settings:
+    articles: [settings.md]
+    keywords: [settings, team, user, permission, role, 2fa, password, billing, plan]
+
+  tasks:
+    articles: [tasks.md]
+    keywords: [task, todo, reminder, follow-up, action item]
