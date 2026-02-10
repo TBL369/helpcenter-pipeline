@@ -22,3 +22,6 @@ logs/
 
 # Legacy reference PDFs (archived locally)
 legacy-pdfs/
+
+# Changelog pipeline state
+.last-sync-state

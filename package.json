@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "sync": "ts-node src/index.ts",
+    "changelog": "ts-node src/changelog/index.ts",
+    "changelog:dry": "ts-node src/changelog/index.ts --dry-run",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -17,7 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "@notionhq/client": "^2.2.14",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "openai": "^6.21.0",
+    "yaml": "^2.8.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.16",
