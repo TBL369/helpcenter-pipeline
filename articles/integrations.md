@@ -17,13 +17,32 @@ Connect your existing tech stack to Enginy so you can synchronize data, enrich c
   - [Import Sources](#import-sources)
   - [Communication](#communication)
 - [Configure Your CRM](#configure-your-crm)
-  - [Step 1: Input / Sync Mapping](#step-1-input--sync-mapping)
-  - [Step 2: Export Mapping](#step-2-export-mapping)
+  - [Step 1: Sync Configuration](#step-1-sync-configuration)
+    - [Integration User](#integration-user)
+    - [Contact Identifier](#contact-identifier)
+    - [Company Identifier](#company-identifier)
+    - [General](#general)
+  - [Step 2: Field Mapping](#step-2-field-mapping)
+    - [Field Types](#field-types)
+    - [Mapping Options](#mapping-options)
+    - [Association Type](#association-type)
   - [Step 3: Campaign Mapping (Optional)](#step-3-campaign-mapping-optional)
+    - [Sequence](#sequence)
+    - [Email](#email)
+    - [General](#general)
+    - [Conversation Tags](#conversation-tags)
   - [Step 4: User Mapping](#step-4-user-mapping)
+    - [Identities Mapping](#identities-mapping)
+    - [Users Mapping](#users-mapping)
+    - [Default CRM owner](#default-crm-owner)
   - [Save Your Configuration](#save-your-configuration)
 - [Troubleshooting](#troubleshooting)
 - [FAQs](#faqs)
+    - [Q1: Can I connect more than one CRM at the same time?](#q1-can-i-connect-more-than-one-crm-at-the-same-time)
+    - [Q2: What happens if I do not configure Export Mapping — will my data still sync?](#q2-what-happens-if-i-do-not-configure-export-mapping-will-my-data-still-sync)
+    - [Q3: I do not have my own AI or TheirStack account. Can I still use those features?](#q3-i-do-not-have-my-own-ai-or-theirstack-account-can-i-still-use-those-features)
+    - [Q4: What does the "Overwrite existing value" checkbox do in a manual Export to CRM?](#q4-what-does-the-overwrite-existing-value-checkbox-do-in-a-manual-export-to-crm)
+    - [Q5: Why should I avoid the "Associate as Primary and remove previous associations" option?](#q5-why-should-i-avoid-the-associate-as-primary-and-remove-previous-associations-)
 
 ---
 
@@ -31,9 +50,13 @@ Connect your existing tech stack to Enginy so you can synchronize data, enrich c
 
 The Integrations page is organized into three tabs that give you a clear view of every available connection and its current status.
 
+![](images/integrations-1.png)
+
 ## All Tab
 
 The **All** tab displays every integration Enginy supports, grouped by category (CRM, Data Enrichment, AI Enrichment, Import Sources, and Communication). Use this tab to browse, enable, or configure any integration.
+
+**Note:** To enable any integration, please contact your Account Manager if it isn’t available to activate in your workspace in order to enable its API.
 
 ## Enabled Tab
 
@@ -43,7 +66,7 @@ The **Enabled** tab shows only the integrations you have currently turned on. Th
 
 The **Disabled** tab shows all integrations that are not yet enabled. It is a useful starting point when you want to expand your connected tool set.
 
-> **Important:** You can only have **one CRM integration** active at a time. If you want to enable a new CRM, you must first disable the currently active one.
+**Important:** You can only have **one CRM integration** active at a time. If you want to enable a new CRM, you must first disable the currently active one.
 
 ---
 
@@ -53,52 +76,47 @@ The **Disabled** tab shows all integrations that are not yet enabled. It is a us
 
 Connect a CRM to synchronize and export contacts and companies between Enginy and your CRM of choice.
 
-| Platform | Description |
-|---|---|
-| HubSpot | Full-featured CRM with marketing, sales, and service hubs. |
-| Dynamics | Microsoft Dynamics 365 CRM. |
-| Pipedrive | Sales-focused CRM built around pipeline management. |
-| Salesforce | Enterprise CRM platform. |
-| TribeCRM | CRM designed for relationship-driven sales teams. |
-| Zoho | CRM suite with sales automation and analytics. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Platform</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>HubSpot</b></p></td><td><p class="intercom-align-justify no-margin">Full-featured CRM with marketing, sales, and service hubs.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Dynamics</b></p></td><td><p class="intercom-align-justify no-margin">Microsoft Dynamics 365 CRM.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Pipedrive</b></p></td><td><p class="intercom-align-justify no-margin">Sales-focused CRM built around pipeline management.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Salesforce</b></p></td><td><p class="intercom-align-justify no-margin">Enterprise CRM platform.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>TribeCRM</b></p></td><td><p class="intercom-align-justify no-margin">CRM designed for relationship-driven sales teams.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Zoho</b></p></td><td><p class="intercom-align-justify no-margin">CRM suite with sales automation and analytics.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Custom CRM (Beta)</b></p></td><td><p class="intercom-align-justify no-margin">Connect your own CRM using API key authentication.</p></td></tr></tbody></table>
 
-> **Note:** Only one CRM can be active at a time. See [Configure Your CRM](#configure-your-crm) for the full setup guide.
+**Note:** All CRM integrations require an initial setup configuration, as explained in this article. It only varies slightly for *Pipedrive*: in step 2 of the configuration, you can also map Leads.
 
 ## Data Enrichment
 
 Plug in your data-enrichment tools to optimize outreach, verify data, and qualify leads.
 
-| Tool | What It Does |
-|---|---|
-| Apollo | Lead enrichment, email discovery, and engagement tracking to optimize outreach. |
-| Cognism | Lead generation platform with global databases to identify and connect with prospects. |
-| Datagma | AI-based platform to enrich business insights and help qualify leads effectively. |
-| Dropcontact | Updates, enriches, and verifies contact and company data directly within CRMs. |
-| Hunter | Finds and verifies professional email addresses for B2B outreach campaigns. |
-| Kaspr | Retrieves contact data (emails and phone numbers) from LinkedIn for prospecting. |
-| Lusha | Enriches contact data with verified emails, direct dials, and company details. |
-| ZoomInfo | Business intelligence tool that offers comprehensive databases to find and qualify leads. |
-| Proxycurl | Provides APIs for detailed contact and company profile enrichment. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What It Does</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Apollo</b></p></td><td><p class="intercom-align-justify no-margin">Lead enrichment, email discovery, and engagement tracking to optimize outreach.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Cognism</b></p></td><td><p class="intercom-align-justify no-margin">Lead generation platform with global databases to identify and connect with prospects.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Datagma</b></p></td><td><p class="intercom-align-justify no-margin">AI-based platform to enrich business insights and help qualify leads effectively.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Dropcontact</b></p></td><td><p class="intercom-align-justify no-margin">Updates, enriches, and verifies contact and company data directly within CRMs.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Hunter</b></p></td><td><p class="intercom-align-justify no-margin">Finds and verifies professional email addresses for B2B outreach campaigns.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Kaspr</b></p></td><td><p class="intercom-align-justify no-margin">Retrieves contact data (emails and phone numbers) from LinkedIn for prospecting.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Lusha</b></p></td><td><p class="intercom-align-justify no-margin">Enriches contact data with verified emails, direct dials, and company details.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>ZoomInfo</b></p></td><td><p class="intercom-align-justify no-margin">Business intelligence tool that offers comprehensive databases to find and qualify leads.</p></td></tr></tbody></table>
+
+**Note:** Each of these integrations can be activated by simply pasting the API key.
+
+e.g.:
+
+![](images/integrations-2.png)
 
 ## AI Enrichment
 
-| Tool | What It Does |
-|---|---|
-| OpenAI | If you have your own OpenAI subscription, connect it here to consume your own credits when generating AI variable outputs instead of using Enginy's built-in credits. |
+If you have an API-enabled Enterprise account with any of these AI providers, you can connect it to Enginy. This way, AI variables will use **your provider tokens** instead of **Enginy Credits** when generating data.
 
-> **Tip:** If you do not have a personal OpenAI account, Enginy provides its own credits for AI variable outputs automatically. No additional setup is required.
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What It Does</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Anthropic</b></p></td><td><p class="intercom-align-justify no-margin">Powers Claude models for safe, helpful AI assistance.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Google AI</b></p></td><td><p class="intercom-align-justify no-margin">Powers Gemini models for multimodal AI tasks.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>OpenAI</b></p></td><td><p class="intercom-align-justify no-margin">Powers GPT models for text generation, reasoning, and code tasks.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>xAI</b></p></td><td><p class="intercom-align-justify no-margin">Powers Grok models with real-time knowledge and unique personality.</p></td></tr></tbody></table>
+
+**Note:** If you don’t have an API key from any of these providers, Enginy can provide the AI service for you — usage will be charged in **Enginy Credits**.
 
 ## Import Sources
 
-| Tool | What It Does |
-|---|---|
-| TheirStack | Aggregates and imports company data from multiple platforms. You can connect your own TheirStack account. If you do not have one, Enginy's subscription is used and credits are deducted from your plan when importing companies. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What It Does</p></td></tr><tr><td><p class="intercom-align-justify no-margin">TheirStack</p></td><td><p class="intercom-align-justify no-margin">Aggregates and imports company data from multiple platforms. You can connect your own TheirStack account. If you do not have one, Enginy's subscription is used and credits are deducted from your account when importing companies.</p></td></tr></tbody></table>
+
+TheirStack integration can be activated by simply pasting the **API key**.
+
+![](images/integrations-3.png)
 
 ## Communication
 
-| Tool | What It Does |
-|---|---|
-| Slack | Connect Slack to enable team communications and workflow notifications from Enginy. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What It Does</p></td></tr><tr><td><p class="intercom-align-justify no-margin">Slack</p></td><td><p class="intercom-align-justify no-margin">Connect Slack to enable team communications and workflow notifications from Enginy.</p></td></tr></tbody></table>
+
+Slack integration can be activated by connecting via Oauth.
+
+![](images/integrations-4.png)
+
+![](images/integrations-5.png)
 
 ---
 
@@ -106,76 +124,113 @@ Plug in your data-enrichment tools to optimize outreach, verify data, and qualif
 
 To set up your CRM integration:
 
-1. Go to **Integrations** and open the **All** tab (or the **Disabled** tab).
-2. Locate the CRM card you want to connect (for example, HubSpot).
-3. Enable the integration using the **toggle switch** on the card.
-4. Click the **Configure** button on the CRM card.
+1.  Go to **Integrations** and open the **All** tab (or the **Disabled** tab).
+    
+2.  Locate the CRM card you want to connect (for example, HubSpot).
+    
+3.  Enable the integration using the **toggle switch** on the card.
+    
+4.  Click the **Configure** button on the CRM card.
+    
 
 A floating setup window opens with four sequential steps.
 
 ---
 
-## Step 1: Input / Sync Mapping
+## Step 1: Sync Configuration
 
-This step defines how Enginy matches contacts and companies with your CRM records to prevent duplicates and ensure data integrity. A "sync" means Enginy compares its records against CRM records using the identifiers you configure here.
+This step defines how Enginy matches contacts and companies with your CRM records to prevent duplicates and ensure data integrity. A sync means Enginy compares its records against CRM records using the identifiers you configure here.
+
+![](images/integrations-6.png)
+
+### Integration User
+
+It shows whose email address is the API integration user.
 
 ### Contact Identifier
 
 Choose how Enginy determines whether a contact already exists in your CRM.
 
-| Option | Matching Logic |
-|---|---|
-| **First name + Last name + Company name** | A contact matches when all three fields are the same in both Enginy and the CRM. |
-| **LinkedIn profile URL OR First name + Last name + Company name** | A contact matches if the LinkedIn profile URL is the same **or** all three name/company fields match. |
-| **Custom Mapping** | Opens a pop-up where you define custom conditions using AND/OR logic (for example, match by *First Name* AND *Last Name*, OR by *Professional Email*). |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Option</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Matching Logic</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>First name + Last name + Company name</b></p></td><td><p class="intercom-align-justify no-margin">A contact matches when all three fields are the same in both Enginy and the CRM.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn profile URL OR First name + Last name + Company name</b></p></td><td><p class="intercom-align-justify no-margin">A contact matches if the LinkedIn profile URL is the same <b>or</b> all three name/company fields match.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Custom Mapping</b></p></td><td><p class="intercom-align-justify no-margin">Opens a pop-up where you define custom conditions using AND/OR logic (for example, match by <i>First Name</i> AND <i>Last Name</i>, OR by <i>Professional Email</i>).</p></td></tr></tbody></table>
+
+![](images/integrations-7.png)
+
+![](images/integrations-8.png)
 
 ### Company Identifier
 
 Choose how Enginy determines whether a company already exists in your CRM.
 
-| Option | Matching Logic |
-|---|---|
-| **Domain** | Matches on the company domain (e.g., `enginy.ai`). You can also check the box **Include any domain extension** to treat `.com`, `.es`, `.org`, etc. as equivalent. |
-| **Domain or Company Name** | Matches if either the domain or the company name is the same. |
-| **Custom Mapping** | Opens a pop-up where you define custom conditions (for example, match by *Domain* OR *Company LinkedIn URL*). |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Option</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Matching Logic</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Domain</b></p></td><td><p class="intercom-align-justify no-margin">Matches on the company domain (e.g., <code>enginy.ai</code>). You can also check the box <b>Include any domain extension</b> to treat <code>.com</code>, <code>.es</code>, <code>.org</code>, etc. as equivalent.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Domain or Company Name</b></p></td><td><p class="intercom-align-justify no-margin">Matches if either the domain or the company name is the same.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Custom Mapping</b></p></td><td><p class="intercom-align-justify no-margin">Opens a pop-up where you define custom conditions (for example, match by <i>Domain</i> OR <i>Company LinkedIn URL</i>).</p></td></tr></tbody></table>
+
+![](images/integrations-9.png)
+
+![](images/integrations-10.png)
+
+### General
+
+Under **General**, you’ll find two toggles that control how associations are handled during export:
+
+-   **When exporting contacts, associate them with companies in HubSpot:** If enabled, Enginy will automatically link exported contacts to their corresponding companies in HubSpot.
+    
+-   **When exporting companies, associate them with contacts in HubSpot:** If enabled, Enginy will automatically link exported companies to their related contacts in HubSpot.
+    
+
+![](images/integrations-11.png)
 
 ---
 
-## Step 2: Export Mapping
+## Step 2: Field Mapping
 
 This step configures which Enginy fields map to which CRM fields when exporting data. The setup is split into two tabs — **Contacts** and **Companies** — and the mapping configuration works the same way in both.
 
 ### Field Types
 
-| Field Type | Description |
-|---|---|
-| **Enginy Fields** | Standard fields from your contact or company lists (e.g., Phone Number, Job Title). Click the **+** icon to add a new mapping: select the Enginy field first, then select the corresponding CRM field. To the right of each mapping, check the **Overwrite** checkbox if you want new data to replace existing values in the CRM. |
-| **Fixed Fields** | Fields that always export with the same static value. For example, create a CRM field called "Source" and set its fixed value to "Enginy" so every exported record is tagged with its origin. |
-| **Export Fields** | Fields whose value you configure specifically at the time of export. |
-| **Engagement Fields** | Fields that are populated when an Activity is created in the CRM (for example, an email-sent event or a call log). |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field Type</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Enginy Fields</b></p></td><td><p class="intercom-align-justify no-margin">Standard fields from your contact or company lists (e.g., Phone Number, Job Title). Click the <b>Add field</b> button to add a new mapping: select the Enginy field first, then select the corresponding CRM field.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Fixed Value Fields</b></p></td><td><p class="intercom-align-justify no-margin">Fields that always export with the same static value. For example, create a CRM field called "Source" and set its fixed value to "Enginy" so every exported record is tagged with its origin. Click the <b>Add field</b> button to add a new mapping: select the Enginy field first, then select the corresponding CRM field.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Manual Export Fields</b></p></td><td><p class="intercom-align-justify no-margin">Fields whose value you define specifically at the time of export. Click the <b>Add field</b> button to add a new mapping: select the CRM field which will be asked to be set when exporting. As many as you want.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Engagement Fields</b></p></td><td><p class="intercom-align-justify no-margin">Fields that are populated when an Activity is created in the CRM (for example, an email-sent event, a LinkedIn message, or a Task log). Just <b>select</b> the HubSpot field and then set the Value to export. Only one can be set.</p></td></tr></tbody></table>
 
-> **Warning:** Do not map a Company field in the **Contacts** tab, or a Contact field in the **Companies** tab. Doing so may cause export errors.
+![](images/integrations-12.png)
+
+![](images/integrations-13.png)
+
+**Warning:** Don’t map a Company field in the Contacts tab (or a Contact field in the Companies tab). This **can cause export errors**. If you must map the same field in both tabs, make sure it’s mapped the same in both places.
+
+In each CRM field mapping dropdown, you’ll see small status icons indicating whether the mapping is **supported**, **not supported**, or **supported with limitations / a workaround**.
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Icon</p></td><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Meaning</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Blue check</b></p></td><td><p class="intercom-align-justify no-margin">The mapping is okay, has no potential problems.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Yellow exclamation</b></p></td><td><p class="intercom-align-justify no-margin">The field types in Enginy and the CRM may be incompatible (e.g., an Enginy Text field mapped to a CRM Enumeration field).</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Red X</b></p></td><td><p class="intercom-align-justify no-margin">In these cases, the mapping can’t be applied because the types don’t match — or because the CRM field is read-only and can’t be updated (e.g., an Enginy Text field mapped to a CRM Number field, or a read-only CRM field).</p></td></tr></tbody></table>
+
+**Note:** Some yellow warning icons appear when the selected CRM field is an enumeration (dropdown) field. In this case, your Enginy text field can still export successfully as long as the value you send matches one of the allowed dropdown options (but internal names, not label names).
+
+-   **Workaround:** Create an **AI Variable** with output type = **One off,** and define the output tag options to exactly match the CRM dropdown values — using the **internal option names** (not the labels). This ensures the exported value is accepted and the export completes successfully. Additional considerations:  
+    ​
+    
+    -   If is a Fixed value field or an Engagement field just input the exact internal name in the mapped Value to export in the Field mapping integration's setting.
+        
+    -   If is a Manual export field just input the exact internal name at the moment of the export.
+        
+
+### Mapping Options
+
+Here are the available mapping types between Enginy and your CRM fields:
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Option</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Behaviour</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Bi-directional sync</b></p></td><td><p class="intercom-align-justify no-margin">Changes sync both ways automatically.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>[CRM] overwrites Enginy</b></p></td><td><p class="intercom-align-justify no-margin">Changes in [CRM] automatically overwrite the corresponding fields in Enginy.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Enginy overwrites [CRM]</b></p></td><td><p class="intercom-align-justify no-margin">Changes in Enginy automatically overwrite the corresponding fields in [CRM].</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Sync if value is empty</b></p></td><td><p class="intercom-align-justify no-margin">Data only syncs automatically when the destination field is empty, either in Enginy or [CRM], preventing overwriting existing values.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Sync deactivated</b></p></td><td><p class="intercom-align-justify no-margin">No automatic sync. You’ll need to manually export or run a sync to apply changes.</p></td></tr></tbody></table>
+
+![](images/integrations-14.png)
 
 ### Association Type
 
 The **Association Type** setting controls the relationship between a contact and a company inside the CRM.
 
-| Option | Behavior |
-|---|---|
-| Add as additional association | Adds the association without changing existing ones. |
-| Add association as Primary | Sets the new association as the primary relationship. |
-| Associate as Primary and remove previous associations | Sets the new association as primary **and** deletes all previous associations. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Option</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Behavior</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Add as additional association</b></p></td><td><p class="intercom-align-justify no-margin">Adds the association without changing existing ones.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Add association as Primary</b></p></td><td><p class="intercom-align-justify no-margin">Sets the new association as the primary relationship.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Associate as Primary and remove previous associations</b></p></td><td><p class="intercom-align-justify no-margin">Sets the new association as primary <b>and</b> deletes all previous associations.</p></td></tr></tbody></table>
 
-> **Warning:** The "Associate as Primary and remove previous associations" option is **not recommended** unless you are certain you want to erase all prior associations for the record. Using it can result in data loss if historical relationships exist.
+![](images/integrations-15.png)
 
-### Exporting Associated Companies
+**Warning:** The "Associate as Primary and remove previous associations" option is **not recommended** unless you are certain you want to erase all prior associations for the record. Using it can result in data loss if historical relationships exist.
 
-When exporting a contact, you can automatically generate the association between the contact and its company. To do this:
+When exporting manually a contact or company, you can choose the **Association Type** in the export modal. The integration settings define the default association type, but you can override it for each individual manual export in the export modal.
 
-1. Start the export process for the contact.
-2. Enable the **Export associated companies** switch that appears during export.
+You can also: **overwrite existing values** for any field mapping (in either the **Contacts** or **Companies** tab), overwrite CRM owner (who register the export in CRM), optionally set **Manual export field values**, and enable **Export associated companies** (or **Export associated contacts** when manually exporting a company).
 
-When activated, the company record linked to the contact is exported (or updated) alongside the contact, and the CRM association is created automatically.
+![](images/integrations-16.png)
 
 ---
 
@@ -183,16 +238,29 @@ When activated, the company record linked to the contact is exported (or updated
 
 This step lets you sync campaign-specific properties to your CRM. These are not standard list fields; they are properties tied to campaign activity.
 
-| Property | What It Contains | Example Value |
-|---|---|---|
-| **Campaign Sequence Details** | The steps included in the campaign. | `1st Email, 2nd Email, LinkedIn Connection Request, 1st LinkedIn` |
-| **Campaign Engagement Status** | The current status of each lead in the campaign. | `Added to Campaign`, `Message Sent (1/3) - Email`, `Message Replied (3/3) - LinkedIn` |
-| **Campaign Opens** | Total number of times a lead has opened one or more emails in the campaign. | `3` |
-| **Campaign Clicks** | Total number of times a lead has clicked a link in campaign emails. | `1` |
-| **Campaign Open Analysis** | Indicates per-message whether the contact opened that specific email. | `No`, `Yes (1st Message)`, `Yes (2nd Message)` |
-| **Campaign Click Analysis** | Indicates per-message whether the contact clicked a link in that specific email. | `No`, `Yes (1st Message)` |
-| **Campaign Reply Analysis** | Indicates per-message whether the lead replied to each automated message. | `No`, `Yes (1st Message)`, `Yes (2nd Message)` |
-| **Sequence Status** | The overall status of the campaign sequence for the lead. | `Not Started`, `Ongoing`, `Replied`, `Finished` |
+### Sequence
+
+Properties related to the campaign sequence:
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Property</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What It Contains</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Example Value</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Sequence Details</b></p></td><td><p class="intercom-align-justify no-margin">The steps included in the campaign.</p></td><td><p class="intercom-align-justify no-margin"><code>1st Email, 2nd Email, LinkedIn Connection Request, 1st LinkedIn</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Engagement Status</b></p></td><td><p class="intercom-align-justify no-margin">The current status of each lead in the campaign.</p></td><td><p class="intercom-align-justify no-margin"><code>Added to Campaign</code>, <code>Message Sent (1/3) - Email</code>, <code>Message Replied (3/3) - LinkedIn</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Sequence Status</b></p></td><td><p class="intercom-align-justify no-margin">The overall status of the campaign sequence for the lead.</p></td><td><p class="intercom-align-justify no-margin"><code>Not Started</code>, <code>Ongoing</code>, <code>Replied</code>, <code>Finished</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Reply Analysis</b></p></td><td><p class="intercom-align-justify no-margin">Indicates per-message whether the lead replied to each automated message.</p></td><td><p class="intercom-align-justify no-margin"><code>No</code>, <code>Yes (1st Message)</code>, <code>Yes (2nd Message)</code></p></td></tr></tbody></table>
+
+### Email
+
+Properties related to the campaign email steps messages:
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Property</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">What it Contains</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Example Value</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Opens</b></p></td><td><p class="intercom-align-justify no-margin">Total number of times a lead has opened one or more emails in the campaign.</p></td><td><p class="intercom-align-justify no-margin"><code>3</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Clicks</b></p></td><td><p class="intercom-align-justify no-margin">Total number of times a lead has clicked a link in campaign emails.</p></td><td><p class="intercom-align-justify no-margin"><code>1</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Open Analysis</b></p></td><td><p class="intercom-align-justify no-margin">Indicates per-message whether the contact opened that specific email.</p></td><td><p class="intercom-align-justify no-margin"><code>No</code>, <code>Yes (1st Message)</code>, <code>Yes (2nd Message)</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Click Analysis</b></p></td><td><p class="intercom-align-justify no-margin">Indicates per-message whether the contact clicked a link in that specific email.</p></td><td><p class="intercom-align-justify no-margin"><code>No</code>, <code>Yes (1st Message)</code></p></td></tr></tbody></table>
+
+### General
+
+Properties under general aspects of campaigns:
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Property</p></td><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">What it Contains</p></td><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Example Value</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign</b></p></td><td><p class="intercom-align-justify no-margin">All Campaign names the contact has been added to.</p></td><td><p class="intercom-align-justify no-margin"><code>UK Hiring Campaign, Italian SDR Campaign, Jordi's Campaign</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Senders</b></p></td><td><p class="intercom-align-justify no-margin">All sender names that have contacted the contact</p></td><td><p class="intercom-align-justify no-margin"><code>Adham Elman, Giulio Gargano, Jordi Casas</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Activities</b></p></td><td><p class="intercom-align-justify no-margin">All activities that have occurred with the contact</p></td><td><p class="intercom-align-justify no-margin"><code>Visit LinkedIn profile, LinkedIn Invitation sent, Contact has accepted invitation, ...</code></p></td></tr></tbody></table>
+
+### Conversation Tags
+
+Properties related to Conversation Tags:
+
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Property</p></td><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">What it Contains</p></td><td style="background-color: #d7efdc;"><p class="intercom-align-justify no-margin">Example Value</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Conversation Tags</b></p></td><td><p class="intercom-align-justify no-margin">All conversation tags applied to the contact (comma-separated).</p></td><td><p class="intercom-align-justify no-margin"><code>Contacted, Positive, Meeting Booked</code></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Conversation Tags Categories</b></p></td><td><p class="intercom-align-justify no-margin">Categories of conversation tags: POSITIVE, NEUTRAL, NEGATIVE (comma-separated).</p></td><td><p class="intercom-align-justify no-margin"><code>POSITIVE, POSITIVE, POSITIVE</code></p></td></tr></tbody></table>
 
 ---
 
@@ -204,13 +272,23 @@ This final step defines the associations between Enginy users/identities and CRM
 
 An **Identity** in Enginy is the profile that runs a campaign (for example, a LinkedIn profile or an email sender). Identities Mapping links each Enginy identity to a CRM user.
 
-When a campaign — which is always linked to an identity — performs a sync or export, the CRM activity log shows the associated CRM user as the one who executed the action.
+When a campaign — which is always linked to an identity — performs a sync or export (Campaign mappings export types), the CRM activity log shows the associated CRM user as the one who executed the action.
+
+![](images/integrations-17.png)
 
 ### Users Mapping
 
-**Users Mapping** links an Enginy user account to a CRM user. This sets the default owner for any record exported by that user.
+**Users Mapping** links an Enginy user account to a CRM user. This sets the **default owner** for any record exported by that user — even for automatic exports via field mappings, not just manual exports.
 
 If CRM users have different permission levels, this association respects those limits. A record exported by an Enginy user is owned by the mapped CRM user and is governed by that CRM user's permissions.
+
+![](images/integrations-18.png)
+
+### Default CRM owner
+
+This mapping sets a **default CRM owner** (contact or company owner) for exports performed by an Enginy user who isn’t mapped in User Mapping.
+
+![](images/integrations-19.png)
 
 ---
 
@@ -222,33 +300,28 @@ After completing all four steps, click **Update** to save your CRM configuration
 
 # Troubleshooting
 
-| Symptom / Error | Cause | Resolution |
-|---|---|---|
-| Export fails with field-mapping errors | A Company field is mapped in the **Contacts** tab (or vice versa). | Open **Step 2: Export Mapping**, verify that each tab only contains fields belonging to its own object type, and remove any misplaced mappings. |
-| Duplicate records appear in the CRM after export | The identifier configured in **Step 1** does not uniquely match existing records. | Review and tighten the Contact or Company Identifier. Consider using the **LinkedIn profile URL** option for contacts or enabling **Include any domain extension** for companies. |
-| Cannot enable a second CRM | Enginy allows only one active CRM at a time. | Go to the **Enabled** tab, disable the current CRM, then enable and configure the new one. |
-| CRM activity log shows the wrong user | Identities or Users Mapping is not configured correctly in **Step 4**. | Open **Step 4: User Mapping** and verify that each Enginy identity and user is linked to the correct CRM user. |
+<table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Symptom / Error</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Cause</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Resolution</p></td></tr><tr><td><p class="no-margin">Export fails with field-mapping errors</p></td><td><p class="no-margin">A Company field is mapped in the <b>Contacts</b> tab (or vice versa).</p></td><td><p class="no-margin">Open <b>Step 2: Export Mapping</b>, verify that each tab only contains fields belonging to its own object type, and remove any misplaced mappings.</p></td></tr><tr><td><p class="no-margin">Duplicate records appear in the CRM after export</p></td><td><p class="no-margin">The identifier configured in <b>Step 1</b> does not uniquely match existing records.</p></td><td><p class="no-margin">Review and tighten the Contact or Company Identifier. Consider using the <b>LinkedIn profile URL</b> option for contacts or enabling <b>Include any domain extension</b> for companies.</p></td></tr><tr><td><p class="no-margin">Cannot enable a second CRM</p></td><td><p class="no-margin">Enginy allows only one active CRM at a time.</p></td><td><p class="no-margin">Go to the <b>Enabled</b> tab, disable the current CRM, then enable and configure the new one.</p></td></tr><tr><td><p class="no-margin">CRM activity log shows the wrong user</p></td><td><p class="no-margin">Identities or Users Mapping is not configured correctly in <b>Step 4</b>.</p></td><td><p class="no-margin">Open <b>Step 4: User Mapping</b> and verify that each Enginy identity and user is linked to the correct CRM user.</p></td></tr></tbody></table>
 
 ---
 
 # FAQs
 
-## Q1: Can I connect more than one CRM at the same time?
+### Q1: Can I connect more than one CRM at the same time?
 
 No. Enginy supports only one active CRM integration at a time. If you want to switch to a different CRM, disable the current one first, then enable and configure the new one.
 
-## Q2: What happens if I do not configure Export Mapping — will my data still sync?
+### Q2: What happens if I do not configure Export Mapping — will my data still sync?
 
-Step 1 (Input / Sync Mapping) controls how records are matched, but without Step 2 (Export Mapping) Enginy will not know which fields to push to your CRM. You must configure at least the essential field mappings before exporting.
+Step 1 (Sync Configuration) controls how records are matched, but without Step 2 (Field Mapping) Enginy will not know which fields to push to your CRM. Even not which ones to pull from CRM. You must configure at least the essential field mappings before exporting or syncing.
 
-## Q3: I do not have my own OpenAI or TheirStack account. Can I still use those features?
+### Q3: I do not have my own AI or TheirStack account. Can I still use those features?
 
-Yes. For **OpenAI**, Enginy provides its own credits for AI variable outputs if you do not connect a personal subscription. For **TheirStack**, Enginy's subscription is used by default and credits are deducted from your plan when importing companies.
+Yes. For **AI**, Enginy provides its own credits for AI variable outputs if you do not connect a personal subscription. For **TheirStack**, Enginy's subscription is used by default and credits are deducted from your plan when importing companies.
 
-## Q4: What does the "Overwrite" checkbox do in Export Mapping?
+### Q4: What does the "Overwrite existing value" checkbox do in a manual Export to CRM?
 
 When checked, the value in Enginy replaces whatever value currently exists in the corresponding CRM field during export. When unchecked, the existing CRM value is preserved and only empty fields are populated.
 
-## Q5: Why should I avoid the "Associate as Primary and remove previous associations" option?
+### Q5: Why should I avoid the "Associate as Primary and remove previous associations" option?
 
 This option deletes all existing associations for the record before setting the new one as primary. If you have historical relationships or multiple valid associations in your CRM, using this option can result in data loss. Use it only when you are certain the new association should be the sole relationship.
