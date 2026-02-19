@@ -40,7 +40,7 @@ Otherwise, output the final article.
 1. **# Title (H1)** — Short noun or noun phrase. Must match the section name.
 2. **Intro paragraph** — 1–2 sentences explaining the section's purpose. No heading for the intro.
 3. **`---` horizontal rule**
-4. **# Table of Contents (H1)** — Internal links to every H1 section and meaningful H2/H3/H4 subsections. Use standard Markdown anchors: `[Heading Text](#heading-text)`. Indent sub-items with 2 spaces per level (H2 = 2 spaces, H3 = 4 spaces, H4 = 6 spaces). Include FAQ question headings indented under the FAQs entry.
+4. **# Table of Contents (H1)** — Internal links to every H1 section and meaningful H2/H3/H4 subsections. Use standard Markdown anchors: `[Heading Text](#heading-text)`. Indent sub-items with 2 spaces per level (H2 = 2 spaces, H3 = 4 spaces, H4 = 6 spaces). Do NOT include the FAQs section or its individual questions in the TOC.
 5. **`---` horizontal rule**
 6. **Content sections** — Organized with clear headings following the hierarchy and flow described below. Place a `---` horizontal rule between every H1 section.
 7. **# FAQs (H1)** — Last section. 4–7 genuinely relevant questions using the format `### Q1: Question text?`.
@@ -73,8 +73,10 @@ Typical help-center flow within the content sections:
 
 - Place a `---` horizontal rule: (a) after the intro paragraph, (b) after the TOC, (c) between every H1-level section.
 - Always surround `---` with one blank line above and one blank line below.
-- One blank line before every heading. One blank line after every heading before the first paragraph.
-- One blank line between paragraphs. One blank line before and after tables, lists, images, and callouts.
+- One blank line before every heading. No blank line after `#` (H1) headings — the first paragraph starts immediately on the next line. One blank line after `##`/`###`/`####` headings before the first paragraph.
+- One blank line between paragraphs. One blank line after tables, images, and callouts, but NO blank line before tables.
+- Callouts and unordered lists (`-`): one blank line before and after.
+- Numbered lists (`1.`, `2.`, `3.`): no blank lines between items, no blank line before the first item, and no blank line after the last item.
 - Never use double blank lines.
 
 ### Tables
@@ -103,6 +105,7 @@ Typical help-center flow within the content sections:
 - Each step starts with an imperative verb ("Go to…", "Click…", "Select…", "Navigate to…", "Open…", "Enter…", "Review…").
 - Handle branches explicitly: "If you see X, do Y; otherwise do Z."
 - Use 4-space indentation for sub-items within a step.
+- No blank lines between numbered list items. No blank line before the first item or after the last item.
 
 ### Bullet Lists
 
@@ -132,6 +135,7 @@ Typical help-center flow within the content sections:
 - TOC links must point to headings using standard Markdown anchors: `[Heading Text](#heading-text)`.
 - Anchor slugs: lowercase, hyphens replace spaces, remove special punctuation.
 - Indent sub-items with 2 spaces per level.
+- Do NOT include the FAQs section or its individual questions in the TOC.
 
 ### FAQs
 
@@ -167,10 +171,13 @@ Typical help-center flow within the content sections:
 - [ ] Steps are complete and runnable by a non-technical user.
 - [ ] Roles/permissions and plan/regional differences are explicit wherever needed.
 - [ ] Troubleshooting (if present) uses Symptom/Issue → Cause → Resolution in an HTML table.
-- [ ] TOC anchors work and match headings.
+- [ ] TOC anchors work and match headings. FAQs are NOT listed in the TOC.
 - [ ] Callouts use bold labels as plain paragraphs (no blockquote `>` syntax).
 - [ ] ALL tables use Intercom-compatible HTML (`<table role="presentation">`), never Markdown pipe tables.
 - [ ] Headings use `#` (H1) for top-level sections, `##` (H2) for subsections, `###` (H3) for sub-subsections. `####` (H4) only when an H3 genuinely needs further breakdown.
 - [ ] `---` horizontal rules appear after the intro, after the TOC, and between every H1 section.
+- [ ] No blank line after H1 headings. Content starts immediately on the next line.
+- [ ] No blank line before tables.
+- [ ] Numbered lists have no blank lines between items, and no blank line before the first item or after the last item.
 - [ ] List nesting does not exceed 2 levels.
 - [ ] Output is clean Markdown in English only.

@@ -1,11 +1,9 @@
 # Credits
-
 Track your credit consumption, manage your subscription plan, and monitor conversation activity across your team — all from the Credits section. Access it clicking the **View Usage** button in the bottom-left.
 
 ---
 
 # Table of Contents
-
 - [Core Concepts](#core-concepts)
 - [Overview](#overview)
 - [Plan Overview](#plan-overview)
@@ -28,17 +26,9 @@ Track your credit consumption, manage your subscription plan, and monitor conver
     - [Time savings](#time-savings)
     - [ROI Summary](#roi-summary)
 - [Renewal Policy](#renewal-policy)
-- [FAQs](#faqs)
-    - [Q1: How can I purchase additional credits?](#q1-how-can-i-purchase-additional-credits)
-    - [Q2: What happens to my unused credits at the end of the month?](#q2-what-happens-to-my-unused-credits-at-the-end-of-the-month)
-    - [Q3: Is there a hard limit on conversations per identity?](#q3-is-there-a-hard-limit-on-conversations-per-identity)
-    - [Q4: Can I see which team member is consuming the most credits?](#q4-can-i-see-which-team-member-is-consuming-the-most-credits)
-    - [Q5: How can I estimate how many credits I need each month?](#q5-how-can-i-estimate-how-many-credits-i-need-each-month)
-
 ---
 
 # Core Concepts
-
 Credits are the unit of consumption in Enginy. Every action you perform on contacts — such as scraping data, enriching contact details, running AI variables, or executing workflows — costs a specific number of credits. Your subscription plan determines how many credits you receive each month, and you can purchase add-on credits if you need more.
 
 Conversations represent the outbound messages (emails and LinkedIn messages) your identities send. The number of conversations an identity can generate is naturally determined by its sending capacity. There is no additional hard limit imposed on conversations beyond that capacity.
@@ -46,19 +36,16 @@ Conversations represent the outbound messages (emails and LinkedIn messages) you
 ---
 
 # Overview
-
 To open the Credits section, click the **View Usage** button on the left-side panel.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440107/helpcenter/credits-1.png)
 
 This section is divided into four tabs:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tab</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Purpose</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Plan</b></p></td><td><p class="intercom-align-justify no-margin">View your current plan, credit top-up historical data, and purchase additional credits and identities.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Credits</b></p></td><td><p class="intercom-align-justify no-margin">View credit usage history broken down by time, user, and action type, and purchase additional credits.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Conversations</b></p></td><td><p class="intercom-align-justify no-margin">View monthly conversation usage broken down by time, identity, and originating campaign.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Plan &amp; Credits</b></p></td><td><p class="intercom-align-justify no-margin">Explore plans and estimate credits using the built-in credit calculator, pricing comparison, and ROI estimator</p></td></tr></tbody></table>
 
 ---
 
 # Plan Overview
-
 Use the **Plan** tab to review your current subscription details.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440109/helpcenter/credits-2.png)
@@ -66,7 +53,6 @@ Use the **Plan** tab to review your current subscription details.
 ## Plan Details
 
 The Plan tab displays a full breakdown of your current subscription status:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Plan</b></p></td><td><p class="intercom-align-justify no-margin">The name of your active plan.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Plan Credits</b></p></td><td><p class="intercom-align-justify no-margin">The total credits allocated by your base plan.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Add-on Credits</b></p></td><td><p class="intercom-align-justify no-margin">Extra credits purchased separately.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Identities</b></p></td><td><p class="intercom-align-justify no-margin">The number of identities included in your plan.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Price</b></p></td><td><p class="intercom-align-justify no-margin">The monthly cost of your subscription.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Next Renewal</b></p></td><td><p class="intercom-align-justify no-margin">The date when your plan renews.</p></td></tr></tbody></table>
 
 ## Manage Your Subscription
@@ -86,7 +72,6 @@ You can also view your **Enginy Credits** balance: available credits *(Plan Cred
 ---
 
 # Credit Usage History
-
 The **Credits** tab lets you track exactly how your credits are being consumed. You can analyze usage by time, user, and specific action type.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440110/helpcenter/credits-6.png)
@@ -94,7 +79,6 @@ The **Credits** tab lets you track exactly how your credits are being consumed. 
 ## Actions That Consume Credits
 
 The system tracks credit usage for the following activities:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Action Type</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Scrapings</b></p></td><td><p class="intercom-align-justify no-margin">Extracting data for companies or contacts.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Enrichments</b></p></td><td><p class="intercom-align-justify no-margin">Finding emails, phone numbers, and other data such as from TheirStack or Crunchbase.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>AI Variables</b></p></td><td><p class="intercom-align-justify no-margin">Executing AI to generate personalized data or messages.</p></td></tr></tbody></table>
 
 **Note:** You can buy more credits through the **Add More Credits** button, the same way as in the Plan tab.
@@ -145,7 +129,6 @@ Tracks how credits are consumed by different team members. Use this chart to mon
 ---
 
 # Monthly Conversations
-
 The **Conversations** tab provides visibility into conversation activity within your account. The number of conversations each identity can generate is naturally determined by its sending capacity (emails and LinkedIn messages), but there is no additional hard limit imposed on conversations. This section allows you to monitor volume and trends over time.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440107/helpcenter/credits-11.png)
@@ -153,13 +136,11 @@ The **Conversations** tab provides visibility into conversation activity within 
 ## Conversation Breakdowns
 
 You can analyze conversations through three different breakdowns:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Breakdown</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Visualization</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>By Time</b></p></td><td><p class="intercom-align-justify no-margin">Line graph</p></td><td><p class="intercom-align-justify no-margin">Shows daily or weekly or monthly conversation usage over time.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>By Campaigns</b></p></td><td><p class="intercom-align-justify no-margin">Pie chart</p></td><td><p class="intercom-align-justify no-margin">Displays "Conversations usage by campaigns" — tracks consumption across different active campaigns.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>By Identities</b></p></td><td><p class="intercom-align-justify no-margin">Pie chart</p></td><td><p class="intercom-align-justify no-margin">Displays "Conversations usage by identities" — shows which team members are initiating the most conversations.</p></td></tr></tbody></table>
 
 ---
 
 # Plan and Credits
-
 The **Plan & Credits** tab provides tools to help you estimate your credit needs, compare available pricing plans, and calculate the expected return on investment from using Enginy. This tab contains three sub-sections: **Calculate your credits**, **Pricing plans**, and **Estimated ROI**.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440108/helpcenter/credits-12.png)
@@ -175,7 +156,6 @@ Use the slider or the input field to set the number of contacts you plan to proc
 **Step 2 — Select your actions**
 
 Select which actions you plan to use. Each action has a specific credit cost per result:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Action</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Credit Cost</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Extract company and contact data</b></p></td><td><p class="intercom-align-justify no-margin">1 credit/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Email enrichment</b></p></td><td><p class="intercom-align-justify no-margin">5 credits/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Phone enrichment</b></p></td><td><p class="intercom-align-justify no-margin">40 credits/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Google Maps Data</b></p></td><td><p class="intercom-align-justify no-margin">1 credit/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Technology Stack Data</b></p></td><td><p class="intercom-align-justify no-margin">1 credit/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Job Posting Data</b></p></td><td><p class="intercom-align-justify no-margin">1 credit/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Email Verification</b></p></td><td><p class="intercom-align-justify no-margin">1 credit/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Phone Verification</b></p></td><td><p class="intercom-align-justify no-margin">3 credits/result</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>AI Variables</b></p></td><td><p class="intercom-align-justify no-margin">3 credits/field (quantity adjustable)</p></td></tr></tbody></table>
 
 **Step 3 — Review your estimate**
@@ -196,7 +176,6 @@ Based on your selections, the calculator displays a summary panel showing:
 The Pricing plans sub-section allows you to compare all available Enginy plans side by side. You can toggle between **Without Phones** and **With Phones** to see how plans differ depending on whether phone enrichment capabilities are included.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440109/helpcenter/credits-13.png)
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Feature</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Basic</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Smart</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Business</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Enterprise</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Monthly price</b></p></td><td><p class="intercom-align-justify no-margin">599 EUR/month</p></td><td><p class="intercom-align-justify no-margin">799 EUR/month</p></td><td><p class="intercom-align-justify no-margin">1,199 EUR/month</p></td><td><p class="intercom-align-justify no-margin">Custom</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Annual price</b></p></td><td><p class="intercom-align-justify no-margin">7,188 EUR/year</p></td><td><p class="intercom-align-justify no-margin">9,588 EUR/year</p></td><td><p class="intercom-align-justify no-margin">14,388 EUR/year</p></td><td><p class="intercom-align-justify no-margin">Custom</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Credits/month</b></p></td><td><p class="intercom-align-justify no-margin">5,000</p></td><td><p class="intercom-align-justify no-margin">10,000</p></td><td><p class="intercom-align-justify no-margin">32,000</p></td><td><p class="intercom-align-justify no-margin">Custom</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Contacts/month</b></p></td><td><p class="intercom-align-justify no-margin">Up to 500</p></td><td><p class="intercom-align-justify no-margin">Up to 1,000</p></td><td><p class="intercom-align-justify no-margin">Up to 2,000</p></td><td><p class="intercom-align-justify no-margin">Custom</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Identities included</b></p></td><td><p class="intercom-align-justify no-margin">1</p></td><td><p class="intercom-align-justify no-margin">2</p></td><td><p class="intercom-align-justify no-margin">4</p></td><td><p class="intercom-align-justify no-margin">Custom</p></td></tr></tbody></table>
 
 Each plan builds on the previous tier and adds specific features:
@@ -242,7 +221,6 @@ The Estimated ROI calculator helps you estimate how much additional revenue and 
 ### Increase in revenue
 
 Adjust the following inputs to estimate your revenue impact:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Input</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Contacts processed</b></p></td><td><p class="intercom-align-justify no-margin">Number of contacts processed in Enginy per month</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Conversion rate</b></p></td><td><p class="intercom-align-justify no-margin">Your expected conversion rate when using Enginy (an Enginy average benchmark is displayed for reference)</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Annual contract value</b></p></td><td><p class="intercom-align-justify no-margin">The average annual value of a closed deal</p></td></tr></tbody></table>
 
 The calculator displays both **Yearly Revenue** and **Monthly Revenue** estimates based on your inputs.
@@ -250,7 +228,6 @@ The calculator displays both **Yearly Revenue** and **Monthly Revenue** estimate
 ### Time savings
 
 Adjust the following inputs to estimate how much time your Sales team can save:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Input</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Employees</b></p></td><td><p class="intercom-align-justify no-margin">Number of employees on your team</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Hourly Rate</b></p></td><td><p class="intercom-align-justify no-margin">Average hourly cost per employee</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Daily Time Saved</b></p></td><td><p class="intercom-align-justify no-margin">Estimated hours saved per day by using Enginy (an Enginy average benchmark is displayed for reference)</p></td></tr></tbody></table>
 
 The calculator displays both **Yearly Time Savings** and **Monthly Time Savings** estimates.
@@ -267,9 +244,7 @@ The ROI Summary panel combines both calculations and displays the **estimated ye
 ---
 
 # Renewal Policy
-
 Understanding how credit resets work is important for planning your usage:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Aspect</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Policy</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Reset Date</b></p></td><td><p class="intercom-align-justify no-margin">Credits are automatically renewed on the 1st of each month.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Rollover Policy</b></p></td><td><p class="intercom-align-justify no-margin">As a general rule, credits that are not consumed will <b>not</b> be carried over to the following month.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Exceptions</b></p></td><td><p class="intercom-align-justify no-margin">There may be occasional and specific exceptions to the rollover policy depending on your agreement or a concrete situation.</p></td></tr></tbody></table>
 
 **Warning:** Plan your credit usage accordingly each month. Unused credits typically expire at the end of the billing period and do not accumulate.
@@ -277,7 +252,6 @@ Understanding how credit resets work is important for planning your usage:
 ---
 
 # FAQs
-
 ### Q1: How can I purchase additional credits?
 
 You have two options. First, click the **Add More Credits** button in the Plan tab to connect with an agent via the platform chat. Second, contact your Account Manager directly. Both methods will allow you to get more credits, but the first one is more autonomous and may be faster.

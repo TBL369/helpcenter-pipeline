@@ -1,11 +1,9 @@
 # Activity
-
 The Activity section in Enginy provides a centralized, chronological record of every action performed on the platform. Use it to track bulk operations, monitor team work, troubleshoot errors, and maintain full traceability of your data workflows.
 
 ---
 
 # Table of Contents
-
 - [How Activity Works](#how-activity-works)
 - [Understand the Prospecting and Engagement Tabs](#understand-the-prospecting-and-engagement-tabs)
   - [Prospecting Tab](#prospecting-tab)
@@ -32,21 +30,12 @@ The Activity section in Enginy provides a centralized, chronological record of e
   - [Audit and Compliance](#audit-and-compliance)
   - [Resource Optimization](#resource-optimization)
   - [Campaign Monitoring](#campaign-monitoring)
-- [FAQs](#faqs)
-    - [Q1: What is the difference between the Prospecting tab and the Engagement tab?](#q1-what-is-the-difference-between-the-prospecting-tab-and-the-engagement-tab)
-    - [Q2: Does importing contacts via CSV count toward my daily scraping limit?](#q2-does-importing-contacts-via-csv-count-toward-my-daily-scraping-limit)
-    - [Q3: A task shows as "Queued" and is not starting. What should I do?](#q3-a-task-shows-as-queued-and-is-not-starting-what-should-i-do)
-    - [Q4: How can I find out why a CSV import or CRM export failed?](#q4-how-can-i-find-out-why-a-csv-import-or-crm-export-failed)
-    - [Q5: Can I cancel an action that is currently processing or queued?](#q5-can-i-cancel-an-action-that-is-currently-processing-or-queued)
-
 ---
 
 # How Activity Works
-
 Every row in Activity represents a task or process executed in your Enginy workspace. The view is divided into two main tabs — **Prospecting** and **Engagement** — so you can quickly isolate the type of activity you need to review.
 
 Each entry displays the following information:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Column</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Action</b></p></td><td><p class="intercom-align-justify no-margin">The kind of operation that was performed (e.g., scraping, search, enrichment, CSV import, CRM export, campaign step).</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Created by / Identity</b></p></td><td><p class="intercom-align-justify no-margin">Who triggered the action (a team member or, in the Engagement tab, the identity used in a campaign).</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Records</b></p></td><td><p class="intercom-align-justify no-margin">How many companies or contacts were processed.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Status</b></p></td><td><p class="intercom-align-justify no-margin">Whether the action is <b>Completed</b>, <b>Failed</b>, <b>Processing</b>, <b>Queued</b>, or <b>Cancelled</b>.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Credits</b></p></td><td><p class="intercom-align-justify no-margin">How many credits were spent for any of the actions executed while prospecting</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign</b></p></td><td><p class="intercom-align-justify no-margin">Where the engagement actions come from</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Completed</b></p></td><td><p class="intercom-align-justify no-margin">When the action started and/or how long ago it was executed.</p></td></tr></tbody></table>
 
 Activity is the single source of truth for understanding what has happened in your account.
@@ -58,7 +47,6 @@ Activity is the single source of truth for understanding what has happened in yo
 ---
 
 # Understand the Prospecting and Engagement Tabs
-
 Activity is organized into two tabs. Each tab displays a different category of platform activity.
 
 ## Prospecting Tab
@@ -108,7 +96,6 @@ The specific action types you may see include:
     
 
 The following action types are recorded in this tab:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Action</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Scrape company open positions from TheirStack</b></p></td><td><p class="no-margin">Scrape a company’s open positions from TheirStack.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from TheirStack</b></p></td><td><p class="no-margin">Search for companies in TheirStack.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from TheirStack</b></p></td><td><p class="no-margin">Search for companies in TheirStack.</p></td></tr><tr><td><p class="no-margin"><b>Enrich with phone</b></p></td><td><p class="no-margin">Enrich contacts with phone numbers.</p></td></tr><tr><td><p class="no-margin"><b>Verify contact phone</b></p></td><td><p class="no-margin">Verify a contact’s phone number.</p></td></tr><tr><td><p class="no-margin"><b>Export companies to CSV</b></p></td><td><p class="no-margin">Export companies to a CSV file.</p></td></tr><tr><td><p class="no-margin"><b>Export contacts to CSV</b></p></td><td><p class="no-margin">Export contacts to a CSV file.</p></td></tr><tr><td><p class="no-margin"><b>Import companies from CSV</b></p></td><td><p class="no-margin">Import companies from a CSV file.</p></td></tr><tr><td><p class="no-margin"><b>Import contacts from CSV</b></p></td><td><p class="no-margin">Import contacts from a CSV file.</p></td></tr><tr><td><p class="no-margin"><b>Enrich companies legal information</b></p></td><td><p class="no-margin">Enrich company legal information.</p></td></tr><tr><td><p class="no-margin"><b>Enrich companies with AI</b></p></td><td><p class="no-margin">Enrich company data using AI.</p></td></tr><tr><td><p class="no-margin"><b>Enrich contacts with AI</b></p></td><td><p class="no-margin">Enrich contact data using AI.</p></td></tr><tr><td><p class="no-margin"><b>Enrich companies with technologies</b></p></td><td><p class="no-margin">Enrich company technologies (tech stack).</p></td></tr><tr><td><p class="no-margin"><b>Evaluate company with formula field</b></p></td><td><p class="no-margin">Evaluate companies using a formula field.</p></td></tr><tr><td><p class="no-margin"><b>Evaluate contact with formula field</b></p></td><td><p class="no-margin">Evaluate contacts using a formula field.</p></td></tr><tr><td><p class="no-margin"><b>Get company contacts countries</b></p></td><td><p class="no-margin">Retrieve the countries of a company’s contacts.</p></td></tr><tr><td><p class="no-margin"><b>Extract company headcount from LinkedIn</b></p></td><td><p class="no-margin">Extract company headcount from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Find from name on LinkedIn</b></p></td><td><p class="no-margin">Find a company on LinkedIn by name.</p></td></tr><tr><td><p class="no-margin"><b>Scrape companies from LinkedIn</b></p></td><td><p class="no-margin">Scrape company profiles from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Scrape company Account IQ from LinkedIn</b></p></td><td><p class="no-margin">Scrape Account IQ data from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Scrape company from LinkedIn</b></p></td><td><p class="no-margin">Scrape a company profile from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Scrape company open positions from LinkedIn</b></p></td><td><p class="no-margin">Scrape a company’s open positions from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Scrape company posts from LinkedIn</b></p></td><td><p class="no-margin">Scrape a company’s posts from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Scrape contacts from LinkedIn</b></p></td><td><p class="no-margin">Scrape contact profiles from LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from LinkedIn</b></p></td><td><p class="no-margin">Search for companies on LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from LinkedIn</b></p></td><td><p class="no-margin">Search for companies on LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from a LinkedIn event</b></p></td><td><p class="no-margin">Search for contacts from a LinkedIn event.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from a LinkedIn post</b></p></td><td><p class="no-margin">Search for contacts from a LinkedIn post.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from company</b></p></td><td><p class="no-margin">Search for contacts from a company.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from LinkedIn</b></p></td><td><p class="no-margin">Search for contacts on LinkedIn.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from LinkedIn connection</b></p></td><td><p class="no-margin">Search for contacts from LinkedIn connections.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from LinkedIn followers</b></p></td><td><p class="no-margin">Search for contacts from LinkedIn followers.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from LinkedIn poll</b></p></td><td><p class="no-margin">Search for contacts from a LinkedIn poll.</p></td></tr><tr><td><p class="no-margin"><b>Import companies from Website Visitors</b></p></td><td><p class="no-margin">Import companies from Website Visitors.</p></td></tr><tr><td><p class="no-margin"><b>Import companies from [CRM] list</b></p></td><td><p class="no-margin">Import companies from a CRM list.</p></td></tr><tr><td><p class="no-margin"><b>Import companies from [CRM] search</b></p></td><td><p class="no-margin">Import companies from a CRM search.</p></td></tr><tr><td><p class="no-margin"><b>Import contacts from [CRM] list</b></p></td><td><p class="no-margin">Import contacts from a CRM list.</p></td></tr><tr><td><p class="no-margin"><b>Import contacts from [CRM] search</b></p></td><td><p class="no-margin">Import contacts from a CRM search.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from Google Maps</b></p></td><td><p class="no-margin">Search for companies on Google Maps.</p></td></tr><tr><td><p class="no-margin"><b>Enrich with email</b></p></td><td><p class="no-margin">Enrich contacts with email addresses.</p></td></tr><tr><td><p class="no-margin"><b>Verify contact email</b></p></td><td><p class="no-margin">Verify a contact’s email address.</p></td></tr><tr><td><p class="no-margin"><b>Enrich company with Crunchbase</b></p></td><td><p class="no-margin">Enrich company data using Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>Enrich contact with Crunchbase</b></p></td><td><p class="no-margin">Enrich contact data using Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>Search companies from Crunchbase</b></p></td><td><p class="no-margin">Search for companies in Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>Search contacts from Crunchbase</b></p></td><td><p class="no-margin">Search for contacts in Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>Search investors from Crunchbase</b></p></td><td><p class="no-margin">Search for investors in Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>Export companies to CRM</b></p></td><td><p class="no-margin">Export companies to the CRM.</p></td></tr><tr><td><p class="no-margin"><b>Export contacts to CRM</b></p></td><td><p class="no-margin">Export contacts to the CRM.</p></td></tr><tr><td><p class="no-margin"><b>Sync companies with CRM</b></p></td><td><p class="no-margin">Sync company data with the CRM.</p></td></tr><tr><td><p class="no-margin"><b>Sync contacts with CRM</b></p></td><td><p class="no-margin">Sync contact data with the CRM.</p></td></tr></tbody></table>
 
 **Note:** Importing via CSV or from the CRM has no record limit. Only scrapings are subject to a daily cap.
@@ -120,22 +107,16 @@ The following action types are recorded in this tab:
 The **Engagement** tab displays all activity related to campaigns. You can use the search bar to look up activity by the name of the lead or the identity used in the campaign.
 
 The following action types are recorded in this tab:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Action</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Add to another campaign</b></p></td><td><p class="intercom-align-justify no-margin">The lead was moved or added to a different campaign.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Email</b></p></td><td><p class="intercom-align-justify no-margin">An email was sent as part of a campaign step.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Liked last post</b></p></td><td><p class="intercom-align-justify no-margin">A LinkedIn "like" action was executed on the lead's most recent post.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn invitation</b></p></td><td><p class="intercom-align-justify no-margin">A LinkedIn connection request was sent.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn message</b></p></td><td><p class="intercom-align-justify no-margin">A LinkedIn message was sent to the lead.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn voice message</b></p></td><td><p class="intercom-align-justify no-margin">A LinkedIn voice message was sent to the lead.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Task</b></p></td><td><p class="intercom-align-justify no-margin">A Task was created for a lead and needs to be completed.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Visit LinkedIn profile</b></p></td><td><p class="intercom-align-justify no-margin">The lead's LinkedIn profile was visited.</p></td></tr></tbody></table>
 
 ---
 
 # Filter Activity Records
-
 At the top of the Activity view you can narrow down the list using filters. This is essential when you have a large volume of history.
 
 ## Filter by Action Type
-
 1.  Open the **Actions** dropdown, either from Prospecting or Engagement tabs.
-    
 2.  Select the type of process you want to view.
-    
-
 This is the fastest way to answer questions like "Did yesterday's contact import finish correctly?" or "How many exports to the CRM have we done this week?"
 
 **Tip:** In the **Engagement** tab, the action filter lets you isolate specific campaign step types (e.g., only emails, only LinkedIn invitations).
@@ -192,9 +173,7 @@ You can combine multiple filters at once to get a very precise view. For example
 ---
 
 # Task Statuses Reference
-
 Every action in Activity has one of the following statuses:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Status</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Meaning</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Completed</b></p></td><td><p class="intercom-align-justify no-margin">The action finished successfully and all applicable data was processed.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Processing</b></p></td><td><p class="intercom-align-justify no-margin">The action is still running. Data is being processed; you may need to wait until it finishes before exporting or triggering related tasks.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Queued</b></p></td><td><p class="intercom-align-justify no-margin">The action is waiting to start. This can happen when other processes are already running, or when usage limits are temporarily reached (e.g., scrapings, searches, LinkedIn connection requests per day/hour, or emails per day/hour, depending on identity configuration).</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Failed</b></p></td><td><p class="intercom-align-justify no-margin">The action could not be completed due to an error. For imports/exports, open the corresponding report (CSV Import Report or CRM Export Report) to see what went wrong. Typical reasons include invalid data, missing required fields, or conflicts in the CRM.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Cancelled</b></p></td><td><p class="intercom-align-justify no-margin">The action was manually cancelled or stopped while in a Processing or Queued state. No further processing will occur.<br>​<b>Note</b>: professional email and phone number enrichments cannot be cancelled as they trigger our query to our providers, which means we already assume the cost. All other actions can be cancelled.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Pending</b></p></td><td><p class="intercom-align-justify no-margin">The engagement action is queued and pending to be executed when allowed by Identity capacity and system queues.</p></td></tr></tbody></table>
 
 **Tip:** Use these statuses to quickly identify where you need to take action. For example, re-run a failed import after fixing the file, or free up resources if too many jobs are queued.
@@ -202,7 +181,6 @@ Every action in Activity has one of the following statuses:
 ---
 
 # Monitor Rolling 24-Hour Scrapings
-
 At the top-right of the Activity page you will see the **Rolling 24 Hour Scrapings** indicator. This panel shows:
 
 -   How many scraping processes have been executed in the last 24 hours.
@@ -235,26 +213,17 @@ If you frequently reach your daily limit, consider:
 ---
 
 # Review a Prospecting Action Report
-
 The CSV Import Report lets you inspect the detailed result of importing companies or contacts from a CSV file.
 
 ## Access the Report
-
 1.  Open the **Prospecting** tab in Activity.
-    
 2.  Open the **Actions** dropdown and select the action which you want to see the report (optional).
-    
 3.  Optionally, filter by user and date to locate the exact import.
-    
 4.  Locate the import you want to inspect.
-    
 5.  Click the **row** to open the CSV Import Report, or click the **dropdown arrow** to expand and see the list of imported companies or contacts directly in Activity.
-    
-
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440077/helpcenter/activity-4.png)
 
 This panel shows the basic following data:
-
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Status</b></p></td><td><p class="intercom-align-justify no-margin">Status of the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Created by</b></p></td><td><p class="intercom-align-justify no-margin">Who triggered the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Finished</b></p></td><td><p class="intercom-align-justify no-margin">Completion time of the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Credits</b></p></td><td><p class="intercom-align-justify no-margin">Credits consumed by the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Completed In</b></p></td><td><p class="intercom-align-justify no-margin">Total time of execution of the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Contacts</b></p></td><td><p class="intercom-align-justify no-margin">Contacts count involved by the action</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Companies</b></p></td><td><p class="intercom-align-justify no-margin">Companies count involved by the action</p></td></tr></tbody></table>
 
 Note: for CSV and Excel exports, in the corresponding panel you will find the file to be downloaded
@@ -262,7 +231,6 @@ Note: for CSV and Excel exports, in the corresponding panel you will find the fi
 ---
 
 # Practical Use Cases
-
 Below are common ways teams use Activity effectively.
 
 ## Monitor Teamwork
@@ -280,16 +248,10 @@ Below are common ways teams use Activity effectively.
     
 
 ## Detect and Fix Errors
-
 1.  Filter by **Failed** status to quickly find problematic tasks.
-    
 2.  Open the corresponding report (CSV Import or CRM Export) to see why they failed and how many records were affected.
-    
 3.  Correct the issue (e.g., fix the CSV file or adjust the CRM field mapping).
-    
 4.  Re-run the task.
-    
-
 ## Audit and Compliance
 
 -   Answer questions like "Who exported this data?" or "When was this list imported?"
@@ -316,7 +278,6 @@ Below are common ways teams use Activity effectively.
 ---
 
 # FAQs
-
 ### **Q1: What is the difference between the Prospecting tab and the Engagement tab?**
 
 The **Prospecting** tab shows all activity related to finding and managing contacts and companies — including scrapings, searches, enrichments, and imports/exports. The **Engagement** tab shows all activity related to outbound campaigns, such as emails sent, LinkedIn invitations, LinkedIn messages, and social interactions like liking a post.
