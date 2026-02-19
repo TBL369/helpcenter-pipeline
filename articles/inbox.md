@@ -69,7 +69,7 @@ The Inbox interface is divided into four main columns to streamline your workflo
 
 The sidebar is your primary navigation tool, organizing your workload into Folders and Tags by identity selected:
 
-![](images/inbox-1.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440117/helpcenter/inbox-1.png)
 
 ## Folders
 
@@ -114,7 +114,7 @@ You can create your own tags directly from the Inbox. Each custom AI tag allows 
 
 **Important:** AI tags must have a valid prompt configured before they can be activated.
 
-![](images/inbox-2.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440118/helpcenter/inbox-2.png)
 
 ### Tag Compatibility and Dynamic Updates
 
@@ -156,13 +156,13 @@ Use the search bar or apply filters to find specific conversations. You can appl
 4.  Click the **X** on any chip to remove that filter.
     
 
-![](images/inbox-3.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440118/helpcenter/inbox-3.png)
 
 ## Bulk Actions
 
 Select multiple conversations using checkboxes (or "Select All") to reveal the action toolbar.
 
-![](images/inbox-4.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440118/helpcenter/inbox-4.png)
 
 **Note:** The checkbox appears after a slight delay when hovering to preserve a smooth scrolling experience.
 
@@ -174,7 +174,7 @@ Select multiple conversations using checkboxes (or "Select All") to reveal the a
 
 This view shows the full chronological history of all interactions with a lead, including messages, tasks, added/removed tags, and campaign actions from your entire team (e.g. LinkedIn invitation sent, Visited profile, ...).
 
-![](images/inbox-5.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440118/helpcenter/inbox-5.png)
 
 **Note:** Access to this complete history depends on user permissions. A user must have the appropriate access rights to view the full timeline of team interactions.
 
@@ -201,7 +201,7 @@ This ensures continuity and allows responses to follow the same communication ch
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Feature</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Details</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>To Field</b></p></td><td><p class="intercom-align-justify no-margin">Pre-filled with recipient information.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Subject Line</b></p></td><td><p class="intercom-align-justify no-margin">Pre-filled based on conversation thread.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Rich Text Editor</b></p></td><td><p class="intercom-align-justify no-margin">Formatting tools: Bold, Italic, Underline, Ordered list, Bullet list, Insert Link.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Images</b></p></td><td><p class="intercom-align-justify no-margin">Supported formats: JPEG, PNG. Max size: 5.0 MB.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>File Attachments</b></p></td><td><p class="intercom-align-justify no-margin">Supported format: PDF. Max size: 5.0 MB.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Signature</b></p></td><td><p class="intercom-align-justify no-margin">Email signature automatically included.</p></td></tr></tbody></table>
 
-![](images/inbox-6.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440119/helpcenter/inbox-6.png)
 
 **Important:** To prevent spam or bounce issues, all file attachments are sent as links rather than direct attachments. This improves deliverability and ensures your messages reach the recipient's inbox.
 
@@ -220,7 +220,7 @@ When AI detects a positive or engaging message from a lead, it automatically gen
 -   **Directly Send:** Press the send button to send the AI suggestion immediately.
     
 
-![](images/inbox-7.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440119/helpcenter/inbox-7.png)
 
 **Tip:** You can always discard the AI draft entirely and write your own response from scratch.
 
@@ -239,7 +239,7 @@ You can schedule messages for future delivery:
 
 4\. Once scheduled, the message appears in the timeline with the scheduled time and displays two action buttons: **Send Now** to send immediately, and **Cancel** to remove the scheduled message.
 
-![](images/inbox-8.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440119/helpcenter/inbox-8.png)
 
 ---
 
@@ -247,7 +247,7 @@ You can schedule messages for future delivery:
 
 Displays complete lead and company information with actionable shortcuts.
 
-![](images/inbox-9.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440119/helpcenter/inbox-9.png)
 
 **Note:** By default, this panel is hidden. Open it by clicking the lead's name at the top of the messages or by using the button in the top-right corner of the chat view.
 
@@ -304,7 +304,7 @@ Chronological log of all interactions from the last 19 months:
 -   Link clicks
     
 
-![](images/inbox-10.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440117/helpcenter/inbox-10.png)
 
 ## Campaign Status
 
@@ -312,13 +312,13 @@ Displays all campaigns where the lead is enrolled:
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Name</b></p></td><td><p class="intercom-align-justify no-margin">Linked campaign name (clickable).</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Current Status</b></p></td><td><p class="intercom-align-justify no-margin">In Progress, Paused, Finished, or Replied.</p></td></tr></tbody></table>
 
-![](images/inbox-11.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440117/helpcenter/inbox-11.png)
 
 ## Work History
 
 Lists previous roles and companies, including tenure duration. This information is helpful for understanding the contact's career trajectory and personalizing your outreach.
 
-![](images/inbox-12.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440118/helpcenter/inbox-12.png)
 
 ---
 
