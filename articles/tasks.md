@@ -55,13 +55,13 @@ To open the Tasks page, navigate to **Tasks** in Enginy. The page is organized i
 
 The **Pending** tab shows all tasks that still need to be done. Use this tab as your daily working queue to see what actions you need to take next.
 
-![](images/tasks-1.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440153/helpcenter/tasks-1.png)
 
 ## Completed Tab
 
 The **Completed** tab shows all tasks that have been finished. It includes an additional **Completed** column (not present in the Pending tab) that shows when each task was marked as done. Use this tab to review your work history and confirm that tasks were handled.
 
-![](images/tasks-2.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440153/helpcenter/tasks-2.png)
 
 ## Task List Columns Reference
 
