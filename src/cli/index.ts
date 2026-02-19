@@ -593,30 +593,65 @@ async function exportArticlesFlow(
 }
 
 /**
- * Función para exportar artículos a archivos Markdown en el repo
+ * Muestra los subdirectorios existentes dentro de articles/ y pide al usuario
+ * el subdirectorio destino para un artículo dado.
  */
-async function exportMarkdownFlow(
+async function pickSubdir(
+  articlesDir: string,
+  articleTitle: string,
+  defaultSlug: string,
+  rl: readline.Interface,
+): Promise<string> {
+  const subdirs = fs.readdirSync(articlesDir, { withFileTypes: true })
+    .filter(e => e.isDirectory())
+    .map(e => e.name)
+    .sort();
+
+  if (subdirs.length > 0) {
+    console.log(`\n   Subdirectorios existentes en articles/:`);
+    for (let i = 0; i < subdirs.length; i++) {
+      const connector = i === subdirs.length - 1 ? '└' : '├';
+      console.log(`   ${connector}── ${subdirs[i]}/`);
+    }
+  }
+
+  const answer = await askQuestion(
+    rl,
+    `\n   Subdirectorio destino para "${articleTitle}" (Enter = ${defaultSlug}): `,
+  );
+
+  return answer.trim() || defaultSlug;
+}
+
+/**
+ * Función para importar artículos de Intercom al repositorio como archivos Markdown
+ */
+async function importMarkdownFlow(
   intercomClient: IntercomClient,
   rl: readline.Interface,
 ): Promise<void> {
-  const defaultPath = process.cwd();
-  const repoPath = await askQuestion(
-    rl,
-    `\n📂 Ruta al repo helpcenter-pipeline:\n   (Se buscarán archivos .md en <ruta>/articles/)\n   (Enter para usar: ${defaultPath})\n> `,
-  );
-
-  const finalPath = repoPath || defaultPath;
-  const articlesDir = path.join(finalPath, 'articles');
+  const repoPath = process.cwd();
+  const articlesDir = path.join(repoPath, 'articles');
 
   if (!fs.existsSync(articlesDir)) {
-    console.error(`\n   ❌ No se encontró la carpeta articles/ en: ${finalPath}`);
-    console.error('   Asegúrate de que la ruta apunta al repo helpcenter-pipeline.\n');
+    console.error(`\n   ❌ No se encontró la carpeta articles/ en: ${repoPath}`);
+    console.error('   Asegúrate de ejecutar el CLI desde la raíz del repo helpcenter-pipeline.\n');
     return;
   }
 
-  const exporter = new MarkdownExporter({ repoPath: finalPath });
+  const exporter = new MarkdownExporter({ repoPath });
 
-  console.log('\n📋 Ingresa los artículos a exportar de Intercom.');
+  // Ofrecer listar artículos de Intercom
+  const wantList = await askQuestion(
+    rl,
+    '\n   ¿Quieres ver la lista de artículos disponibles en Intercom? (s/n): ',
+  );
+
+  if (wantList.toLowerCase() === 's' || wantList.toLowerCase() === 'si' || wantList.toLowerCase() === 'sí') {
+    await listArticlesFlow(intercomClient, rl);
+  }
+
+  console.log('\n📋 Ingresa los artículos a importar de Intercom.');
   console.log('   Puedes usar: IDs, URLs, o títulos.');
   console.log('   Escribe "fin" o línea vacía para terminar.\n');
 
@@ -633,15 +668,15 @@ async function exportMarkdownFlow(
 
   const articleIds = await parseArticleInputsWithSearch(articleInput, intercomClient, rl);
   if (articleIds.length === 0) {
-    console.error('❌ No se encontraron artículos para exportar.');
+    console.error('❌ No se encontraron artículos para importar.');
     return;
   }
 
-  console.log(`\n✅ Se encontraron ${articleIds.length} artículo(s) para exportar.`);
+  console.log(`\n✅ Se encontraron ${articleIds.length} artículo(s) para importar.`);
   console.log(`   IDs: ${articleIds.join(', ')}\n`);
 
   console.log('──────────────────────────────────────────────────────────');
-  console.log('📝 Exportando artículos a Markdown...\n');
+  console.log('📥 Importando artículos al repositorio...\n');
 
   let successCount = 0;
   let failCount = 0;
@@ -663,11 +698,14 @@ async function exportMarkdownFlow(
         continue;
       }
 
-      process.stdout.write(` "${title.substring(0, 30)}${title.length > 30 ? '...' : ''}"...`);
+      console.log(` "${title}"`);
 
-      const result = await exporter.exportArticle(title, body);
+      const slug = exporter.getSlug(title);
+      const subdir = await pickSubdir(articlesDir, title, slug, rl);
+
+      const result = await exporter.exportArticle(title, body, { subdir });
       const imgInfo = result.imagesDownloaded > 0 ? ` (${result.imagesDownloaded} imgs)` : '';
-      console.log(` ✅${imgInfo} → ${path.basename(result.filePath)}`);
+      console.log(`   ✅${imgInfo} → ${path.relative(repoPath, result.filePath)}`);
       successCount++;
 
       if (i < articleIds.length - 1) {
@@ -682,11 +720,11 @@ async function exportMarkdownFlow(
   }
 
   console.log('\n══════════════════════════════════════════════════════════');
-  console.log('   RESUMEN DE EXPORTACIÓN A MARKDOWN');
+  console.log('   RESUMEN DE IMPORTACIÓN AL REPOSITORIO');
   console.log('══════════════════════════════════════════════════════════\n');
   console.log(`   📂 Destino: ${articlesDir}`);
   console.log(`   📄 Artículos procesados: ${articleIds.length}`);
-  console.log(`   ✅ Exportados: ${successCount}`);
+  console.log(`   ✅ Importados: ${successCount}`);
   console.log(`   ❌ Fallidos: ${failCount}`);
 
   if (errors.length > 0) {
@@ -926,7 +964,7 @@ async function main(): Promise<void> {
           await listArticlesFlow(intercomClient, rl);
           break;
         case '2':
-          await exportMarkdownFlow(intercomClient, rl);
+          await importMarkdownFlow(intercomClient, rl);
           break;
         case '3':
           if (!notionClient) {

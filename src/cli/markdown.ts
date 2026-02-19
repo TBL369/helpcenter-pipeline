@@ -52,20 +52,25 @@ export class MarkdownExporter {
     return td;
   }
 
-  async exportArticle(title: string, htmlBody: string, filename?: string): Promise<ExportResult> {
+  async exportArticle(title: string, htmlBody: string, options?: { filename?: string; subdir?: string }): Promise<ExportResult> {
     fs.mkdirSync(this.articlesDir, { recursive: true });
     fs.mkdirSync(this.imagesDir, { recursive: true });
 
     const { html: processedHtml, downloadedCount } = await this.downloadImages(htmlBody, title);
     const markdown = this.htmlToMarkdown(title, processedHtml);
-    const slug = filename || this.slugify(title);
-    const articleDir = path.join(this.articlesDir, slug);
+    const slug = options?.filename || this.slugify(title);
+    const dirName = options?.subdir || slug;
+    const articleDir = path.join(this.articlesDir, dirName);
     fs.mkdirSync(articleDir, { recursive: true });
     const filePath = path.join(articleDir, `${slug}.md`);
 
     fs.writeFileSync(filePath, markdown, 'utf-8');
 
     return { filePath, imagesDownloaded: downloadedCount };
+  }
+
+  getSlug(text: string): string {
+    return this.slugify(text);
   }
 
   private htmlToMarkdown(title: string, html: string): string {
