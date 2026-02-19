@@ -800,6 +800,12 @@ function intercomPostProcess(html: string): string {
   // 7b. Bold labels: convertir strong+newline en strong+br (antes del minificado)
   out = out.replace(/(<strong>[^<]+<\/strong>)\n/g, '$1<br>');
 
+  // 7c. Imágenes: <p><img></p> → <div class="intercom-container intercom-align-center"> (formato nativo)
+  out = out.replace(
+    /<p[^>]*>(<img [^>]*>)<\/p>/g,
+    '<div class="intercom-container intercom-align-center">$1</div>',
+  );
+
   // 8. Minificar TODO whitespace entre tags (Intercom renderiza \n como cursor visible)
   out = out.replace(/>\s+</g, '><');
 
@@ -811,6 +817,8 @@ function intercomPostProcess(html: string): string {
   out = out.replace(/(<\/p>)(<p class)/g, `$1${SPACER}$2`);
   // Entre párrafo y heading (</p><h) para FAQ y transiciones párrafo→sección
   out = out.replace(/(<\/p>)(<h[1-6] )/g, `$1${SPACER}$2`);
+  // Entre párrafo y imagen (</p><div class="intercom-container")
+  out = out.replace(/(<\/p>)(<div class="intercom-container)/g, `$1${SPACER}$2`);
   // Entre párrafo y <hr>
   out = out.replace(/(<\/p>)(<hr>)/g, `$1${SPACER}$2`);
   // Después de <hr>
@@ -823,7 +831,7 @@ function intercomPostProcess(html: string): string {
   // Después de callouts
   out = out.replace(/(intercom-interblocks-callout[^>]*>.*?<\/div>)(<)/g, `$1${SPACER}$2`);
   // Después de imágenes (doble spacer)
-  out = out.replace(/(<p[^>]*><img [^>]*><\/p>)/g, `$1${SPACER}${SPACER}`);
+  out = out.replace(/(<div class="intercom-container[^>]*><img [^>]*><\/div>)/g, `$1${SPACER}${SPACER}`);
   // Fix: entre imágenes consecutivas, el </p><p de la regla de párrafos añade 1 spacer extra
   // (imagen ya tiene 2 después + 1 entre párrafos = 3). Quitar el spacer extra.
   out = out.replace(
