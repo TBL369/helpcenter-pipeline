@@ -613,7 +613,7 @@ async function exportMarkdownFlow(
   const defaultPath = process.cwd();
   const repoPath = await askQuestion(
     rl,
-    `\n📂 Ruta al repo helpcenter-pipeline:\n   (Enter para usar: ${defaultPath})\n> `,
+    `\n📂 Ruta al repo helpcenter-pipeline:\n   (Se buscarán archivos .md en <ruta>/articles/)\n   (Enter para usar: ${defaultPath})\n> `,
   );
 
   const finalPath = repoPath || defaultPath;
@@ -755,7 +755,7 @@ async function uploadToIntercomFlow(
   const defaultPath = process.cwd();
   const repoPath = await askQuestion(
     rl,
-    `\n📂 Ruta al repo helpcenter-pipeline:\n   (Enter para usar: ${defaultPath})\n> `,
+    `\n📂 Ruta al repo helpcenter-pipeline:\n   (Se buscarán archivos .md en <ruta>/articles/)\n   (Enter para usar: ${defaultPath})\n> `,
   );
 
   const finalPath = repoPath || defaultPath;
