@@ -357,9 +357,10 @@ infra/
   com.helpcenter.sync.plist    Cron job macOS (launchd) — ejecuta nightly.ts
   setup-cron.sh                Script de instalación del cron
 prompts/
-  article-augmented-safe.md    Prompt para integrar contenido suplementario en artículos
+  article-augmented.md         Prompt para integrar contenido suplementario en artículos
   article-merge.md             Prompt para merge de contenido OLD + NEW
   change-brief.md              Prompt para generar change briefs desde diffs de PRs
+  config-auditor.md            Prompt para auditar config/ contra la estructura del repo SaaS
   images-to-article.md         Prompt para crear artículos desde screenshots
   prompt-optimizer.md          Prompt optimizer (metodología 4-D)
 src/
