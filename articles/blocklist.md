@@ -75,7 +75,7 @@ The Blocklist section contains two tabs at the top of the page:
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Tab</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Contacts</b></p></td><td><p class="intercom-align-justify no-margin">Displays all individually blocked contacts. Contacts are identified by their email address and/or LinkedIn URL.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Companies</b></p></td><td><p class="intercom-align-justify no-margin">Displays all blocked companies. Companies are identified by their domain and/or LinkedIn URL.</p></td></tr></tbody></table>
 
-![](images/blocklist-1.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440091/helpcenter/blocklist-1.png)
 
 Both tabs share the same filtering and column structure, with one difference in the first column (see Column Fields below).
 
@@ -110,7 +110,7 @@ The columns displayed in the Blocklist table differ slightly between the two tab
 5.  Save your changes.
     
 
-![](images/blocklist-2.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440091/helpcenter/blocklist-2.png)
 
 ## Add a Single Company
 
@@ -125,7 +125,7 @@ The columns displayed in the Blocklist table differ slightly between the two tab
 5.  Save your changes.
     
 
-![](images/blocklist-3.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-3.png)
 
 ## Bulk-Add Contacts or Companies
 
@@ -140,13 +140,13 @@ You can block multiple contacts or companies at once directly from any list:
 4.  Choose a reason for blocking.
     
 
-![](images/blocklist-4.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-4.png)
 
-![](images/blocklist-5.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-5.png)
 
-![](images/blocklist-6.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-6.png)
 
-![](images/blocklist-7.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-7.png)
 
 **Notes:**
 
@@ -170,9 +170,9 @@ To update a blocklisted entry (for example, to correct the email address, domain
 3.  Make your changes and save.
     
 
-![](images/blocklist-8.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440097/helpcenter/blocklist-8.png)
 
-![](images/blocklist-9.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440097/helpcenter/blocklist-9.png)
 
 ## Unblock an Entry
 
@@ -196,9 +196,9 @@ When viewing any list of Contacts or Companies, a **blocklist indicator** is dis
 -   From this pop-up, you can select and remove entries from the Blocklist without navigating away from your current list.
     
 
-![](images/blocklist-10.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440091/helpcenter/blocklist-10.png)
 
-![](images/blocklist-11.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440091/helpcenter/blocklist-11.png)
 
 ---
 
