@@ -31,7 +31,7 @@ Every task has one of two statuses:
 Each task also carries a type that indicates the kind of action required:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Type</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Description</b></p></td></tr><tr><td><p class="no-margin"><b>TODO</b></p></td><td><p class="no-margin">A general action item (e.g., "Call Valentina (LinkedIn Not Accepted)").</p></td></tr><tr><td><p class="no-margin"><b>CALL</b></p></td><td><p class="no-margin">A phone-call task (e.g., "Cold Call").</p></td></tr><tr><td><p class="no-margin"><b>EMAIL</b></p></td><td><p class="no-margin">An email-related task (e.g., "Follow-up email").</p></td></tr></tbody></table>
 
-**Note:** Tasks also appear in the Inbox conversations alongside your other interactions with the lead.
+> **Note:** Tasks also appear in the Inbox conversations alongside your other interactions with the lead.
 
 ---
 
@@ -75,7 +75,7 @@ The task list updates to show only tasks assigned to the selected owner.
 Click the **Sort** button in the toolbar and select one of the available options:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Sort Option</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Behavior</b></p></td></tr><tr><td><p class="no-margin"><b>Newest first</b></p></td><td><p class="no-margin">Displays the most recently created tasks at the top.</p></td></tr><tr><td><p class="no-margin"><b>Oldest first</b></p></td><td><p class="no-margin">Displays the earliest created tasks at the top.</p></td></tr><tr><td><p class="no-margin"><b>Recently completed</b></p></td><td><p class="no-margin">Displays the most recently completed tasks at the top. Most useful in the Completed tab.</p></td></tr><tr><td><p class="no-margin"><b>First completed</b></p></td><td><p class="no-margin">Displays the earliest completed tasks at the top. Most useful in the Completed tab.</p></td></tr></tbody></table>
 
-**Tip:** The **Recently completed** and **First completed** sort options are most useful when viewing the Completed tab to review recent work or find older completed tasks.
+> **Tip:** The **Recently completed** and **First completed** sort options are most useful when viewing the Completed tab to review recent work or find older completed tasks.
 
 ---
 
@@ -92,7 +92,7 @@ The panel gives you a complete breakdown of the task, including its type, associ
 2. Scroll to the **Notes** field at the bottom of the panel.
 3. Click the field (it displays the placeholder text **Add a note…** when empty).
 4. Type your note.
-**Tip:** Use notes to record call outcomes, capture follow-up details, or leave context for teammates who may pick up the task.
+> **Tip:** Use notes to record call outcomes, capture follow-up details, or leave context for teammates who may pick up the task.
 
 ---
 
@@ -101,9 +101,9 @@ The panel gives you a complete breakdown of the task, including its type, associ
 2. Click the **Complete** button at the bottom-right corner of the panel.
 Once completed, the task automatically moves from the **Pending** tab to the **Completed** tab and its status changes from **Pending** (orange) to **Completed** (green).
 
-**Note:** The **Complete** button includes a small dropdown chevron beside it with an additional option: **Complete & Pause**, which completes the task and pauses the campaign sequence for that lead. Use this when you need to stop further automated outreach to a specific contact.
+> **Note:** The **Complete** button includes a small dropdown chevron beside it with an additional option: **Complete & Pause**, which completes the task and pauses the campaign sequence for that lead. Use this when you need to stop further automated outreach to a specific contact.
 
-**Important:** The **Complete** button is only available for tasks with a **Pending** status. Tasks already marked as **Completed** do not display this button.
+> **Important:** The **Complete** button is only available for tasks with a **Pending** status. Tasks already marked as **Completed** do not display this button.
 
 ---
 

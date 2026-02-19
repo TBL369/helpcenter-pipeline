@@ -44,7 +44,7 @@ When a contact or company is added to the Blocklist:
     
 This is especially useful for excluding competitors, existing customers you do not want to re-engage, churned accounts, or any person or organization you prefer not to interact with.
 
-**Important:** A contact or company that is on the Blocklist cannot be re-added to any list or campaign until it is first removed (unblocked) from the Blocklist.
+> **Important:** A contact or company that is on the Blocklist cannot be re-added to any list or campaign until it is first removed (unblocked) from the Blocklist.
 
 ---
 
@@ -61,7 +61,7 @@ Both tabs share the same filtering and column structure, with one difference in 
 The following filters are available in both the Contacts and Companies tabs:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Filter</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Available Values</p></td></tr><tr><td><p class="no-margin"><b>Search bar</b></p></td><td><p class="no-margin">Quick keyword search across blocklisted entries.</p></td><td><p class="no-margin">Free text.</p></td></tr><tr><td><p class="no-margin"><b>Source</b></p></td><td><p class="no-margin">Filter by the origin that added the entry to the Blocklist.</p></td><td><p class="no-margin">Blocklist, Inbox, Workflow, Campaign, List.</p></td></tr><tr><td><p class="no-margin"><b>Reason</b></p></td><td><p class="no-margin">Filter by the reason the entry was blocked.</p></td><td><p class="no-margin">Not interested, Competitor, Customer, Not target, Other, Churn.</p></td></tr><tr><td><p class="no-margin"><b>Created by</b></p></td><td><p class="no-margin">Filter by the team member who added the entry.</p></td><td><p class="no-margin">Any workspace user.</p></td></tr></tbody></table>
 
-**Note:** There is also a button to **Export all to CSV.**
+> **Note:** There is also a button to **Export all to CSV.**
 
 ## Column Fields
 The columns displayed in the Blocklist table differ slightly between the two tabs:
@@ -124,7 +124,7 @@ To update a blocklisted entry (for example, to correct the email address, domain
 To remove a contact or company from the Blocklist:
 1.  Locate the entry in the Blocklist.
 2.  Click the **Unblock** button in the **Actions** column.
-**Tip:** Once unblocked, the contact or company will reappear in your lists and become eligible for campaigns and CRM exports again. Unblocking does not delete the record; it simply lifts the block.
+> **Tip:** Once unblocked, the contact or company will reappear in your lists and become eligible for campaigns and CRM exports again. Unblocking does not delete the record; it simply lifts the block.
 
 ---
 
@@ -153,7 +153,7 @@ When viewing any list of Contacts or Companies, a **blocklist indicator** is dis
 -   The Blocklist is workspace-wide. Entries blocked by one user apply across the entire workspace.
 -   There is no limit to the number of entries you can add to the Blocklist.
     
-**Warning:** Blocking a contact or company takes effect immediately. Verify your selections carefully before confirming, especially when using the bulk-add workflow.
+> **Warning:** Blocking a contact or company takes effect immediately. Verify your selections carefully before confirming, especially when using the bulk-add workflow.
 
 ---
 

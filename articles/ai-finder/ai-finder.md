@@ -40,7 +40,7 @@ The AI will automatically build an optimized LinkedIn search with the correct jo
 2.  **Review generated filters** — The system analyzes your query and builds an optimized LinkedIn Sales Navigator search. Review the filters it has selected.
 3.  **Adjust if needed** — Modify, add, or remove any generated filters before proceeding.
 4.  **Import results** — Add matching contacts or companies directly from LinkedIn into Enginy.
-**Tip:** You can revisit your previous searches anytime through **Search History** in the AI Finder textbox
+> **Tip:** You can revisit your previous searches anytime through **Search History** in the AI Finder textbox
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440078/helpcenter/ai-finder-1.png)
 
@@ -64,7 +64,7 @@ Use these other filters when searching for organizations (accounts):
 Use these filters to refine the search of people (leads) with intent data:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="no-margin">Filter</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Changed Jobs</b></p></td><td><p class="no-margin">Boolean Yes/No</p></td></tr><tr><td><p class="no-margin"><b>Posted on LinkedIn</b></p></td><td><p class="no-margin">Boolean Yes/No</p></td></tr><tr><td><p class="no-margin"><b>Category Interest</b></p></td><td><p class="no-margin">Filter by the lead’s interest in specific categories/topics.</p></td></tr></tbody></table>
 
-**Tip:** Contacts who recently changed jobs typically show higher engagement rates. Consider combining the **Changed Jobs** filter with your outreach campaigns for better response rates.
+> **Tip:** Contacts who recently changed jobs typically show higher engagement rates. Consider combining the **Changed Jobs** filter with your outreach campaigns for better response rates.
 
 ## Identity Specific Filters (optional)
 Use these filters to refine the search of people (leads) with Sales Navigator identity specific filters:
@@ -91,7 +91,7 @@ Alongside the AI Finder search field, Enginy offers AI Recommendations — dynam
 ## How AI Recommendations Work
 Instead of building searches from scratch, AI Recommendations present ready-to-use queries that match your business focus. Each recommendation appears as a selectable pill directly below the AI Finder search input. Clicking one instantly generates a customized list of leads or companies aligned with your sales strategy.
 
-**Important:** For the most accurate and personalized recommendations, make sure your **AI Playbook** and **Personal Information** are properly configured. These settings help the system understand your target audience, industry, and sales focus, allowing AI Recommendations to deliver more relevant suggestions.
+> **Important:** For the most accurate and personalized recommendations, make sure your **AI Playbook** and **Personal Information** are properly configured. These settings help the system understand your target audience, industry, and sales focus, allowing AI Recommendations to deliver more relevant suggestions.
 
 ## Recommendation Types
 AI Recommendations are categorized based on different prospecting strategies:

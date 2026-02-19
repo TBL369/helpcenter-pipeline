@@ -56,7 +56,7 @@ An identity in Enginy is a sender profile composed of a LinkedIn account, one or
     
 While connecting LinkedIn and email is not strictly required to create an identity, you need at least one channel connected to use the identity in campaigns. An identity with only LinkedIn connected can run campaigns that contain LinkedIn-only actions; likewise, an identity with only email connected can run email-only campaigns.
 
-**Warning:** If you delete an identity that has an active campaign, reconnecting it later won’t reattach it to the campaign. The campaign will lose that identity.
+> **Warning:** If you delete an identity that has an active campaign, reconnecting it later won’t reattach it to the campaign. The campaign will lose that identity.
 
 ## Users vs. Identities
 In Enginy, a **User** and an **Identity** are not the same thing.
@@ -66,7 +66,7 @@ A single User can add and manage multiple Identities connected to the company ac
 
 If multiple people on your team need to work in Enginy with their own access, each person must have their own User account, and each User can connect their own Identities. Conversely, if a single person wants to send from multiple mailboxes (for example, [sales@company.com](mailto:sales@company.com) and [support@company.com](mailto:support@company.com)), they can do so by adding multiple email addresses to one Identity.
 
-**Important:** For billing and security purposes, do not share a single User account among multiple people. Each person should have their own account and connect their corresponding identities.
+> **Important:** For billing and security purposes, do not share a single User account among multiple people. Each person should have their own account and connect their corresponding identities.
 
 ---
 
@@ -100,7 +100,7 @@ Connect directly to a LinkedIn profile by entering your login credentials.
 -   LinkedIn Email
 -   LinkedIn Password
     
-**Important:** If your LinkedIn profile uses Two-Step Authentication (2FA/MFA), you will need to provide the access code during the linking process. Additionally, if you use social logins (Google, Microsoft, Apple) or an Access Key to sign in to LinkedIn, you will not be able to connect successfully. You must set a direct password in your LinkedIn settings first.
+> **Important:** If your LinkedIn profile uses Two-Step Authentication (2FA/MFA), you will need to provide the access code during the linking process. Additionally, if you use social logins (Google, Microsoft, Apple) or an Access Key to sign in to LinkedIn, you will not be able to connect successfully. You must set a direct password in your LinkedIn settings first.
 
 ## Option B: Manually
 Create an identity by manually filling in the profile data. This method does not require LinkedIn credentials.
@@ -123,7 +123,7 @@ This option allows people who do not have an Enginy account (for example, team m
 1.  Click the **Generate Share Link** button.
 2.  Share the generated link with the person.
 3.  The person opens the link in their browser and uses either the Credentials or Manual method to create their identity.
-**Note:** The share link is temporary (valid for 24 hours) and can only be used once.
+> **Note:** The share link is temporary (valid for 24 hours) and can only be used once.
 
 ---
 
@@ -155,7 +155,7 @@ The LinkedIn configuration section contains two tabs: **Rate Limits** and **With
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440116/helpcenter/identities-7.png)
 
-**Note:** The Daily scrapings setting is only available if the identity has Sales Navigator enabled.
+> **Note:** The Daily scrapings setting is only available if the identity has Sales Navigator enabled.
 
 ### Rate Limits
 Define the daily activity limits for the identity on LinkedIn:
@@ -163,7 +163,7 @@ Define the daily activity limits for the identity on LinkedIn:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440117/helpcenter/identities-8.png)
 
-**Warning:** Increasing daily connection requests or message limits beyond the recommended defaults can trigger LinkedIn automation detection, which may result in temporary account restrictions. If you do increase them, do so temporarily and monitor closely.
+> **Warning:** Increasing daily connection requests or message limits beyond the recommended defaults can trigger LinkedIn automation detection, which may result in temporary account restrictions. If you do increase them, do so temporarily and monitor closely.
 
 ### Withdrawals
 Manage pending LinkedIn connection requests that have not been accepted:
@@ -175,7 +175,7 @@ Manage pending LinkedIn connection requests that have not been accepted:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440112/helpcenter/identities-10.png)
 
-**Important:** After withdrawing a connection request, you cannot send a new request to the same person for 3 weeks.
+> **Important:** After withdrawing a connection request, you cannot send a new request to the same person for 3 weeks.
 
 ## Email Configuration
 The Email configuration section contains three tabs: **Manage**, **Email Rate**, and **Signature**.
@@ -215,7 +215,7 @@ This method explicitly authorizes the Enginy application for your entire organiz
 If you prefer to allow users to authorize applications themselves:
 1.  Navigate to **Microsoft Entra Admin Center** > **Applications** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 2.  Ensure that **"Allow user consent for apps from verified publishers"** is selected.
-**Note:** Enginy AI is a verified publisher.
+> **Note:** Enginy AI is a verified publisher.
 
 # Troubleshoot a Failing Connection
 If the integration fails despite granting consent, check for **Conditional Access Policies** that may be blocking third-party applications:
@@ -226,7 +226,7 @@ If the integration fails despite granting consent, check for **Conditional Acces
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="no-margin">Symptom</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Likely Cause</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Resolution</p></td></tr><tr><td><p class="no-margin">"Approval required" screen appears when connecting</p></td><td><p class="no-margin">Organization requires admin consent for third-party apps</p></td><td><p class="no-margin">Request approval from your IT administrator, or have the admin grant tenant-wide consent (Solution A above)</p></td></tr><tr><td><p class="no-margin">Connection fails after admin consent was granted</p></td><td><p class="no-margin">Conditional Access Policies blocking third-party applications</p></td><td><p class="no-margin">Review and exclude Enginy from restrictive Conditional Access Policies</p></td></tr><tr><td><p class="no-margin">Permissions granted but connection still does not work</p></td><td><p class="no-margin">Permission propagation delay in Azure</p></td><td><p class="no-margin">Use the Admin Browser workaround described below, or wait and retry after a few minutes</p></td></tr></tbody></table>
 
 # Alternative: Connect via Admin Browser
-**Note:** This is a workaround for situations where permission propagation is delayed.
+> **Note:** This is a workaround for situations where permission propagation is delayed.
 
 If the standard procedures above do not resolve the issue, the Azure Administrator can attempt to connect the email integration directly:
 1.  Open the browser where the **Azure Administrator** is already logged in with their Azure Admin permissions.
@@ -254,7 +254,7 @@ Make sure you have:
     -   **IMAP Host** and **IMAP Port**
     -   **SMTP Host** and **SMTP Port**
         
-**Tip:** For many providers (Google, Microsoft, etc.), you may need to enable IMAP/SMTP access or generate an **App Password**, especially if 2FA is enabled.
+> **Tip:** For many providers (Google, Microsoft, etc.), you may need to enable IMAP/SMTP access or generate an **App Password**, especially if 2FA is enabled.
 
 # How to connect
 1.  Fill in the fields:
@@ -290,7 +290,7 @@ These are the most common secure options (they can vary by provider):
     ![](https://res.cloudinary.com/enginy/image/upload/v1771440113/helpcenter/identities-15.png)
 -   **Lead continuity** — If a lead starts a sequence with a specific email address and you later disconnect that address, the system will not reassign the lead to another connected address. Instead, the lead will produce an error. To resolve this, you must reconnect the original email address.
     
-**Warning:** If you disconnect an email address that has active leads mid-sequence, those leads will fail. The only way to fix this is to reconnect the same address that initiated the conversation.
+> **Warning:** If you disconnect an email address that has active leads mid-sequence, those leads will fail. The only way to fix this is to reconnect the same address that initiated the conversation.
 
 #### Warm-Up
 The Warm-Up feature trains an email address through an external provider to reduce spam detection and increase deliverability.
@@ -306,7 +306,7 @@ The Warm-Up feature trains an email address through an external provider to redu
 -   Pause all campaigns that use the identity (and therefore the email address being warmed up). Not mandatory but highly recommended warm-up properly.
 -   Avoid sending any emails from that address outside of Enginy.
     
-**Tip:** Following these requirements ensures the warm-up process completes successfully and your sender reputation improves as expected.
+> **Tip:** Following these requirements ensures the warm-up process completes successfully and your sender reputation improves as expected.
 
 ### Email Rate
 Configure the sending limits per email address to avoid spam filters:

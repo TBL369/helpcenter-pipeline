@@ -747,6 +747,14 @@ function addJustifyAlignment(html: string): string {
 }
 
 /**
+ * Elimina <p> wrapper dentro de <li> que marked genera en "loose lists".
+ * Intercom añade margin extra al <p> dentro de <li>, causando spacing no deseado.
+ */
+function stripParagraphsInListItems(html: string): string {
+  return html.replace(/<li([^>]*)><p([^>]*)>/g, '<li$1$2>').replace(/<\/p>\s*<\/li>/g, '</li>');
+}
+
+/**
  * Lee un .md, extrae titulo (primer # heading) y convierte el body a HTML.
  * Preserva el TOC pero sanitiza los anchor links que Intercom no soporta.
  */
@@ -774,6 +782,7 @@ function mdFileToHtml(filePath: string): { title: string; html: string } {
   body = body.trim();
 
   let html = marked.parse(body) as string;
+  html = stripParagraphsInListItems(html);
   html = addJustifyAlignment(html);
   return { title, html };
 }

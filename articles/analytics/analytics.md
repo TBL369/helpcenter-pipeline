@@ -49,7 +49,7 @@ The main chart displays your outbound process as a funnel visualization. You can
 Each bar in the funnel represents a stage of your outbound process:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Stage</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Calculation</p></td></tr><tr><td><p class="no-margin"><b>Total Audience</b></p></td><td><p class="no-margin">Total number of people added to a campaign during the selected period. This represents 100% of your pool.</p></td><td><p class="no-margin">Base metric (100%)</p></td></tr><tr><td><p class="no-margin"><b>Engaged</b></p></td><td><p class="no-margin">Contacts who took any action: LinkedIn profile visits, connection requests, messages, or were contacted via email.</p></td><td><p class="no-margin">(Engaged / Total Audience) x 100</p></td></tr><tr><td><p class="no-margin"><b>Contacted</b></p></td><td><p class="no-margin">Contacts who received at least one message (LinkedIn or Email).</p></td><td><p class="no-margin">(Contacted / Total Audience) x 100</p></td></tr><tr><td><p class="no-margin"><b>Replied</b></p></td><td><p class="no-margin">Contacts who responded to your outreach (LinkedIn or Email).</p></td><td><p class="no-margin">(Replied / Contacted) x 100</p></td></tr><tr><td><p class="no-margin"><b>Positive</b></p></td><td><p class="no-margin">Conversations tagged with positive category tags (e.g., "Interested", "Meeting booked").</p></td><td><p class="no-margin">(Positive / Contacted) x 100</p></td></tr></tbody></table>
 
-**Note:** Positive Replies include both AI-generated positive tags and manual tags you have created that reflect genuine interest or success (e.g., "Interested", "Meeting booked"). These help you quickly measure real buying intent and engagement quality.
+> **Note:** Positive Replies include both AI-generated positive tags and manual tags you have created that reflect genuine interest or success (e.g., "Interested", "Meeting booked"). These help you quickly measure real buying intent and engagement quality.
 
 ## Tagged Conversations
 On the right side of the Performance Tab, you will see a list of tags with bars indicating the volume of conversations for each category.
@@ -72,7 +72,7 @@ On the right side of the Performance Tab, you will see a list of tags with bars 
 Understanding how tag removal affects your Analytics data is important for maintaining accurate metrics:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Action</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Effect on Conversations</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Effect on Analytics</p></td></tr><tr><td><p class="no-margin"><b>Deleting a tag</b> (AI or manual)</p></td><td><p class="no-margin">All instances of that tag are removed from conversations.</p></td><td><p class="no-margin">The tag will no longer appear in Analytics.</p></td></tr><tr><td><p class="no-margin"><b>Deactivating an AI tag</b></p></td><td><p class="no-margin">Tags already assigned to existing conversations remain intact.</p></td><td><p class="no-margin">The metric for that tag will still appear in Analytics.</p></td></tr></tbody></table>
 
-**Important:** To remove a deactivated tag from Analytics, you must either manually remove the tags from the corresponding conversations or fully delete the tag from the AI Conversations Tags page.
+> **Important:** To remove a deactivated tag from Analytics, you must either manually remove the tags from the corresponding conversations or fully delete the tag from the AI Conversations Tags page.
 
 ## Performance Tables
 Below the funnel, you can toggle between two detailed performance tables to compare results: **Campaings** and **Identities**.
@@ -92,7 +92,7 @@ Both tabs display the same columns:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440089/helpcenter/analytics-6.png)
 
-**Tip:** Hover over the "Positive" cell to see a breakdown of specific positive tags (e.g., "Interested", "Meeting booked").
+> **Tip:** Hover over the "Positive" cell to see a breakdown of specific positive tags (e.g., "Interested", "Meeting booked").
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440089/helpcenter/analytics-7.png)
 
@@ -118,9 +118,9 @@ Four charts represent the overall campaign funnel over time.
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440091/helpcenter/analytics-9.png)
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="no-margin">Metric</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Description</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Counting Rule</p></td></tr><tr><td><p class="no-margin"><b>Added to Campaign</b></p></td><td><p class="no-margin">How many new people entered your campaigns each day.</p></td><td><p class="no-margin">Each person is counted once on the day their campaign started.</p></td></tr><tr><td><p class="no-margin"><b>Total Started</b></p></td><td><p class="no-margin">How many people had their first action or activity (e.g., profile visit, message sent).</p></td><td><p class="no-margin">Each person is counted once on the day of their very first activity.</p></td></tr><tr><td><p class="no-margin"><b>Total Contacted</b></p></td><td><p class="no-margin">How many people received their first message from you.</p></td><td><p class="no-margin">Each person is counted once on the day you sent them their first message (LinkedIn or Email).</p></td></tr><tr><td><p class="no-margin"><b>Companies Contacted</b></p></td><td><p class="no-margin">Number of unique companies contacted through your campaigns.</p></td><td><p class="no-margin">Each company is counted once, on the day the first contact with any person in that company was made.</p></td></tr></tbody></table>
 
-**Important:** Total Started can include people added in previous periods if their first action happened during your selected dates.
+> **Important:** Total Started can include people added in previous periods if their first action happened during your selected dates.
 
-**Note:** Companies Contacted is derived from the Total Contacted people metric, aggregated by company.
+> **Note:** Companies Contacted is derived from the Total Contacted people metric, aggregated by company.
 
 ## LinkedIn Metrics
 Tracks all LinkedIn outreach activity performed through your Enginy campaigns:
@@ -128,7 +128,7 @@ Tracks all LinkedIn outreach activity performed through your Enginy campaigns:
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440087/helpcenter/analytics-10.png)
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Metric</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Counting Rule</p></td></tr><tr><td><p class="no-margin"><b>Messages Sent</b></p></td><td><p class="no-margin">Every LinkedIn message or InMail sent.</p></td><td><p class="no-margin">Every single message counts. If you send 3 messages to one contact, that counts as 3.</p></td></tr><tr><td><p class="no-margin"><b>Connection Requests Sent</b></p></td><td><p class="no-margin">Number of contacts who received a LinkedIn connection request via your Enginy campaigns.</p></td><td><p class="no-margin">Each person is counted once on the day you sent them a connection request.</p></td></tr><tr><td><p class="no-margin"><b>Connections Accepted</b></p></td><td><p class="no-margin">Number of contacts who accepted the LinkedIn connection request sent through your Enginy campaigns.</p></td><td><p class="no-margin">Each person is counted once on the day they accepted. Compare to "Connection Requests Sent" to calculate your acceptance rate.</p></td></tr><tr><td><p class="no-margin"><b>Visited Profiles</b></p></td><td><p class="no-margin">Number of LinkedIn profile visits made to contacts.</p></td><td><p class="no-margin">Every visit counts, including multiple visits to the same person.</p></td></tr><tr><td><p class="no-margin"><b>Liked Posts</b></p></td><td><p class="no-margin">Number of posts liked on LinkedIn.</p></td><td><p class="no-margin">Every like counts. You can like multiple posts from the same person.</p></td></tr></tbody></table>
 
-**Note:** LinkedIn shows contacts when you view their profile, unless you are browsing in private mode. Profile visits and post likes are effective ways to warm up contacts before reaching out.
+> **Note:** LinkedIn shows contacts when you view their profile, unless you are browsing in private mode. Profile visits and post likes are effective ways to warm up contacts before reaching out.
 
 ## Email Metrics
 Tracks your email outreach activity:
@@ -136,7 +136,7 @@ Tracks your email outreach activity:
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440086/helpcenter/analytics-11.png)
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Metric</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Counting Rule</p></td></tr><tr><td><p class="no-margin"><b>Emails Sent</b></p></td><td><p class="no-margin">Number of email messages sent.</p></td><td><p class="no-margin">Every single email counts. If you send a 5-email sequence to one contact, that counts as 5.</p></td></tr><tr><td><p class="no-margin"><b>Emails Bounced</b></p></td><td><p class="no-margin">Number of conversations where the email failed to deliver.</p></td><td><p class="no-margin">Each bounce message received is counted.</p></td></tr><tr><td><p class="no-margin"><b>Emails Opened</b></p></td><td><p class="no-margin">Number of email messages that were opened.</p></td><td><p class="no-margin">Each email is counted once (first open only), even if someone opens it multiple times.</p></td></tr><tr><td><p class="no-margin"><b>Emails Clicked</b></p></td><td><p class="no-margin">Number of people who clicked on a link in your email.</p></td><td><p class="no-margin">Each email is counted once (first click only), even if they click multiple times.</p></td></tr></tbody></table>
 
-**Important:** Email open tracking uses tracking pixels and is not 100% accurate, as some email clients block tracking. High bounce rates indicate a need for better data quality or email verification.
+> **Important:** Email open tracking uses tracking pixels and is not 100% accurate, as some email clients block tracking. High bounce rates indicate a need for better data quality or email verification.
 
 ---
 

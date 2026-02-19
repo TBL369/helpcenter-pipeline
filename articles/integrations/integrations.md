@@ -57,7 +57,7 @@ The Integrations page is organized into three tabs that give you a clear view of
 ## All Tab
 The **All** tab displays every integration Enginy supports, grouped by category (CRM, Data Enrichment, AI Enrichment, Import Sources, and Communication). Use this tab to browse, enable, or configure any integration.
 
-**Note:** To enable any integration, please contact your Account Manager if it isn’t available to activate in your workspace in order to enable its API.
+> **Note:** To enable any integration, please contact your Account Manager if it isn’t available to activate in your workspace in order to enable its API.
 
 ## Enabled Tab
 The **Enabled** tab shows only the integrations you have currently turned on. This is a quick way to audit your active connections at a glance.
@@ -65,7 +65,7 @@ The **Enabled** tab shows only the integrations you have currently turned on. Th
 ## Disabled Tab
 The **Disabled** tab shows all integrations that are not yet enabled. It is a useful starting point when you want to expand your connected tool set.
 
-**Important:** You can only have **one CRM integration** active at a time. If you want to enable a new CRM, you must first disable the currently active one.
+> **Important:** You can only have **one CRM integration** active at a time. If you want to enable a new CRM, you must first disable the currently active one.
 
 ---
 
@@ -74,13 +74,13 @@ The **Disabled** tab shows all integrations that are not yet enabled. It is a us
 Connect a CRM to synchronize and export contacts and companies between Enginy and your CRM of choice.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Platform</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>HubSpot</b></p></td><td><p class="no-margin">Full-featured CRM with marketing, sales, and service hubs.</p></td></tr><tr><td><p class="no-margin"><b>Dynamics</b></p></td><td><p class="no-margin">Microsoft Dynamics 365 CRM.</p></td></tr><tr><td><p class="no-margin"><b>Pipedrive</b></p></td><td><p class="no-margin">Sales-focused CRM built around pipeline management.</p></td></tr><tr><td><p class="no-margin"><b>Salesforce</b></p></td><td><p class="no-margin">Enterprise CRM platform.</p></td></tr><tr><td><p class="no-margin"><b>TribeCRM</b></p></td><td><p class="no-margin">CRM designed for relationship-driven sales teams.</p></td></tr><tr><td><p class="no-margin"><b>Zoho</b></p></td><td><p class="no-margin">CRM suite with sales automation and analytics.</p></td></tr><tr><td><p class="no-margin"><b>Custom CRM (Beta)</b></p></td><td><p class="no-margin">Connect your own CRM using API key authentication.</p></td></tr></tbody></table>
 
-**Note:** All CRM integrations require an initial setup configuration, as explained in this article. It only varies slightly for *Pipedrive*: in step 2 of the configuration, you can also map Leads.
+> **Note:** All CRM integrations require an initial setup configuration, as explained in this article. It only varies slightly for *Pipedrive*: in step 2 of the configuration, you can also map Leads.
 
 ## Data Enrichment
 Plug in your data-enrichment tools to optimize outreach, verify data, and qualify leads.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">What It Does</p></td></tr><tr><td><p class="no-margin"><b>Apollo</b></p></td><td><p class="no-margin">Lead enrichment, email discovery, and engagement tracking to optimize outreach.</p></td></tr><tr><td><p class="no-margin"><b>Cognism</b></p></td><td><p class="no-margin">Lead generation platform with global databases to identify and connect with prospects.</p></td></tr><tr><td><p class="no-margin"><b>Datagma</b></p></td><td><p class="no-margin">AI-based platform to enrich business insights and help qualify leads effectively.</p></td></tr><tr><td><p class="no-margin"><b>Dropcontact</b></p></td><td><p class="no-margin">Updates, enriches, and verifies contact and company data directly within CRMs.</p></td></tr><tr><td><p class="no-margin"><b>Hunter</b></p></td><td><p class="no-margin">Finds and verifies professional email addresses for B2B outreach campaigns.</p></td></tr><tr><td><p class="no-margin"><b>Kaspr</b></p></td><td><p class="no-margin">Retrieves contact data (emails and phone numbers) from LinkedIn for prospecting.</p></td></tr><tr><td><p class="no-margin"><b>Lusha</b></p></td><td><p class="no-margin">Enriches contact data with verified emails, direct dials, and company details.</p></td></tr><tr><td><p class="no-margin"><b>ZoomInfo</b></p></td><td><p class="no-margin">Business intelligence tool that offers comprehensive databases to find and qualify leads.</p></td></tr></tbody></table>
 
-**Note:** Each of these integrations can be activated by simply pasting the API key.
+> **Note:** Each of these integrations can be activated by simply pasting the API key.
 
 e.g.:
 
@@ -90,7 +90,7 @@ e.g.:
 If you have an API-enabled Enterprise account with any of these AI providers, you can connect it to Enginy. This way, AI variables will use **your provider tokens** instead of **Enginy Credits** when generating data.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">What It Does</p></td></tr><tr><td><p class="no-margin"><b>Anthropic</b></p></td><td><p class="no-margin">Powers Claude models for safe, helpful AI assistance.</p></td></tr><tr><td><p class="no-margin"><b>Google AI</b></p></td><td><p class="no-margin">Powers Gemini models for multimodal AI tasks.</p></td></tr><tr><td><p class="no-margin"><b>OpenAI</b></p></td><td><p class="no-margin">Powers GPT models for text generation, reasoning, and code tasks.</p></td></tr><tr><td><p class="no-margin"><b>xAI</b></p></td><td><p class="no-margin">Powers Grok models with real-time knowledge and unique personality.</p></td></tr></tbody></table>
 
-**Note:** If you don’t have an API key from any of these providers, Enginy can provide the AI service for you — usage will be charged in **Enginy Credits**.
+> **Note:** If you don’t have an API key from any of these providers, Enginy can provide the AI service for you — usage will be charged in **Enginy Credits**.
 
 ## Import Sources
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Tool</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">What It Does</p></td></tr><tr><td><p class="no-margin">TheirStack</p></td><td><p class="no-margin">Aggregates and imports company data from multiple platforms. You can connect your own TheirStack account. If you do not have one, Enginy's subscription is used and credits are deducted from your account when importing companies.</p></td></tr></tbody></table>
@@ -163,12 +163,12 @@ This step configures which Enginy fields map to which CRM fields when exporting 
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440121/helpcenter/integrations-13.png)
 
-**Warning:** Don’t map a Company field in the Contacts tab (or a Contact field in the Companies tab). This **can cause export errors**. If you must map the same field in both tabs, make sure it’s mapped the same in both places.
+> **Warning:** Don’t map a Company field in the Contacts tab (or a Contact field in the Companies tab). This **can cause export errors**. If you must map the same field in both tabs, make sure it’s mapped the same in both places.
 
 In each CRM field mapping dropdown, you’ll see small status icons indicating whether the mapping is **supported**, **not supported**, or **supported with limitations / a workaround**.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc;"><p class="no-margin">Icon</p></td><td style="background-color: #d7efdc;"><p class="no-margin">Meaning</p></td></tr><tr><td><p class="no-margin"><b>Blue check</b></p></td><td><p class="no-margin">The mapping is okay, has no potential problems.</p></td></tr><tr><td><p class="no-margin"><b>Yellow exclamation</b></p></td><td><p class="no-margin">The field types in Enginy and the CRM may be incompatible (e.g., an Enginy Text field mapped to a CRM Enumeration field).</p></td></tr><tr><td><p class="no-margin"><b>Red X</b></p></td><td><p class="no-margin">In these cases, the mapping can’t be applied because the types don’t match — or because the CRM field is read-only and can’t be updated (e.g., an Enginy Text field mapped to a CRM Number field, or a read-only CRM field).</p></td></tr></tbody></table>
 
-**Note:** Some yellow warning icons appear when the selected CRM field is an enumeration (dropdown) field. In this case, your Enginy text field can still export successfully as long as the value you send matches one of the allowed dropdown options (but internal names, not label names).
+> **Note:** Some yellow warning icons appear when the selected CRM field is an enumeration (dropdown) field. In this case, your Enginy text field can still export successfully as long as the value you send matches one of the allowed dropdown options (but internal names, not label names).
 -   **Workaround:** Create an **AI Variable** with output type = **One off,** and define the output tag options to exactly match the CRM dropdown values — using the **internal option names** (not the labels). This ensures the exported value is accepted and the export completes successfully. Additional considerations:  
     ​
     -   If is a Fixed value field or an Engagement field just input the exact internal name in the mapped Value to export in the Field mapping integration's setting.
@@ -186,7 +186,7 @@ The **Association Type** setting controls the relationship between a contact and
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440123/helpcenter/integrations-15.png)
 
-**Warning:** The "Associate as Primary and remove previous associations" option is **not recommended** unless you are certain you want to erase all prior associations for the record. Using it can result in data loss if historical relationships exist.
+> **Warning:** The "Associate as Primary and remove previous associations" option is **not recommended** unless you are certain you want to erase all prior associations for the record. Using it can result in data loss if historical relationships exist.
 
 When exporting manually a contact or company, you can choose the **Association Type** in the export modal. The integration settings define the default association type, but you can override it for each individual manual export in the export modal.
 
@@ -275,7 +275,7 @@ Expand the **Enrichment** section to access these quick actions:
 
 You will also see the enrichment score, sync status, and verification results.
 
-**Tip:** Click the **refresh icon** next to the email or phone field to re-verify the data at any time.
+> **Tip:** Click the **refresh icon** next to the email or phone field to re-verify the data at any time.
 
 ### Check Activity
 The **Activity** section shows all recent actions and their statuses:
@@ -323,7 +323,7 @@ You can also remove a contact from any list using the remove icon next to it.
 2. Click the refresh icon next to the **Email** or **Phone** field.
 3. Wait a few seconds to see the updated verification result.
 
-**Tip:** Always verify contact info before starting outreach — it keeps your campaigns clean and your sender reputation safe. Check the **Activity** section regularly to confirm enrichments and syncs are running smoothly.
+> **Tip:** Always verify contact info before starting outreach — it keeps your campaigns clean and your sender reputation safe. Check the **Activity** section regularly to confirm enrichments and syncs are running smoothly.
 
 ---
 

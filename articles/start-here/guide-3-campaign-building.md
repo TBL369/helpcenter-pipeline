@@ -87,9 +87,9 @@ AI Variables are used for two purposes in campaigns:
 - **Signature** — Specify that the sign-off should be omitted (for emails, the signature is added automatically from the identity configuration).
 - **Examples** — Provide 1-2 examples of the desired output.
 
-**Tip:** Use the **Enhance** button below the prompt editor to let the AI polish your prompt automatically. You can also start from pre-built **Templates** for common use cases.
+> **Tip:** Use the **Enhance** button below the prompt editor to let the AI polish your prompt automatically. You can also start from pre-built **Templates** for common use cases.
 
-**Note:** For the full prompt best practices guide, available AI models comparison, Deep Research capabilities and limitations, and advanced use cases (message template personalization), see the **AI Playbook** article.
+> **Note:** For the full prompt best practices guide, available AI models comparison, Deep Research capabilities and limitations, and advanced use cases (message template personalization), see the **AI Playbook** article.
 
 ## Run AI Variables on Your List
 Once created, AI Variables appear as columns in your lists. Run them before launching a campaign so that each contact has its personalized message ready:
@@ -97,7 +97,7 @@ Once created, AI Variables appear as columns in your lists. Run them before laun
 2. Click the column header and select **Run column > All rows** (or select specific rows first).
 3. Alternatively, click **Enrich > Enrich with AI** and select the variables to run.
 
-**Important:** AI-generated messages in campaigns do not have an extra credit cost beyond the AI Variable generation itself.
+> **Important:** AI-generated messages in campaigns do not have an extra credit cost beyond the AI Variable generation itself.
 
 ---
 
@@ -119,7 +119,7 @@ Enginy includes pre-built templates such as **AI Sales Agent** and **AI Recruiti
 When a lead replies to a campaign message, you have three options for how to handle the follow-up:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Mode</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>How It Works</b></p></td></tr><tr><td><p class="no-margin"><b>Manual</b></p></td><td><p class="no-margin">You or your team respond manually from the Inbox.</p></td></tr><tr><td><p class="no-margin"><b>Copilot (AI Suggestions)</b></p></td><td><p class="no-margin">The AI suggests a reply for you to review, edit, and send. Select an AI Campaign prompt by clicking <b>Edit Prompt</b>.</p></td></tr><tr><td><p class="no-margin"><b>Automatic (AI Replies)</b></p></td><td><p class="no-margin">The AI generates and sends replies without your approval. Click <b>Enable</b> to activate.</p></td></tr></tbody></table>
 
-**Important:** In all three modes, the automated campaign sequence for that contact is halted once they reply. Only the conversation follow-up continues.
+> **Important:** In all three modes, the automated campaign sequence for that contact is halted once they reply. Only the conversation follow-up continues.
 
 ---
 
@@ -147,7 +147,7 @@ Conditions branch the sequence into **Yes** or **No** paths:
 ### Timing Between Actions
 By default, each action executes as soon as possible after the previous one. To add a delay, click the **As soon as possible** label at the top of the action box and configure the wait time in days.
 
-**Tip:** Use conditions to build adaptive sequences. For example: check if the lead has a LinkedIn profile → if yes, visit profile and send connection → if accepted, send LinkedIn message → if not, check for email → send email. This way, one campaign handles multiple scenarios.
+> **Tip:** Use conditions to build adaptive sequences. For example: check if the lead has a LinkedIn profile → if yes, visit profile and send connection → if accepted, send LinkedIn message → if not, check for email → send email. This way, one campaign handles multiple scenarios.
 
 ## Step 2 — Audience
 Add contacts to the campaign using one of two methods:
@@ -156,7 +156,7 @@ Add contacts to the campaign using one of two methods:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440098/helpcenter/campaigns-16.png)
 
-**Note:** You can also add contacts to a campaign later, directly from the Contacts list or from the campaign's Audience tab.
+> **Note:** You can also add contacts to a campaign later, directly from the Contacts list or from the campaign's Audience tab.
 
 ## Step 3 — AI Agent
 Configure how the AI Agent handles conversations after a lead replies:
@@ -174,7 +174,7 @@ Define the operational settings for the campaign:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440100/helpcenter/campaigns-21.png)
 
-**Important:** If your sequence includes **Task** steps, you cannot disable Contacts CRM Sync — the contact must exist in the CRM to create the task there.
+> **Important:** If your sequence includes **Task** steps, you cannot disable Contacts CRM Sync — the contact must exist in the CRM to create the task there.
 
 ## Launch
 1. Review the campaign details, sequence flow, and target contacts.
@@ -206,7 +206,7 @@ The Overview tab is your performance cockpit. It shows high-level KPIs across ch
 
 Below the metrics, a **sequence flow preview** shows the number of leads at each step, helping you see where leads are progressing or getting stuck.
 
-**Tip:** Click **View activity** on any step to jump to the Activity tab filtered to that step.
+> **Tip:** Click **View activity** on any step to jump to the Activity tab filtered to that step.
 
 ## Audience Tab
 The Audience tab shows who is in the campaign and their current state. Status chips at the top filter the list:
@@ -214,7 +214,7 @@ The Audience tab shows who is in the campaign and their current state. Status ch
 
 Click any row to open a side panel with the lead's profile, timeline of steps, and error details (if any).
 
-**Tip:** To fix an error, check the substatus — common fixes include enriching the contact's email, reconnecting LinkedIn or email, or reducing message length. For the full statuses and substatuses reference table, see the **Campaigns** article.
+> **Tip:** To fix an error, check the substatus — common fixes include enriching the contact's email, reconnecting LinkedIn or email, or reducing message length. For the full statuses and substatuses reference table, see the **Campaigns** article.
 
 ## Activity Tab
 Lists all actions performed in the campaign (excluding conditions). Filter by stage, recipient, or date to audit what happened and when.
@@ -226,9 +226,9 @@ Lists all actions performed in the campaign (excluding conditions). Filter by st
 - **Archive** — Deactivate permanently. Remains visible under the Archived filter.
 - **Delete** — Permanently remove the campaign.
 
-**Warning:** Once a campaign is launched, its sequence structure is locked — you cannot add or remove steps. If you need a different flow, duplicate and edit the copy before launching.
+> **Warning:** Once a campaign is launched, its sequence structure is locked — you cannot add or remove steps. If you need a different flow, duplicate and edit the copy before launching.
 
-**Warning:** If you remove a contact from a campaign, you cannot add that contact back to the same campaign later.
+> **Warning:** If you remove a contact from a campaign, you cannot add that contact back to the same campaign later.
 
 ---
 
@@ -252,7 +252,7 @@ Tags categorize conversations based on lead intent. Enginy includes default AI-p
 
 You can also create custom tags with specific instructions so the AI knows when to apply them. Tags are dynamic — they update as the conversation evolves.
 
-**Note:** Configure and manage AI Conversation Tags from **AI Playbook > AI Conversation Tags**. For the full Inbox reference including filters, bulk actions, and advanced features, see the **Inbox** article.
+> **Note:** Configure and manage AI Conversation Tags from **AI Playbook > AI Conversation Tags**. For the full Inbox reference including filters, bulk actions, and advanced features, see the **Inbox** article.
 
 ## Replying to Messages
 From the Chat View, you can:
@@ -277,12 +277,12 @@ Switch between **All Channels**, **LinkedIn**, **Email**, and **Tasks** to see f
 ## Tagged Conversations
 The Tagged Conversations widget shows how replies are categorized (e.g., Interested, Not Interested, Bad Timing, Meeting Booked). Filter by All, LinkedIn, or Email to spot patterns in objections and outcomes.
 
-**Tip:** Click any tag to jump directly to the Inbox filtered by that tag.
+> **Tip:** Click any tag to jump directly to the Inbox filtered by that tag.
 
 ## Progress by Action
 A sequence flow preview shows the number of leads at each step, including waits, actions, and branches. Use this to identify where leads are getting stuck and optimize your sequence timing or messaging.
 
-**Note:** For cross-campaign analytics, global metrics, and historical performance tracking, see the **Analytics** article.
+> **Note:** For cross-campaign analytics, global metrics, and historical performance tracking, see the **Analytics** article.
 
 ---
 
@@ -315,9 +315,9 @@ A sequence flow preview shows the number of leads at each step, including waits,
 4. Do not attach files directly; share files via links instead.
 5. Use multiple domains (e.g., company.com, company.io, company.es) and rotate across campaigns.
 
-**Important:** Enginy does not allow file attachments in emails (they are a common spam trigger). Use the link attachment feature to upload files and insert a shareable link.
+> **Important:** Enginy does not allow file attachments in emails (they are a common spam trigger). Use the link attachment feature to upload files and insert a shareable link.
 
-**Note:** For the full LinkedIn and email best practices reference, identity limits, queue prioritization, and working hours configuration, see the **Campaigns** article.
+> **Note:** For the full LinkedIn and email best practices reference, identity limits, queue prioritization, and working hours configuration, see the **Campaigns** article.
 
 ---
 

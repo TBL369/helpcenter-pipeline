@@ -66,7 +66,7 @@ You can also view your **Enginy Credits** balance: available credits *(Plan Cred
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440110/helpcenter/credits-5.png)
 
-**Note:** You can use these buttons to quickly purchase credits and identities. You can also contact your Account Manager, who can review your needs and propose a tailored solution. If you want to change your plan, reach out to your Account Manager directly to handle it.
+> **Note:** You can use these buttons to quickly purchase credits and identities. You can also contact your Account Manager, who can review your needs and propose a tailored solution. If you want to change your plan, reach out to your Account Manager directly to handle it.
 
 ---
 
@@ -79,7 +79,7 @@ The **Credits** tab lets you track exactly how your credits are being consumed. 
 The system tracks credit usage for the following activities:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Action Type</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Scrapings</b></p></td><td><p class="no-margin">Extracting data for companies or contacts.</p></td></tr><tr><td><p class="no-margin"><b>Enrichments</b></p></td><td><p class="no-margin">Finding emails, phone numbers, and other data such as from TheirStack or Crunchbase.</p></td></tr><tr><td><p class="no-margin"><b>AI Variables</b></p></td><td><p class="no-margin">Executing AI to generate personalized data or messages.</p></td></tr></tbody></table>
 
-**Note:** You can buy more credits through the **Add More Credits** button, the same way as in the Plan tab.
+> **Note:** You can buy more credits through the **Add More Credits** button, the same way as in the Plan tab.
 
 ## Filters and Time Ranges
 You can filter credit usage data by the following time ranges:
@@ -93,7 +93,7 @@ You can filter credit usage data by the following time ranges:
     
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440110/helpcenter/credits-7.png)
 
-**Note:** You can custom the Date Range by clicking the numbers from the calendar modal.
+> **Note:** You can custom the Date Range by clicking the numbers from the calendar modal.
 
 Total credits used are shown in a chart for the selected **Date Range** as a dotted line, where each dot represents a day. The chart can be grouped by **day**, **week**, or **month**.
 
@@ -149,7 +149,7 @@ Based on your selections, the calculator displays a summary panel showing:
 -   **Contacts per month** — The number of contacts you entered.
 -   **Credits per contact** — The average credit cost per contact based on the actions you selected.
     
-**Note:** The credit calculator is an estimation tool. Your actual consumption may vary depending on the specific actions performed on the platform.
+> **Note:** The credit calculator is an estimation tool. Your actual consumption may vary depending on the specific actions performed on the platform.
 
 ## Pricing Plans
 The Pricing plans sub-section allows you to compare all available Enginy plans side by side. You can toggle between **Without Phones** and **With Phones** to see how plans differ depending on whether phone enrichment capabilities are included.
@@ -163,7 +163,7 @@ Each plan builds on the previous tier and adds specific features:
 -   **Business** (includes everything in Smart) — Dedicated Success Manager.
 -   **Enterprise** (includes everything in Business) — Open API, Bring your own API key, Dedicated Technical Implementation Manager.
     
-**Important:** A one-time implementation fee of 2000 EUR applies to all plans.
+> **Important:** A one-time implementation fee of 2000 EUR applies to all plans.
 
 ## Fully Managed Service
 In addition to the self-service plans, Enginy offers a **Fully Managed Service** starting from **5,000 EUR/month**. With this option, Enginy books qualified meetings on your behalf, handling the entire outreach process and adding them directly to your calendar.
@@ -205,7 +205,7 @@ The ROI Summary panel combines both calculations and displays the **estimated ye
 Understanding how credit resets work is important for planning your usage:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Aspect</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Policy</p></td></tr><tr><td><p class="no-margin"><b>Reset Date</b></p></td><td><p class="no-margin">Credits are automatically renewed on the 1st of each month.</p></td></tr><tr><td><p class="no-margin"><b>Rollover Policy</b></p></td><td><p class="no-margin">As a general rule, credits that are not consumed will <b>not</b> be carried over to the following month.</p></td></tr><tr><td><p class="no-margin"><b>Exceptions</b></p></td><td><p class="no-margin">There may be occasional and specific exceptions to the rollover policy depending on your agreement or a concrete situation.</p></td></tr></tbody></table>
 
-**Warning:** Plan your credit usage accordingly each month. Unused credits typically expire at the end of the billing period and do not accumulate.
+> **Warning:** Plan your credit usage accordingly each month. Unused credits typically expire at the end of the billing period and do not accumulate.
 
 ---
 
