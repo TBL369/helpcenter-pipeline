@@ -66,6 +66,7 @@ The AI Playbook is the central brain of your Enginy account. It is where you con
   - [Prompt Examples: Weak vs. Improved](#prompt-examples-weak-vs-improved)
   - [Common Prompt Mistakes](#common-prompt-mistakes)
   - [Prompt Best Practices Checklist](#prompt-best-practices-checklist)
+- [FAQs](#faqs)
 
 ---
 

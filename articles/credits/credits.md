@@ -26,6 +26,7 @@ Track your credit consumption, manage your subscription plan, and monitor conver
     - [Time savings](#time-savings)
     - [ROI Summary](#roi-summary)
 - [Renewal Policy](#renewal-policy)
+- [FAQs](#faqs)
 
 ---
 

@@ -75,6 +75,7 @@ Campaigns in Enginy let you build automated, multichannel outreach sequences tar
   - [How to Activate Email Warm-up in Enginy](#how-to-activate-email-warm-up-in-enginy)
   - [What Happens if You Skip Warm-up](#what-happens-if-you-skip-warm-up)
 - [Working Hours Configuration](#working-hours-configuration)
+- [FAQs](#faqs)
 
 ---
 
