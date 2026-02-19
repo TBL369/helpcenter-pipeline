@@ -800,23 +800,28 @@ function intercomPostProcess(html: string): string {
   // 8. Minificar TODO whitespace entre tags (Intercom renderiza \n como cursor visible)
   out = out.replace(/>\s+</g, '><');
 
-  // 9. Insertar empty-p spacers donde Intercom necesita spacing visible
+  // 9. Insertar spacers SOLO DESPUÉS de cada elemento (nunca antes, evita duplicados)
   // Entre párrafos (</p><p) pero NO dentro de listas (</p></li><li><p> ya compacto)
+  // y NO entre imagen y siguiente elemento (imagen ya pone sus propios spacers)
   out = out.replace(/(<\/p>)(<p class)/g, `$1${SPACER}$2`);
-  // Antes y después de <hr>
-  out = out.replace(/<hr>/g, `${SPACER}<hr>${SPACER}`);
+  // Entre párrafo y heading (</p><h) para FAQ y transiciones párrafo→sección
+  out = out.replace(/(<\/p>)(<h[1-6] )/g, `$1${SPACER}$2`);
+  // Después de <hr>
+  out = out.replace(/(<hr>)/g, `$1${SPACER}`);
   // Después de table-container
   out = out.replace(/(<\/table><\/div>)/g, `$1${SPACER}`);
   // Después de listas outermost (</ul> o </ol> NO seguido de </li>)
   out = out.replace(/(<\/ul>)(<(?!\/li))/g, `$1${SPACER}$2`);
   out = out.replace(/(<\/ol>)(<(?!\/li))/g, `$1${SPACER}$2`);
-  // Antes y después de callouts
-  out = out.replace(/>(<div class="intercom-interblocks-callout)/g, `>${SPACER}$1`);
+  // Después de callouts
   out = out.replace(/(intercom-interblocks-callout[^>]*>.*?<\/div>)(<)/g, `$1${SPACER}$2`);
-  // Alrededor de imágenes (doble spacer)
+  // Después de imágenes (doble spacer)
+  out = out.replace(/(<p[^>]*><img [^>]*><\/p>)/g, `$1${SPACER}${SPACER}`);
+  // Fix: entre imágenes consecutivas, el </p><p de la regla de párrafos añade 1 spacer extra
+  // (imagen ya tiene 2 después + 1 entre párrafos = 3). Quitar el spacer extra.
   out = out.replace(
-    /(<p[^>]*><img [^>]*><\/p>)/g,
-    `${SPACER}$1${SPACER}${SPACER}`,
+    new RegExp(`(${SPACER.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}){3}`, 'g'),
+    `${SPACER}${SPACER}`,
   );
 
   return out.trim();
