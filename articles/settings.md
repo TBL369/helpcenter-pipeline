@@ -44,7 +44,7 @@ This Settings section contains three tabs at the top of the page:
 
 To access your account settings, click **Settings** in the bottom-left corner, or open the account menu in the top-left and select **Settings** from the dropdown.
 
-![](https://downloads.intercomcdn.com/i/o/qjmc10sy/2064847326/c788a0175b968ccd43c85513d8cc/image.png?expires=1771308000&signature=c2b5b3ae07e4833664237cd1ea0fae1b13215762f098b67773ef19cf3de56a4e&req=diAhEsF6moJdX%2FMW3Hu4gbGvqBIY0P2DkJ8jHJayIKN3aB%2BHvKVYXIMDZARF%0AFQ%3D%3D%0A)![](images/settings-2.png)
+![](https://downloads.intercomcdn.com/i/o/qjmc10sy/2064847326/c788a0175b968ccd43c85513d8cc/image.png?expires=1771308000&signature=c2b5b3ae07e4833664237cd1ea0fae1b13215762f098b67773ef19cf3de56a4e&req=diAhEsF6moJdX%2FMW3Hu4gbGvqBIY0P2DkJ8jHJayIKN3aB%2BHvKVYXIMDZARF%0AFQ%3D%3D%0A)![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-2.png)
 
 ---
 
@@ -56,7 +56,7 @@ Each option can be activated or deactivated using a toggle switch, or configured
 
 Navigate to **Settings** > **General** tab to access the options described below.
 
-![](images/settings-3.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-3.png)
 
 ## Configure Company Identity
 
@@ -98,7 +98,7 @@ The **Security** tab focuses on access control to reduce intrusion risks and pro
 
 Navigate to **Settings** > **Security** tab to access the options described below.
 
-![](images/settings-4.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-4.png)
 
 ## Change Your Password
 
@@ -115,9 +115,9 @@ Two-factor authentication adds an extra layer of security to your account by req
 2.  Follow the on-screen configuration wizard to complete the setup.
     
 
-![](images/settings-5.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-5.png)
 
-![](images/settings-6.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-6.png)
 
 **Tip:** If your team handles sensitive data or uses shared access, 2FA should be standard practice. It significantly reduces the impact of leaked or reused passwords.
 
@@ -129,7 +129,7 @@ The **Team** tab is your central panel for managing workspace users. From here y
 
 Navigate to **Settings** > **Team** tab to access the options described below.
 
-![](images/settings-7.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-7.png)
 
 ## Understand Team Capacity
 
@@ -150,11 +150,11 @@ At the top of the user list, you will see a capacity counter (e.g., **Team 10/20
 3.  Submit the invitation. The invited user will receive an email with a temporary password and instructions to set up their account user.
     
 
-![](images/settings-8.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-8.png)
 
 You can track sent invitations under **Pending Invitations**. From there, you can **Resend** or **Remove** them using the corresponding buttons.
 
-![](images/settings-9.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440153/helpcenter/settings-9.png)
 
 ## Manage Users and Actions
 
@@ -179,7 +179,7 @@ The Actions column provides quick access buttons for each user:
 2.  Once multiple users are selected, edit their permissions in bulk.
     
 
-![](images/settings-10.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440148/helpcenter/settings-10.png)
 
 ## Manage User Permissions
 
@@ -202,7 +202,7 @@ Clicking the **Edit permissions** button (gear icon) in the Actions column opens
 
 Controls access to data, records, and activity within the platform.
 
-![](images/settings-11.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-11.png)
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Permission</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Options</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>List Visibility</b></p></td><td><p class="intercom-align-justify no-margin">User can view all lists / User can only view assigned lists</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Delete Access</b></p></td><td><p class="intercom-align-justify no-margin">User can delete records (contacts, companies, or lists) / User cannot delete any records</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Edit Access</b></p></td><td><p class="intercom-align-justify no-margin">User can edit all records / User cannot edit any records</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Import Contacts</b></p></td><td><p class="intercom-align-justify no-margin">User can import new contacts / User cannot import contacts</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Import Companies</b></p></td><td><p class="intercom-align-justify no-margin">User can import new companies / User cannot import companies</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Export Access</b></p></td><td><p class="intercom-align-justify no-margin">User can export contacts or companies / User cannot export</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Activity Access</b></p></td><td><p class="intercom-align-justify no-margin">User can access all activity / User can only access activity they created</p></td></tr></tbody></table>
 
@@ -210,7 +210,7 @@ Controls access to data, records, and activity within the platform.
 
 Controls outreach capabilities including campaign management and identity access. These settings affect sending, viewing, and managing campaigns.
 
-![](images/settings-12.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-12.png)
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Permission</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Options</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Campaign Creation</b></p></td><td><p class="intercom-align-justify no-margin">User can create and edit campaigns / User cannot create or modify campaigns</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Identities Access</b></p></td><td><p class="intercom-align-justify no-margin">User has access to all identities / User has access to specific identities only</p></td></tr></tbody></table>
 
@@ -218,7 +218,7 @@ Controls outreach capabilities including campaign management and identity access
 
 Controls access to account configuration and credit management.
 
-![](images/settings-13.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-13.png)
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Permission</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Options</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Account Configuration</b></p></td><td><p class="intercom-align-justify no-margin">User can access general account settings (includes billing) / User cannot access general account settings</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Credits Usage</b></p></td><td><p class="intercom-align-justify no-margin">User can purchase and consume credits / User can only consume credits / User can only consume limited credits</p></td></tr></tbody></table>
 
