@@ -129,7 +129,7 @@ Fill in the following core fields:
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Website</b></p></td><td><p class="intercom-align-justify no-margin">Your company website URL</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn URL</b></p></td><td><p class="intercom-align-justify no-margin">Your company LinkedIn page URL</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Output Language</b></p></td><td><p class="intercom-align-justify no-margin">The language the AI should use for output</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Company Name</b></p></td><td><p class="intercom-align-justify no-margin">Your company name</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Industry</b></p></td><td><p class="intercom-align-justify no-margin">Your industry or sector</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Number of Employees</b></p></td><td><p class="intercom-align-justify no-margin">Company headcount</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Headquarters Location</b></p></td><td><p class="intercom-align-justify no-margin">City/country of your HQ</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Founding Year</b></p></td><td><p class="intercom-align-justify no-margin">Year the company was founded</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Company Overview</b></p></td><td><p class="intercom-align-justify no-margin">A brief overview of the mission, vision, and unique selling points</p></td></tr></tbody></table>
 
-![](images/ai-playbook-1.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-1.png)
 
 ## Fill with AI (Company)
 
@@ -143,7 +143,7 @@ Below the general details, fill in the strategic modules that train the AI. The 
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Product Name</b></p></td><td><p class="intercom-align-justify no-margin">Name of the product or service</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Product Description</b></p></td><td><p class="intercom-align-justify no-margin">What the product does</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Value Proposition</b></p></td><td><p class="intercom-align-justify no-margin">Why a customer should choose it</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Price Range</b></p></td><td><p class="intercom-align-justify no-margin">Approximate pricing</p></td></tr></tbody></table>
 
-![](images/ai-playbook-2.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-2.png)
 
 **Note:** You can insert as many products or services as needed.
 
@@ -153,7 +153,7 @@ Define your ICP so the AI can tailor outreach to the right audience:
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>ICP Name</b></p></td><td><p class="intercom-align-justify no-margin">ICP profile name.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Job Titles</b></p></td><td><p class="intercom-align-justify no-margin">Target job titles.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Locations</b></p></td><td><p class="intercom-align-justify no-margin">Target geographic locations.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Company Industry</b></p></td><td><p class="intercom-align-justify no-margin">Target industries.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Company Size</b></p></td><td><p class="intercom-align-justify no-margin">Target company size ranges.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Revenue</b></p></td><td><p class="intercom-align-justify no-margin">Target revenue ranges.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Key Pain Points</b></p></td><td><p class="intercom-align-justify no-margin">Problems your ICP faces.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Additional Information</b></p></td><td><p class="intercom-align-justify no-margin">Any other qualifying details.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Disqualifying Factors</b></p></td><td><p class="intercom-align-justify no-margin">Criteria that disqualify a prospect. Factors that make a prospect a poor fit. This helps the AI avoid engaging leads that do not match your target.</p></td></tr></tbody></table>
 
-![](images/ai-playbook-3.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-3.png)
 
 **Tip:** Click the **AI stars icon** to generate related keywords based on your input.
 
@@ -161,19 +161,19 @@ Define your ICP so the AI can tailor outreach to the right audience:
 
 Select companies so the AI can use them as examples to find similar ideal customers.
 
-![](images/ai-playbook-4.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-4.png)
 
 ## Competitors
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Competitor Name</b></p></td><td><p class="intercom-align-justify no-margin">Name of the competing company.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Product Differentiator</b></p></td><td><p class="intercom-align-justify no-margin">How your product differs from theirs.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>LinkedIn URL</b></p></td><td><p class="intercom-align-justify no-margin">Optional.</p></td></tr></tbody></table>
 
-![](images/ai-playbook-5.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-5.png)
 
 ## Testimonials
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Company Name</b></p></td><td><p class="intercom-align-justify no-margin">Customer company name</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Promoter Name</b></p></td><td><p class="intercom-align-justify no-margin">Name of the person giving the testimonial</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Job Position</b></p></td><td><p class="intercom-align-justify no-margin">Their job title</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Main Benefit</b></p></td><td><p class="intercom-align-justify no-margin">The key benefit they highlight</p></td></tr></tbody></table>
 
-![](images/ai-playbook-6.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-6.png)
 
 ## Company FAQs
 
@@ -181,7 +181,7 @@ Select companies so the AI can use them as examples to find similar ideal custom
 
 These FAQs give the AI ready-made answers it can reference during conversations and message generation.
 
-![](images/ai-playbook-7.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-7.png)
 
 ## Save Changes
 
@@ -193,9 +193,9 @@ To save or update any changes you have made, click the **Update** button at the 
 
 This tab holds information related to the **Identities** connected to your account. It gives the AI context about *who* is sending each message, enabling more authentic personalization.
 
-![](images/ai-playbook-8.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-8.png)
 
-![](images/ai-playbook-9.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-9.png)
 
 ## **Identity Fields**
 
@@ -226,7 +226,7 @@ AI Variables are used to generate additional information columns in your lists. 
 -   **Company:** "1-line summary of {company\_name} growth signals (funding, hiring, product launch)."
     
 
-![](images/ai-playbook-10.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-10.png)
 
 ## Create an AI Variable
 
@@ -239,13 +239,13 @@ AI Variables are used to generate additional information columns in your lists. 
 4.  Fill in the form fields described in the sections below.
     
 
-![](images/ai-playbook-11.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-11.png)
 
-![](images/ai-playbook-12.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-12.png)
 
 You can start from default **Templates** to be able to configure the **new AI variable** even faster:
 
-![](images/ai-playbook-13.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-13.png)
 
 **Important:** Whether an **AI Variable** is **Contact-type** or **Company-type** affects its visibility. If it’s Contact-type, you can make it visible only in Contact lists; if it’s Company-type, only in Company lists.
 
@@ -255,19 +255,19 @@ Select the **Output** (response type) to define how the AI returns results:
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Output Type</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Text</b></p></td><td><p class="intercom-align-justify no-margin">Open-ended string answers — summaries, descriptions, messages or hooks.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Number</b></p></td><td><p class="intercom-align-justify no-margin">Numeric value (int or float) — scores, rankings, counts...</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Date</b></p></td><td><p class="intercom-align-justify no-margin">A valid calendar date — events, deadlines, timeline extraction...</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>One of</b></p></td><td><p class="intercom-align-justify no-margin">Restricts results to a predefined set of tags/options (e.g., Yes/No, Hot/Warm/Cold, B2B/B2C)</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>URL</b></p></td><td><p class="intercom-align-justify no-margin">Browser URL format</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Email</b></p></td><td><p class="intercom-align-justify no-margin">Email address form (text + @ + domain)</p></td></tr></tbody></table>
 
-![](images/ai-playbook-14.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-14.png)
 
 **Important:** The response type affects the qualification criteria you can set up. For instance, choosing **One of** ensures consistent, filterable output. Use it whenever you want the AI to choose from a closed set of answers.
 
 **Example:** An AI Variable with the instruction "Tell me if the company is either a B2B, B2C, or B2C with B2B products" and the output type set to **One of** will only return one of those three values. This ensures consistency, makes results easier to filter and analyze, and prevents unexpected or vague answers.
 
-![](images/ai-playbook-15.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-15.png)
 
 ### Provide Explanation Option
 
 You can activate the **Provide explanation** option when creating or editing a variable. When enabled, the AI returns both the selected result **and** a short reasoning behind it, giving your team more context about why the AI chose that answer.
 
-![](images/ai-playbook-16.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-16.png)
 
 **Tip:** Like or dislike the outputs generated to help us keep improving the quality of the AI results.
 
@@ -279,7 +279,7 @@ The **Prompt** field is the main instruction. This is where you tell the AI exac
 
 You can personalize your prompts using variables and even AI variables inside of it. Start typing `{` to see the list of available (AI) variables.
 
-![](images/ai-playbook-17.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-17.png)
 
 **Examples of effective prompts:**
 
@@ -415,14 +415,14 @@ Once created, AI Variables appear as columns (but you might make them visible) i
     
 4.  **Individual run:** Click the **play icon** in a specific cell to run the variable for an individual lead or company.
     
-    ![](images/ai-playbook-18.png)
+    ![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-18.png)
     
 
-![](images/ai-playbook-19.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-19.png)
 
-![](images/ai-playbook-20.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-20.png)
 
-![](images/ai-playbook-21.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-21.png)
 
 ## Manage AI Variables
 
@@ -489,7 +489,7 @@ When AI Variables return "No data found" or produce no results, this is often be
 
 AI Campaigns manage the prompts used by the **AI Agent (chatbot)**. When you enable the option in a campaign's settings for the AI to continue the conversation once a lead replies, the AI uses these campaign prompts to craft automatic responses.
 
-![](images/ai-playbook-22.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440081/helpcenter/ai-playbook-22.png)
 
 ## Create an AI Campaign
 
@@ -524,15 +524,15 @@ Once your AI Campaign is configured and enabled in a campaign's settings (3rd st
 3.  You can personalize the flow by adjusting the prompt with relevant details based on your target leads' information (e.g., common pain points, interests).
     
 
-![](images/ai-playbook-23.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440081/helpcenter/ai-playbook-23.png)
 
-![](images/ai-playbook-24.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440081/helpcenter/ai-playbook-24.png)
 
 **Monitoring conversations:**
 
 All incoming and outgoing messages from AI-powered campaigns are stored in the **Inbox** tab. AI replies appear automatically when a lead responds, allowing you to monitor and intervene if necessary.
 
-![](images/ai-playbook-25.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440081/helpcenter/ai-playbook-25.png)
 
 ---
 
@@ -542,7 +542,7 @@ All incoming and outgoing messages from AI-powered campaigns are stored in the *
 
 AI Conversation Tags let you label conversation replies to organize and act on your sales conversations. The system includes **Auto tagging**, which analyzes the last message sent by a lead to automatically assign the appropriate tag. AI Tags are dynamic — they are updated as the conversation evolves.
 
-![](images/ai-playbook-26.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440081/helpcenter/ai-playbook-26.png)
 
 ## Default Tags
 
@@ -569,7 +569,7 @@ On the **Analytics Page**, you can track a single metric per category. For examp
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Field</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Description</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Title</b></p></td><td><p class="intercom-align-justify no-margin">Name of the tag</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Color</b></p></td><td><p class="intercom-align-justify no-margin">Visual color identifier for the tag</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Category</b></p></td><td><p class="intercom-align-justify no-margin">Select <b>Neutral</b>, <b>Positive</b>, or <b>Negative</b></p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Instructions</b> (optional)</p></td><td><p class="intercom-align-justify no-margin">A prompt the AI uses to analyze conversations and decide whether to apply this tag</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Auto tagging</b> (optional)</p></td><td><p class="intercom-align-justify no-margin">Toggle to active the auto tagging, so that when a conversation matches a tag's criteria it will be automatically applied.</p></td></tr></tbody></table>
 
-![](images/ai-playbook-27.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-27.png)
 
 **Important:** Custom AI tags **must** have a prompt (Instructions) associated before they can be activated for Auto tagging. Without an instruction, the tag can only be used manually.
 
@@ -584,7 +584,7 @@ Auto tagging is controlled by the toggle switch located below the Instructions t
 
 Auto tagging is dynamic. Each time a new message is sent in a conversation, the AI re-evaluates which tags apply.
 
-![](images/ai-playbook-28.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-28.png)
 
 ## Tag Compatibility
 
@@ -608,7 +608,7 @@ In the center of the AI Conversation Tags module, all available tags are display
 -   **Toggle switch** — Enable or disable Auto tagging (only for tags with defined Instructions).
     
 
-![](images/ai-playbook-29.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-29.png)
 
 **Note:** Click on any tag card to open and edit.
 
@@ -625,9 +625,9 @@ A search bar is also available to filter tags by name.
 -   **Analytics Page:** Tag metrics are tracked by tag, helping you quickly understand patterns in replies across campaigns.
     
 
-![](images/ai-playbook-30.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-30.png)
 
-![](images/ai-playbook-31.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-31.png)
 
 ---
 
@@ -635,7 +635,7 @@ A search bar is also available to filter tags by name.
 
 The ICP Quick Filter uses the Ideal Customer Profile defined in your AI Playbook to automatically apply filters when you Search for Contacts or Companies on LinkedIn (for prospecting and list building).
 
-![](images/ai-playbook-32.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-32.png)
 
 ## How it works
 
@@ -678,7 +678,7 @@ You can still adjust any filters manually. Use the ICP filters as a starting poi
 
 Enginy offers a curated selection of AI models from leading providers. Each model has different strengths, and choosing the right one can make a significant difference in output quality and cost. Models marked as **Recommended** in the platform are the best starting point for most use cases.
 
-![](images/ai-playbook-33.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-33.png)
 
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Model</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Provider</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Best For</p></td><td style="background-color: #d7efdc80;"><p class="intercom-align-justify no-margin">Key Strengths</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>GPT 5.2</b></p></td><td><p class="intercom-align-justify no-margin">OpenAI</p></td><td><p class="intercom-align-justify no-margin">Complex reasoning and professional tasks</p></td><td><p class="intercom-align-justify no-margin">OpenAI's latest flagship model (Dec 2025). Excels at multi-step project execution, financial modeling, spreadsheets, and detailed analyses. Features both an instant mode for fast responses and a thinking mode for deeper reasoning. Ideal for power users and enterprise workflows.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>GPT 5 mini</b></p></td><td><p class="intercom-align-justify no-margin">OpenAI</p></td><td><p class="intercom-align-justify no-margin">Balanced everyday tasks</p></td><td><p class="intercom-align-justify no-margin">A smaller, faster variant within the GPT-5 family. Delivers a strong balance of capability and speed, well-suited for everyday enrichment, summarization, and classification tasks without the cost of the full model.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>GPT 5 nano</b></p></td><td><p class="intercom-align-justify no-margin">OpenAI</p></td><td><p class="intercom-align-justify no-margin">High-volume, cost-sensitive tasks</p></td><td><p class="intercom-align-justify no-margin">The most lightweight and cost-effective model in the GPT-5 family. Optimized for speed and efficiency, making it a great choice when running AI Variables across large lists where per-row cost matters.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Gemini 3 Pro</b></p></td><td><p class="intercom-align-justify no-margin">Google</p></td><td><p class="intercom-align-justify no-margin">Top-tier reasoning and accuracy</p></td><td><p class="intercom-align-justify no-margin">Google's most powerful model (Nov 2025). Uses a sparse mixture-of-experts architecture and can output up to 64K tokens. Outperformed major AI models in 19 out of 20 benchmarks on release. Excellent for complex prompts, long instructions, and tasks requiring high accuracy.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Gemini 3 Flash</b></p></td><td><p class="intercom-align-justify no-margin">Google</p></td><td><p class="intercom-align-justify no-margin">Speed-first scenarios</p></td><td><p class="intercom-align-justify no-margin">Google's speed-optimized model (Dec 2025). Provides near-instant responses while maintaining solid quality. Best for sorting through many records quickly, normalizing data, or any task where response time is more important than maximum depth.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Grok 4</b></p></td><td><p class="intercom-align-justify no-margin">xAI</p></td><td><p class="intercom-align-justify no-margin">Complex reasoning and analysis</p></td><td><p class="intercom-align-justify no-margin">xAI's flagship model. Excels in natural language processing, mathematical reasoning, and complex multi-step problem-solving. Its "think before responding" approach improves accuracy and reliability, particularly for prompts that require chained reasoning.</p></td></tr><tr><td><p class="intercom-align-justify no-margin"><b>Claude 4.5 Sonnet</b></p></td><td><p class="intercom-align-justify no-margin">Anthropic</p></td><td><p class="intercom-align-justify no-margin">Nuanced writing and coding</p></td><td><p class="intercom-align-justify no-margin">Anthropic's mid-tier model (Sep 2025). Known for high-quality, nuanced text generation and strong coding capabilities. Produces natural-sounding, well-structured output and follows complex stylistic instructions faithfully. A solid choice for writing outreach messages and generating personalized copy.</p></td></tr></tbody></table>
 
@@ -884,7 +884,7 @@ No. Default tags cannot be edited or deleted to ensure consistency across teams.
 
 This is often caused by exhausted API credits, not a platform bug. Check your usage dashboard or notifications to see if you have hit any limits. Once credits are replenished (by purchasing more or when your billing cycle resets), the AI Variables will resume populating normally. If you have remaining credits and still see empty data, hover the '?' symbol in the output to see the provided explanation. Contact support if you need further investigation.
 
-![](images/ai-playbook-34.png)
+![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-34.png)
 
 ### **Q3. What does the Deep Research toggle do in an AI Variable?**
 
