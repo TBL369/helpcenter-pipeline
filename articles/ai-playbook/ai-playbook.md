@@ -107,7 +107,7 @@ Fill in the following core fields:
 ## Fill with AI (Company)
 Click the **Fill with AI** button to activate a workflow that searches your company's Website and LinkedIn for all the information needed to populate the fields above. The system fills in whatever it finds automatically. You can then review and adjust any details.
 
-**Important:** There is a checkbox to **Overwrite all existing information.** If not checked, the Fill with AI will only fill the empty boxes.
+> **Important:** There is a checkbox to **Overwrite all existing information.** If not checked, the Fill with AI will only fill the empty boxes.
 
 ## Products and Services
 Below the general details, fill in the strategic modules that train the AI. The **Products & Services** section includes:
@@ -115,7 +115,7 @@ Below the general details, fill in the strategic modules that train the AI. The 
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-2.png)
 
-**Note:** You can insert as many products or services as needed.
+> **Note:** You can insert as many products or services as needed.
 
 ## Ideal Customer Profile (ICP)
 Define your ICP so the AI can tailor outreach to the right audience:
@@ -123,7 +123,7 @@ Define your ICP so the AI can tailor outreach to the right audience:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-3.png)
 
-**Tip:** Click the **AI stars icon** to generate related keywords based on your input.
+> **Tip:** Click the **AI stars icon** to generate related keywords based on your input.
 
 ## Ideal Companies
 Select companies so the AI can use them as examples to find similar ideal customers.
@@ -166,7 +166,7 @@ First, select an identity from the dropdown menu. Then fill in the following ide
 ## Fill with AI (Personal)
 Click the **Fill with AI** button to automatically populate these fields using data from the selected identity and their LinkedIn profile. Review and edit as necessary. Repeat this step for each identity you want to use.
 
-**Tip:** Click the **Fill with AI** button to get the suggested values and then review and edit the ones you don't like.
+> **Tip:** Click the **Fill with AI** button to get the suggested values and then review and edit the ones you don't like.
 
 ---
 
@@ -196,7 +196,7 @@ You can start from default **Templates** to be able to configure the **new AI va
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440080/helpcenter/ai-playbook-13.png)
 
-**Important:** Whether an **AI Variable** is **Contact-type** or **Company-type** affects its visibility. If it’s Contact-type, you can make it visible only in Contact lists; if it’s Company-type, only in Company lists.
+> **Important:** Whether an **AI Variable** is **Contact-type** or **Company-type** affects its visibility. If it’s Contact-type, you can make it visible only in Contact lists; if it’s Company-type, only in Company lists.
 
 ### Output Types
 Select the **Output** (response type) to define how the AI returns results:
@@ -204,7 +204,7 @@ Select the **Output** (response type) to define how the AI returns results:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-14.png)
 
-**Important:** The response type affects the qualification criteria you can set up. For instance, choosing **One of** ensures consistent, filterable output. Use it whenever you want the AI to choose from a closed set of answers.
+> **Important:** The response type affects the qualification criteria you can set up. For instance, choosing **One of** ensures consistent, filterable output. Use it whenever you want the AI to choose from a closed set of answers.
 
 **Example:** An AI Variable with the instruction "Tell me if the company is either a B2B, B2C, or B2C with B2B products" and the output type set to **One of** will only return one of those three values. This ensures consistency, makes results easier to filter and analyze, and prevents unexpected or vague answers.
 
@@ -215,7 +215,7 @@ You can activate the **Provide explanation** option when creating or editing a v
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440079/helpcenter/ai-playbook-16.png)
 
-**Tip:** Like or dislike the outputs generated to help us keep improving the quality of the AI results.
+> **Tip:** Like or dislike the outputs generated to help us keep improving the quality of the AI results.
 
 ### Write an Effective Prompt
 The **Prompt** field is the main instruction. This is where you tell the AI exactly what to return and the format. Use the following recommended structure:
@@ -233,7 +233,7 @@ You can personalize your prompts using variables and even AI variables inside of
     
 **Avoid vague prompts like:** "Tell me everything about this company." (Too broad, no structure.)
 
-**Tip:** Be explicit in your prompt about what to search for when using Deep Research. The more specific you are, the more accurate the results will be.
+> **Tip:** Be explicit in your prompt about what to search for when using Deep Research. The more specific you are, the more accurate the results will be.
 
 ### Enhance Button
 Below the prompt editor you will find the **Enhance** button. Clicking it lets the AI automatically polish and refine your prompt — improving its structure, wording, and references to Enginy attributes. This is especially useful when you have written a first draft and want to make sure it follows best practices before saving. You can review the enhanced version and accept or adjust it as needed.
@@ -293,7 +293,7 @@ Deep Research uses more credits than regular AI Variables because:
 -   Page scraping uses credits to extract content from websites.
 -   Multiple iterations may be needed to find the right answer.
     
-**Tip:** Use Deep Research only for fields where the information is not available elsewhere. Test with a small batch first to estimate total costs. Use more specific prompts to reduce the number of search iterations needed.
+> **Tip:** Use Deep Research only for fields where the information is not available elsewhere. Test with a small batch first to estimate total costs. Use more specific prompts to reduce the number of search iterations needed.
 
 #### Deep Research Troubleshooting
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Issue</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Likely Cause</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Solution</p></td></tr><tr><td><p class="no-margin"><b>Returns "No data found" frequently</b></p></td><td><p class="no-margin">Information may not be publicly available</p></td><td><p class="no-margin">Verify the information exists online manually; refine the prompt</p></td></tr><tr><td><p class="no-margin"><b>Slow enrichment times</b></p></td><td><p class="no-margin">Multiple search iterations + page loading</p></td><td><p class="no-margin">Expected behavior; Deep Research prioritizes accuracy over speed</p></td></tr><tr><td><p class="no-margin"><b>Inconsistent results</b></p></td><td><p class="no-margin">Sources may have conflicting information</p></td><td><p class="no-margin">Add more context to the prompt to narrow down sources</p></td></tr><tr><td><p class="no-margin"><b>Blocked on certain sites</b></p></td><td><p class="no-margin">Anti-bot measures</p></td><td><p class="no-margin">Some sites cannot be accessed; try alternative sources</p></td></tr></tbody></table>
@@ -328,9 +328,9 @@ All AI Variables are managed from the **AI Playbook > AI Variables** tab. The le
 -   **AI Variable cards** — In the center of the module, each AI variable is displayed as a card. Click the three dots on any card to access the following actions:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80; width: 319px;"><p class="no-margin">Action</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td style="width: 319px;"><p class="no-margin"><b>Edit</b></p></td><td><p class="no-margin">Edit the variable prompt and settings.</p></td></tr><tr><td style="width: 319px;"><p class="no-margin"><b>Duplicate</b></p></td><td><p class="no-margin">Duplicate the variable to reuse and modify its content efficiently.</p></td></tr><tr><td style="width: 319px;"><p class="no-margin"><b>Clone to client</b></p></td><td><p class="no-margin">Clone it to another client account. This applies only if you are an Enginy partner managing a portfolio of clients.</p></td></tr><tr><td style="width: 319px;"><p class="no-margin"><b>Delete</b></p></td><td><p class="no-margin">Permanently delete the AI Variable.</p></td></tr></tbody></table>
 
-**Note:** You can also create, edit or duplicate an AI variable through a list; hover between columns, click the **+** icon and then on **New AI Variable** (to create), or click the column header and then on **Edit column** or **Duplicate column** (to edit or duplicate).
+> **Note:** You can also create, edit or duplicate an AI variable through a list; hover between columns, click the **+** icon and then on **New AI Variable** (to create), or click the column header and then on **Edit column** or **Duplicate column** (to edit or duplicate).
 
-**Warning:** The AI variable name cannot be changed once created, as renaming would cause problems in campaigns that reference it. If you need a different name, duplicate the variable, give the copy the desired name, and delete the original.
+> **Warning:** The AI variable name cannot be changed once created, as renaming would cause problems in campaigns that reference it. If you need a different name, duplicate the variable, give the copy the desired name, and delete the original.
 
 ## Use Case: Personalize or Randomize a Message Template
 You can use AI Variables to write variations of a message template you already have. This is useful when you want parts of your message to change from contact to contact — either personalized based on data or randomized for variety.
@@ -353,9 +353,9 @@ You can use AI Variables to write variations of a message template you already h
 When AI Variables return "No data found" or produce no results, this is often because the account’s **API usage credits are exhausted**. Another common reason is that the **selected model isn’t strong enough** to reliably complete the prompt’s objective (especially for complex extraction or reasoning tasks).
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Symptom</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Cause</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Resolution</p></td></tr><tr><td><p class="no-margin">AI Variables return "No data found" for all leads</p></td><td><p class="no-margin">API usage credits are exhausted</p></td><td><p class="no-margin">Check your usage dashboard with your AI provider or notifications icon in Enginy next to Settings button. Replenish credits or wait for the billing cycle to reset.</p></td></tr><tr><td><p class="no-margin">Credits remain but data is still empty</p></td><td><p class="no-margin">The selected AI model may be too lightweight/low-quality for the prompt’s objective.</p></td><td><p class="no-margin">Switch to a more capable model and run the AI Variable again. If possible, simplify the prompt or add more context to improve reliability.</p></td></tr></tbody></table>
 
-**Note:** Check the explanation provided to get more information on why No data was found.
+> **Note:** Check the explanation provided to get more information on why No data was found.
 
-**Tip:** If you’re using an AI integration and you get a notification that you’ve run out of API credits, either increase your API quota with your provider or temporarily disconnect the integration to fall back to Enginy’s platform credits.
+> **Tip:** If you’re using an AI integration and you get a notification that you’ve run out of API credits, either increase your API quota with your provider or temporarily disconnect the integration to fall back to Enginy’s platform credits.
 
 ---
 
@@ -407,7 +407,7 @@ AI Conversation Tags let you label conversation replies to organize and act on y
 Enginy includes essential default tags. You can choose to enable them as AI Auto Tags, so the system automatically detects and applies the most common conversation outcomes.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Tag</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Category</p></td></tr><tr><td><p class="no-margin"><b>Interested</b></p></td><td><p class="no-margin">Positive</p></td></tr><tr><td><p class="no-margin"><b>Meeting Booked</b></p></td><td><p class="no-margin">Positive</p></td></tr><tr><td><p class="no-margin"><b>Not Interested</b></p></td><td><p class="no-margin">Negative</p></td></tr><tr><td><p class="no-margin"><b>Bad Timing</b></p></td><td><p class="no-margin">Neutral</p></td></tr><tr><td><p class="no-margin"><b>Not the Target Persona</b></p></td><td><p class="no-margin">Neutral</p></td></tr><tr><td><p class="no-margin"><b>Out of Office</b></p></td><td><p class="no-margin">Neutral</p></td></tr><tr><td><p class="no-margin"><b>Referred</b></p></td><td><p class="no-margin">Positive</p></td></tr></tbody></table>
 
-**Important:** Default tags cannot be deleted or edited, which ensures consistency across your team. However, you can duplicate them and activate or deactivate them depending on your workflow.
+> **Important:** Default tags cannot be deleted or edited, which ensures consistency across your team. However, you can duplicate them and activate or deactivate them depending on your workflow.
 
 ## Tag Categories
 All tags are grouped into three categories:
@@ -422,7 +422,7 @@ On the **Analytics Page**, you can track a single metric per category. For examp
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-27.png)
 
-**Important:** Custom AI tags **must** have a prompt (Instructions) associated before they can be activated for Auto tagging. Without an instruction, the tag can only be used manually.
+> **Important:** Custom AI tags **must** have a prompt (Instructions) associated before they can be activated for Auto tagging. Without an instruction, the tag can only be used manually.
 
 ## Auto Tagging
 Auto tagging is controlled by the toggle switch located below the Instructions text box (and also on the tag card in the main view).
@@ -448,7 +448,7 @@ In the center of the AI Conversation Tags module, all available tags are display
     
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440083/helpcenter/ai-playbook-29.png)
 
-**Note:** Click on any tag card to open and edit.
+> **Note:** Click on any tag card to open and edit.
 
 The module provides two views:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">View</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Shows</p></td></tr><tr><td><p class="no-margin"><b>All</b></p></td><td><p class="no-margin">Every tag in the account</p></td></tr><tr><td><p class="no-margin"><b>Active</b></p></td><td><p class="no-margin">Only tags with an Instruction and Auto tagging enabled</p></td></tr></tbody></table>
@@ -487,7 +487,7 @@ You can still adjust any filters manually. Use the ICP filters as a starting poi
 3.  Click **Fill with AI**.
 4.  The AI analyzes your company website and LinkedIn profile to automatically generate your Ideal Customer Profile.
 5.  Once completed, your ICP is saved and you can instantly apply the Quick Filter.
-**Tip:** Keep your AI Playbook updated. The more accurate and detailed your ICP, the smarter your filters will be.
+> **Tip:** Keep your AI Playbook updated. The more accurate and detailed your ICP, the smarter your filters will be.
 
 ---
 
@@ -497,12 +497,12 @@ Enginy offers a curated selection of AI models from leading providers. Each mode
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440084/helpcenter/ai-playbook-33.png)
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Model</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Provider</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Best For</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Key Strengths</p></td></tr><tr><td><p class="no-margin"><b>GPT 5.2</b></p></td><td><p class="no-margin">OpenAI</p></td><td><p class="no-margin">Complex reasoning and professional tasks</p></td><td><p class="no-margin">OpenAI's latest flagship model (Dec 2025). Excels at multi-step project execution, financial modeling, spreadsheets, and detailed analyses. Features both an instant mode for fast responses and a thinking mode for deeper reasoning. Ideal for power users and enterprise workflows.</p></td></tr><tr><td><p class="no-margin"><b>GPT 5 mini</b></p></td><td><p class="no-margin">OpenAI</p></td><td><p class="no-margin">Balanced everyday tasks</p></td><td><p class="no-margin">A smaller, faster variant within the GPT-5 family. Delivers a strong balance of capability and speed, well-suited for everyday enrichment, summarization, and classification tasks without the cost of the full model.</p></td></tr><tr><td><p class="no-margin"><b>GPT 5 nano</b></p></td><td><p class="no-margin">OpenAI</p></td><td><p class="no-margin">High-volume, cost-sensitive tasks</p></td><td><p class="no-margin">The most lightweight and cost-effective model in the GPT-5 family. Optimized for speed and efficiency, making it a great choice when running AI Variables across large lists where per-row cost matters.</p></td></tr><tr><td><p class="no-margin"><b>Gemini 3 Pro</b></p></td><td><p class="no-margin">Google</p></td><td><p class="no-margin">Top-tier reasoning and accuracy</p></td><td><p class="no-margin">Google's most powerful model (Nov 2025). Uses a sparse mixture-of-experts architecture and can output up to 64K tokens. Outperformed major AI models in 19 out of 20 benchmarks on release. Excellent for complex prompts, long instructions, and tasks requiring high accuracy.</p></td></tr><tr><td><p class="no-margin"><b>Gemini 3 Flash</b></p></td><td><p class="no-margin">Google</p></td><td><p class="no-margin">Speed-first scenarios</p></td><td><p class="no-margin">Google's speed-optimized model (Dec 2025). Provides near-instant responses while maintaining solid quality. Best for sorting through many records quickly, normalizing data, or any task where response time is more important than maximum depth.</p></td></tr><tr><td><p class="no-margin"><b>Grok 4</b></p></td><td><p class="no-margin">xAI</p></td><td><p class="no-margin">Complex reasoning and analysis</p></td><td><p class="no-margin">xAI's flagship model. Excels in natural language processing, mathematical reasoning, and complex multi-step problem-solving. Its "think before responding" approach improves accuracy and reliability, particularly for prompts that require chained reasoning.</p></td></tr><tr><td><p class="no-margin"><b>Claude 4.5 Sonnet</b></p></td><td><p class="no-margin">Anthropic</p></td><td><p class="no-margin">Nuanced writing and coding</p></td><td><p class="no-margin">Anthropic's mid-tier model (Sep 2025). Known for high-quality, nuanced text generation and strong coding capabilities. Produces natural-sounding, well-structured output and follows complex stylistic instructions faithfully. A solid choice for writing outreach messages and generating personalized copy.</p></td></tr></tbody></table>
 
-**Note:** Models marked with the **Recommended** label in the Enginy interface (currently GPT 5.2 and Grok 4) are the best general-purpose options for most AI Variable and AI Campaign use cases.
+> **Note:** Models marked with the **Recommended** label in the Enginy interface (currently GPT 5.2 and Grok 4) are the best general-purpose options for most AI Variable and AI Campaign use cases.
 
 ## Quick selection guide
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Need</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Recommended Models</p></td></tr><tr><td><p class="no-margin">Top performance for complex reasoning</p></td><td><p class="no-margin">GPT 5.2, Gemini 3 Pro, Grok 4</p></td></tr><tr><td><p class="no-margin">Best for nuanced writing and outreach copy</p></td><td><p class="no-margin">Claude 4.5 Sonnet, GPT 5.2</p></td></tr><tr><td><p class="no-margin">Best balance of speed and quality</p></td><td><p class="no-margin">GPT 5 mini, Gemini 3 Flash</p></td></tr><tr><td><p class="no-margin">Most cost-effective for high-volume runs</p></td><td><p class="no-margin">GPT 5 nano, Gemini 3 Flash</p></td></tr></tbody></table>
 
-**Note:** Available models may be updated over time as new capabilities are released. Check the model selector in the AI Variable or AI Campaign editor for the latest options.
+> **Note:** Available models may be updated over time as new capabilities are released. Check the model selector in the AI Variable or AI Campaign editor for the latest options.
 
 ---
 

@@ -55,7 +55,7 @@ Define how your organization appears within the platform.
 ## Join the Beta Program
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Setting</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Beta Program</b> (toggle)</p></td><td><p class="no-margin">Activates early access to new features and improvements before they are generally available.</p></td></tr></tbody></table>
 
-**Note:** Beta features may be unstable or change without prior notice. Use them with caution in production environments.
+> **Note:** Beta features may be unstable or change without prior notice. Use them with caution in production environments.
 
 ## Set Your Preferred Language
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Setting</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Preferred language of communication</b></p></td><td><p class="no-margin">Use the dropdown menu to select your preferred language for platform communications.</p></td></tr></tbody></table>
@@ -64,9 +64,9 @@ Define how your organization appears within the platform.
 These settings help keep your contact database clean automatically by applying rules to manage data quality.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Setting</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Automatically delete Contacts without associated company</b></p></td><td><p class="no-margin">When enabled, contacts with no associated company are automatically deleted.</p></td></tr><tr><td><p class="no-margin"><b>Export Contacts email when domain doesn't match Company domain</b></p></td><td><p class="no-margin">When enabled, the system automatically exports contacts where the email domain differs from the company domain. Useful for data quality control and review.</p></td></tr><tr><td><p class="no-margin"><b>Delete non verified emails</b></p></td><td><p class="no-margin">When enabled, unverified emails are deleted when verification fails. This reduces bounce rates and improves contact quality.</p></td></tr></tbody></table>
 
-**Important:** Contacts imported via CSV are **not** affected by the automatic deletion rule for contacts without associated companies. But the ones coming from HubSpot or LinkedIn scrapings are affected.
+> **Important:** Contacts imported via CSV are **not** affected by the automatic deletion rule for contacts without associated companies. But the ones coming from HubSpot or LinkedIn scrapings are affected.
 
-**Warning:** Before activating automatic deletion options, ensure your team understands the impact. These changes affect data volume and quality permanently and cannot be undone.
+> **Warning:** Before activating automatic deletion options, ensure your team understands the impact. These changes affect data volume and quality permanently and cannot be undone.
 
 ## Configure LinkedIn Integration
 Controls the behavior of the LinkedIn integration with your conversations and contacts.
@@ -94,7 +94,7 @@ Two-factor authentication adds an extra layer of security to your account by req
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-6.png)
 
-**Tip:** If your team handles sensitive data or uses shared access, 2FA should be standard practice. It significantly reduces the impact of leaked or reused passwords.
+> **Tip:** If your team handles sensitive data or uses shared access, 2FA should be standard practice. It significantly reduces the impact of leaked or reused passwords.
 
 ---
 
@@ -108,7 +108,7 @@ Navigate to **Settings** > **Team** tab to access the options described below.
 ## Understand Team Capacity
 At the top of the user list, you will see a capacity counter (e.g., **Team 10/20**). This indicates the number of active users versus your plan's license limit.
 
-**Note:** If you approach your license limit, you must either free up user slots by removing inactive members or request to support agents or your account manager to add more users for free.
+> **Note:** If you approach your license limit, you must either free up user slots by removing inactive members or request to support agents or your account manager to add more users for free.
 
 ## Search and Navigate the User List
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin">Feature</p></td><td style="background-color: #d7efdc80;"><p class="no-margin">Description</p></td></tr><tr><td><p class="no-margin"><b>Search users</b></p></td><td><p class="no-margin">Filter the user list by name or email. Supports keyboard shortcut (Cmd + F / Ctrl + F) for quick access.</p></td></tr><tr><td><p class="no-margin"><b>Pagination</b></p></td><td><p class="no-margin">The list is paginated. Use the dropdown at the bottom to choose how many records to display (e.g., "Show 25"). Navigate between pages using the arrows and page indicators (e.g., "1-25 of 58").</p></td></tr></tbody></table>
@@ -148,7 +148,7 @@ Clicking the **Edit permissions** button (gear icon) in the Actions column opens
 3.  Click **Save Changes** to apply your modifications.
     -   Click **Cancel** to discard changes.
     -   Click **Back to Team** to return to the user list without saving.
-**Important:** Permission changes are applied immediately after clicking **Save Changes**. There is no automatic undo, so review your selections carefully before saving.
+> **Important:** Permission changes are applied immediately after clicking **Save Changes**. There is no automatic undo, so review your selections carefully before saving.
 
 ### Lists Permissions
 Controls access to data, records, and activity within the platform.

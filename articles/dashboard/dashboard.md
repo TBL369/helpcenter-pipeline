@@ -38,7 +38,7 @@ This metric aggregates all contacts and companies brought into the platform rega
 -   LinkedIn imports
 -   CSV file uploads
     
-**Note:** The Total Imported count includes contacts that have been deleted from the platform. This gives you full visibility into your historical import volume.
+> **Note:** The Total Imported count includes contacts that have been deleted from the platform. This gives you full visibility into your historical import volume.
 
 ## Campaigns Summary
 Provides a quick overview of your outreach performance via LinkedIn or email:
@@ -61,7 +61,7 @@ The funnel chart allows you to:
 -   Analyze conversion rates between stages.
 -   Identify bottlenecks in your prospecting workflow.
     
-**Tip:** Use the time-range selector on the funnel to compare different periods and spot trends in your prospecting pipeline.
+> **Tip:** Use the time-range selector on the funnel to compare different periods and spot trends in your prospecting pipeline.
 
 ## Campaigns Chart
 A graphical comparison of outreach volume versus responses:

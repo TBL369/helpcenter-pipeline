@@ -68,7 +68,7 @@ You need at least one channel connected (LinkedIn or email) to use an identity i
 
 A single User can manage multiple Identities and send campaigns from all of them. If multiple people on your team need their own access, each person must have their own User account and can connect their own Identities.
 
-**Important:** For billing and security purposes, do not share a single User account among multiple people.
+> **Important:** For billing and security purposes, do not share a single User account among multiple people.
 
 ## Add a New Identity
 1. Go to the **Identities** dashboard.
@@ -78,7 +78,7 @@ A single User can manage multiple Identities and send campaigns from all of them
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440114/helpcenter/identities-2.png)
 
-**Important:** If your LinkedIn profile uses Two-Step Authentication, you will need to provide the access code during the linking process. If you use social logins or an Access Key to sign in to LinkedIn, you must first set a direct password in your LinkedIn settings.
+> **Important:** If your LinkedIn profile uses Two-Step Authentication, you will need to provide the access code during the linking process. If you use social logins or an Access Key to sign in to LinkedIn, you must first set a direct password in your LinkedIn settings.
 
 ## Connect LinkedIn
 When creating an identity via **Credentials**, your LinkedIn profile connects automatically. For identities created **Manually**, paste the LinkedIn URL in the identity's **Contact Details** section and Enginy will link it.
@@ -95,16 +95,16 @@ Navigate to your identity's **Configuration > Email > Manage** tab and click the
 
 You can connect multiple email addresses to a single identity. When a campaign's **Email Inbox** setting is set to "Shuffle," Enginy distributes leads across all connected inboxes for better deliverability.
 
-**Warning:** If you disconnect an email address that has active leads mid-sequence, those leads will fail. The system will not reassign leads to another address. You must reconnect the original email to resolve the issue.
+> **Warning:** If you disconnect an email address that has active leads mid-sequence, those leads will fail. The system will not reassign leads to another address. You must reconnect the original email to resolve the issue.
 
-**Note:** For detailed instructions on Microsoft 365 admin consent, IMAP troubleshooting, and email signature configuration, see the **Identities** article.
+> **Note:** For detailed instructions on Microsoft 365 admin consent, IMAP troubleshooting, and email signature configuration, see the **Identities** article.
 
 ## Configure Working Hours
 Working hours define the time window during which the identity is active. Campaigns associated with this identity will only execute actions during the specified working hours.
 1. Navigate to **Identity > Configuration > Contact Details**.
 2. Set the time zone, active days, and start/end times.
 
-**Tip:** Adjust working hours to match your prospects' time zones to ensure messages arrive at optimal engagement times. Working hours are configured per identity, not per campaign.
+> **Tip:** Adjust working hours to match your prospects' time zones to ensure messages arrive at optimal engagement times. Working hours are configured per identity, not per campaign.
 
 ## Set LinkedIn Rate Limits
 Navigate to **Identity > Configuration > LinkedIn > Rate Limits** to configure daily activity limits:
@@ -112,11 +112,11 @@ Navigate to **Identity > Configuration > LinkedIn > Rate Limits** to configure d
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440117/helpcenter/identities-7.png)
 
-**Warning:** Increasing daily connection requests or message limits beyond the recommended defaults can trigger LinkedIn automation detection. If you do increase them, do so temporarily and monitor closely.
+> **Warning:** Increasing daily connection requests or message limits beyond the recommended defaults can trigger LinkedIn automation detection. If you do increase them, do so temporarily and monitor closely.
 
 You can also configure **automatic withdrawal** of pending connection requests from the **Withdrawals** tab. Set a threshold in days (e.g., 7 days) and unanswered requests will be withdrawn automatically.
 
-**Important:** After withdrawing a connection request, you cannot send a new request to the same person for 3 weeks.
+> **Important:** After withdrawing a connection request, you cannot send a new request to the same person for 3 weeks.
 
 ## Warm Up Your Email
 If you are using a new email address or domain for outreach, you should warm it up before launching campaigns. Email warm-up gradually builds your sending reputation over approximately 2 weeks.
@@ -124,9 +124,9 @@ If you are using a new email address or domain for outreach, you should warm it 
 2. Click the **Start** button next to the warm-up feature.
 3. After two weeks, return and stop the warm-up.
 
-**Important:** During warm-up, pause all campaigns using that identity and avoid sending any emails from that address outside of Enginy. You will receive automated warming emails during this period — do not mark them as spam.
+> **Important:** During warm-up, pause all campaigns using that identity and avoid sending any emails from that address outside of Enginy. You will receive automated warming emails during this period — do not mark them as spam.
 
-**Note:** Email warm-up has a fixed monthly cost. Contact your Account Manager or chat support for pricing. For a detailed explanation of email deliverability and warm-up, see the **Identities** article.
+> **Note:** Email warm-up has a fixed monthly cost. Contact your Account Manager or chat support for pricing. For a detailed explanation of email deliverability and warm-up, see the **Identities** article.
 
 ---
 
@@ -136,7 +136,7 @@ Connecting your CRM allows you to synchronize and export contacts and companies 
 ## Available CRM Integrations
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>CRM</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Description</b></p></td></tr><tr><td><p class="no-margin"><b>HubSpot</b></p></td><td><p class="no-margin">Full-featured CRM with marketing, sales, and service hubs.</p></td></tr><tr><td><p class="no-margin"><b>Salesforce</b></p></td><td><p class="no-margin">Enterprise CRM platform.</p></td></tr><tr><td><p class="no-margin"><b>Pipedrive</b></p></td><td><p class="no-margin">Sales-focused CRM built around pipeline management.</p></td></tr><tr><td><p class="no-margin"><b>Dynamics</b></p></td><td><p class="no-margin">Microsoft Dynamics 365 CRM.</p></td></tr><tr><td><p class="no-margin"><b>Zoho</b></p></td><td><p class="no-margin">CRM suite with sales automation and analytics.</p></td></tr><tr><td><p class="no-margin"><b>TribeCRM</b></p></td><td><p class="no-margin">CRM designed for relationship-driven sales teams.</p></td></tr><tr><td><p class="no-margin"><b>Custom CRM (Beta)</b></p></td><td><p class="no-margin">Connect your own CRM using API key authentication.</p></td></tr></tbody></table>
 
-**Important:** Enginy supports only one active CRM at a time. If you want to switch, disable the current one first.
+> **Important:** Enginy supports only one active CRM at a time. If you want to switch, disable the current one first.
 
 ## Enable and Configure Your CRM
 1. Go to **Integrations** and open the **All** tab.
@@ -159,7 +159,7 @@ Configure which Enginy fields map to which CRM fields for export and sync. The s
 
 For each mapping, choose a sync direction: Bi-directional, CRM overwrites Enginy, Enginy overwrites CRM, Sync if empty, or Sync deactivated.
 
-**Warning:** Do not map a Company field in the Contacts tab (or vice versa). This can cause export errors.
+> **Warning:** Do not map a Company field in the Contacts tab (or vice versa). This can cause export errors.
 
 **Step 3 — Campaign Mapping (Optional):**
 
@@ -171,7 +171,7 @@ Link Enginy identities and users to CRM users so that exports and activity logs 
 
 After completing all steps, click **Update** to save.
 
-**Note:** For the full field mapping reference, association types, status icons, and troubleshooting, see the **Integrations** article.
+> **Note:** For the full field mapping reference, association types, status icons, and troubleshooting, see the **Integrations** article.
 
 ## Other Integrations
 Beyond CRM, Enginy supports additional integrations you can configure from the **Integrations** page:
@@ -180,7 +180,7 @@ Beyond CRM, Enginy supports additional integrations you can configure from the *
 - **Import Sources** — TheirStack (company data aggregation; connect your own API key or use Enginy's subscription).
 - **Communication** — Slack (connect via OAuth for team notifications).
 
-**Note:** If you do not have your own AI or TheirStack account, Enginy provides these services using your Enginy Credits.
+> **Note:** If you do not have your own AI or TheirStack account, Enginy provides these services using your Enginy Credits.
 
 ---
 
@@ -190,7 +190,7 @@ The Blocklist prevents specific contacts and companies from appearing in your li
 
 If you have a CRM connected, Enginy can identify existing records during sync. However, if you do not have a CRM, creating a blocklist is the primary way to prevent reaching out to existing customers, competitors, or current pipeline.
 
-**Important:** A contact or company on the Blocklist cannot be re-added to any list or campaign until it is first unblocked.
+> **Important:** A contact or company on the Blocklist cannot be re-added to any list or campaign until it is first unblocked.
 
 ## Add Entries to the Blocklist
 **Add individually:**
@@ -209,7 +209,7 @@ If you have a CRM connected, Enginy can identify existing records during sync. H
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440093/helpcenter/blocklist-4.png)
 
-**Tip:** When viewing any list, a blocklist indicator in the bottom bar shows how many entries are currently on the Blocklist. Click it to view and manage those entries without leaving your list. For the complete blocklist reference (source values, reason values, and management options), see the **Blocklist** article.
+> **Tip:** When viewing any list, a blocklist indicator in the bottom bar shows how many entries are currently on the Blocklist. Click it to view and manage those entries without leaving your list. For the complete blocklist reference (source values, reason values, and management options), see the **Blocklist** article.
 
 ---
 
@@ -229,7 +229,7 @@ Navigate to **AI Playbook** from the left-hand menu.
 The Company Information tab includes the following sections:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Section</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>What to Fill In</b></p></td></tr><tr><td><p class="no-margin"><b>Company Information</b></p></td><td><p class="no-margin">Company name, industry, headcount, HQ location, founding year, company overview.</p></td></tr><tr><td><p class="no-margin"><b>Products and Services</b></p></td><td><p class="no-margin">Product name, description, value proposition, price range. Add as many as needed.</p></td></tr><tr><td><p class="no-margin"><b>Ideal Customer Profile (ICP)</b></p></td><td><p class="no-margin">ICP name, target job titles, locations, industries, company size, revenue, key pain points, disqualifying factors.</p></td></tr><tr><td><p class="no-margin"><b>Ideal Companies</b></p></td><td><p class="no-margin">Example companies the AI can use to find similar ideal customers.</p></td></tr><tr><td><p class="no-margin"><b>Competitors</b></p></td><td><p class="no-margin">Competitor names and how your product differentiates from theirs.</p></td></tr><tr><td><p class="no-margin"><b>Testimonials</b></p></td><td><p class="no-margin">Customer company, promoter name, job position, main benefit.</p></td></tr><tr><td><p class="no-margin"><b>Company FAQs</b></p></td><td><p class="no-margin">Frequently asked questions about your business, with answers the AI can reference.</p></td></tr></tbody></table>
 
-**Important:** The ICP section is critical. It powers the Contact and Company scoring system, the ICP Quick Filter for LinkedIn searches, and AI Recommended Lists. Take the time to fill it in thoroughly.
+> **Important:** The ICP section is critical. It powers the Contact and Company scoring system, the ICP Quick Filter for LinkedIn searches, and AI Recommended Lists. Take the time to fill it in thoroughly.
 
 Click **Update** at the bottom right to save changes.
 
@@ -242,9 +242,9 @@ Click **Update** at the bottom right to save changes.
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440085/helpcenter/ai-playbook-8.png)
 
-**Tip:** The more accurate and detailed the information in your AI Playbook, the better the AI will perform across variables, campaigns, and automated interactions.
+> **Tip:** The more accurate and detailed the information in your AI Playbook, the better the AI will perform across variables, campaigns, and automated interactions.
 
-**Note:** The AI Playbook also contains tabs for AI Variables, AI Campaigns, and AI Conversation Tags. These are covered in the Campaign Building Guide as they are used when creating campaigns.
+> **Note:** The AI Playbook also contains tabs for AI Variables, AI Campaigns, and AI Conversation Tags. These are covered in the Campaign Building Guide as they are used when creating campaigns.
 
 ---
 
@@ -258,7 +258,7 @@ Access the Credits section by clicking the **View Usage** button in the bottom-l
 ## What Consumes Credits
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Action</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Credit Cost</b></p></td></tr><tr><td><p class="no-margin"><b>Extract company or contact data (scraping)</b></p></td><td><p class="no-margin">1 credit/result</p></td></tr><tr><td><p class="no-margin"><b>Email enrichment</b></p></td><td><p class="no-margin">5 credits/result</p></td></tr><tr><td><p class="no-margin"><b>Phone enrichment</b></p></td><td><p class="no-margin">40 credits/result</p></td></tr><tr><td><p class="no-margin"><b>AI Variables</b></p></td><td><p class="no-margin">3 credits/field (varies by model and complexity)</p></td></tr><tr><td><p class="no-margin"><b>Email verification</b></p></td><td><p class="no-margin">1 credit/result</p></td></tr><tr><td><p class="no-margin"><b>Phone verification</b></p></td><td><p class="no-margin">3 credits/result</p></td></tr><tr><td><p class="no-margin"><b>Google Maps / TheirStack / Job Posting data</b></p></td><td><p class="no-margin">1 credit/result</p></td></tr><tr><td><p class="no-margin"><b>Crunchbase enrichment</b></p></td><td><p class="no-margin">7 credits/result</p></td></tr></tbody></table>
 
-**Note:** "No data found" results are not billed.
+> **Note:** "No data found" results are not billed.
 
 Conversations (outbound emails and LinkedIn messages) are determined by your identity's sending capacity and are not capped beyond that capacity.
 
@@ -270,7 +270,7 @@ You can purchase additional credits and identities directly from the **Plan** ta
 ## Renewal Policy
 Credits are automatically renewed on the 1st of each month. As a general rule, unused credits do not roll over. Plan your usage accordingly.
 
-**Tip:** Use the built-in **Credit Calculator** in the **Plan & Credits** tab to estimate how many credits you need based on your expected monthly actions. For the full plan comparison, ROI calculator, and credit usage analytics, see the **Credits** article.
+> **Tip:** Use the built-in **Credit Calculator** in the **Plan & Credits** tab to estimate how many credits you need based on your expected monthly actions. For the full plan comparison, ROI calculator, and credit usage analytics, see the **Credits** article.
 
 ---
 
@@ -286,14 +286,14 @@ Navigate to **Settings > General** to configure:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440151/helpcenter/settings-3.png)
 
-**Warning:** Before activating automatic deletion options, ensure your team understands the impact. These changes are permanent and cannot be undone. Contacts imported via CSV are not affected by the automatic deletion rule.
+> **Warning:** Before activating automatic deletion options, ensure your team understands the impact. These changes are permanent and cannot be undone. Contacts imported via CSV are not affected by the automatic deletion rule.
 
 ## Security
 Navigate to **Settings > Security** to:
 - **Change your password** (minimum 12 characters).
 - **Enable Two-Factor Authentication (2FA)** for added security.
 
-**Tip:** If your team handles sensitive data, 2FA should be standard practice. Each user must enable it individually from their own account.
+> **Tip:** If your team handles sensitive data, 2FA should be standard practice. Each user must enable it individually from their own account.
 
 ## Team Management
 Navigate to **Settings > Team** to manage your workspace users. This tab is visible only to users with the **Admin** role.
@@ -307,7 +307,7 @@ From here you can:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440152/helpcenter/settings-7.png)
 
-**Note:** Permission changes take effect immediately after clicking Save Changes. There is no automatic undo. For the full permissions reference, see the **Settings** article.
+> **Note:** Permission changes take effect immediately after clicking Save Changes. There is no automatic undo. For the full permissions reference, see the **Settings** article.
 
 ---
 

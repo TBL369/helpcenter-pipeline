@@ -58,11 +58,11 @@ Go to **Lists** > **+ Create New** (from the dashboard) or click **Add Companies
 ### Import Sources
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Source</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>How It Works</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Credit Cost</b></p></td></tr><tr><td><p class="no-margin"><b>AI Finder</b></p></td><td><p class="no-margin">Describe your ideal customer in plain language (e.g., "SaaS companies in Spain with 50+ employees"). The AI generates LinkedIn filters automatically and returns matching companies.</p></td><td><p class="no-margin">1 credit + 1 scraping per company</p></td></tr><tr><td><p class="no-margin"><b>Find Companies on LinkedIn</b></p></td><td><p class="no-margin">Search using Sales Navigator filters: industry, headquarters, headcount, revenue, department headcount, growth, and more. You can also paste a Sales Navigator URL directly.</p></td><td><p class="no-margin">1 credit + 1 scraping per company</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Jobs</b></p></td><td><p class="no-margin">Paste a LinkedIn Job Search URL to import companies that are hiring for a specific position on LinkedIn.</p></td><td><p class="no-margin">1 credit + 1 scraping per company</p></td></tr><tr><td><p class="no-margin"><b>TheirStack (Tech Stack)</b></p></td><td><p class="no-margin">Find companies by the technologies they use. Filter by tech, country, industry, company type, revenue, headcount, and more.</p></td><td><p class="no-margin">1 credit per company (no scraping)</p></td></tr><tr><td><p class="no-margin"><b>TheirStack (Job Posts)</b></p></td><td><p class="no-margin">Find companies by job postings across all job board sites (not just LinkedIn). Filter by job title, description, location, salary, and company attributes.</p></td><td><p class="no-margin">1 credit per company (no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Google Maps</b></p></td><td><p class="no-margin">Find companies present in a specific geographic area. Search by category (e.g., "Gym") and radius or map area.</p></td><td><p class="no-margin">1 credit per company (no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Crunchbase</b></p></td><td><p class="no-margin">Find companies by keywords, headquarters, industry, headcount, funding, revenue, investor, M&amp;A status, and more.</p></td><td><p class="no-margin">7 credits per company (no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Import from CRM</b></p></td><td><p class="no-margin">Filter and import companies from your connected CRM using property-based filters.</p></td><td><p class="no-margin">Free (no credits, no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Import from CRM List</b></p></td><td><p class="no-margin">Select an existing list from your CRM and import its companies directly.</p></td><td><p class="no-margin">Free (no credits, no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Import from CSV</b></p></td><td><p class="no-margin">Upload a CSV file and map columns to Enginy fields. If your file is in Excel or Google Sheets, save as CSV UTF-8 first.</p></td><td><p class="no-margin">Free (no credits, no scraping)</p></td></tr><tr><td><p class="no-margin"><b>Create Manually</b></p></td><td><p class="no-margin">Search for a company on LinkedIn to auto-fill data, or add one manually by filling in the fields.</p></td><td><p class="no-margin">1 scraping if searched on LinkedIn; free if manual</p></td></tr></tbody></table>
 
-**Tip:** If your AI Playbook has an ICP defined, LinkedIn searches will offer AI-suggested presets with filters pre-filled based on your ICP. These refresh weekly.
+> **Tip:** If your AI Playbook has an ICP defined, LinkedIn searches will offer AI-suggested presets with filters pre-filled based on your ICP. These refresh weekly.
 
-**Important:** Do not import more than 5,000 companies at once from your CRM.
+> **Important:** Do not import more than 5,000 companies at once from your CRM.
 
-**Note:** For the full filter reference for each import source (LinkedIn, TheirStack, Crunchbase, Google Maps), see the **Lists** article.
+> **Note:** For the full filter reference for each import source (LinkedIn, TheirStack, Crunchbase, Google Maps), see the **Lists** article.
 
 ## Step 2: Enrich Companies with LinkedIn Data
 This step is **mandatory** if you imported companies from a source other than LinkedIn or Sales Navigator (CSV, CRM, TheirStack, Google Maps, Crunchbase). It populates LinkedIn fields and the Company URN, which is required to search for contacts within companies.
@@ -77,9 +77,9 @@ When searching by name, you can apply matching filters:
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440136/helpcenter/lists-45.png)
 
-**Warning:** Failing to complete this step can result in creating duplicates in Enginy and not being able to search for contacts within the companies.
+> **Warning:** Failing to complete this step can result in creating duplicates in Enginy and not being able to search for contacts within the companies.
 
-**Tip:** Before running "Find data by name or domain," run the default AI Variable **Simplified Company Name** to normalize company names to the common format used on LinkedIn.
+> **Tip:** Before running "Find data by name or domain," run the default AI Variable **Simplified Company Name** to normalize company names to the common format used on LinkedIn.
 
 ## Step 3: Check CRM Status
 If you have a CRM connected, run a **CRM Sync** to identify whether each company already exists in your CRM.
@@ -88,7 +88,7 @@ If you have a CRM connected, run a **CRM Sync** to identify whether each company
 
 After the sync, check the **Company exists in CRM** column (Yes or No). For companies that do exist, you can also see the CRM Owner, CRM ID, last activity date, and last updated date.
 
-**Note:** CRM Sync is free (no credit cost).
+> **Note:** CRM Sync is free (no credit cost).
 
 ## Step 4: Enrich with AI
 Use AI Variables to segment, clean, or find additional information about your companies. Common use cases include:
@@ -99,7 +99,7 @@ Use AI Variables to segment, clean, or find additional information about your co
 2. Click **Enrich > Enrich with AI**.
 3. Select one or more AI Variables and click **Run**.
 
-**Note:** For a detailed guide on creating AI Variables, writing effective prompts, and using Deep Research, see the **AI Playbook** article.
+> **Note:** For a detailed guide on creating AI Variables, writing effective prompts, and using Deep Research, see the **AI Playbook** article.
 
 ## Step 5: Find Contacts Within Companies
 Now that your company list is enriched, search for buyer personas within these companies.
@@ -111,9 +111,9 @@ Now that your company list is enriched, search for buyer personas within these c
 
 ![](https://res.cloudinary.com/enginy/image/upload/v1771440133/helpcenter/lists-37.png)
 
-**Tip:** If no contacts are found, broaden your filters (e.g., search "HR" instead of "HR Manager"). You can also use the dropdown arrow in the **Contacts Count** column to manually explore people at a specific company.
+> **Tip:** If no contacts are found, broaden your filters (e.g., search "HR" instead of "HR Manager"). You can also use the dropdown arrow in the **Contacts Count** column to manually explore people at a specific company.
 
-**Important:** If the company has not been scraped yet (the Company URN field is empty), results may be inaccurate because the company is not linked to a specific LinkedIn account. Always complete Step 2 before searching for contacts.
+> **Important:** If the company has not been scraped yet (the Company URN field is empty), results may be inaccurate because the company is not linked to a specific LinkedIn account. Always complete Step 2 before searching for contacts.
 
 After creating your list of contacts, proceed to **Option B > Step 2** below to enrich them with AI and contact data.
 
@@ -128,9 +128,9 @@ Go to **Lists** > **+ Create New** or click **Add Contacts** inside an existing 
 ### Import Sources
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Source</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>How It Works</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Credit Cost</b></p></td></tr><tr><td><p class="no-margin"><b>AI Finder</b></p></td><td><p class="no-margin">Describe your ideal contact in natural language. The AI generates LinkedIn filters and returns matching contacts.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Find Contacts on LinkedIn</b></p></td><td><p class="no-margin">Search using filters: job title, geography, function, seniority, years of experience, company industry, company headcount, intent signals, and more. Paste a Sales Navigator URL for direct import.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Post</b></p></td><td><p class="no-margin">Paste a LinkedIn post URL to import people who liked, commented, or engaged with the post (yours or anyone's).</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Event</b></p></td><td><p class="no-margin">Paste a LinkedIn event URL to import attendees.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Poll</b></p></td><td><p class="no-margin">Paste a LinkedIn poll URL to import voters.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Connections</b></p></td><td><p class="no-margin">Import existing LinkedIn connections from any identity synced to Enginy.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from LinkedIn Followers</b></p></td><td><p class="no-margin">Import followers of an identity's LinkedIn profile.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from Crunchbase</b></p></td><td><p class="no-margin">Find contacts (investors, founders) using Crunchbase filters: keywords, headquarters, investment activity, exits, and more.</p></td><td><p class="no-margin">7 credits per contact</p></td></tr><tr><td><p class="no-margin"><b>Import from CRM</b></p></td><td><p class="no-margin">Filter and import contacts from your connected CRM using property-based filters.</p></td><td><p class="no-margin">Free</p></td></tr><tr><td><p class="no-margin"><b>Import from CRM List</b></p></td><td><p class="no-margin">Select an existing list from your CRM and import its contacts.</p></td><td><p class="no-margin">Free</p></td></tr><tr><td><p class="no-margin"><b>Import from CSV</b></p></td><td><p class="no-margin">Upload a CSV and map columns to Enginy fields. Save as CSV UTF-8 from Excel or Google Sheets first.</p></td><td><p class="no-margin">Free</p></td></tr><tr><td><p class="no-margin"><b>Import from Sales Navigator URL</b></p></td><td><p class="no-margin">Paste a saved Sales Navigator search URL to import its contacts.</p></td><td><p class="no-margin">1 credit + 1 scraping per contact</p></td></tr><tr><td><p class="no-margin"><b>Create Manually</b></p></td><td><p class="no-margin">Search for a contact on LinkedIn or fill in the fields manually (first name, last name, job title, company, LinkedIn URL, email, phone).</p></td><td><p class="no-margin">1 scraping if searched on LinkedIn; free if manual</p></td></tr></tbody></table>
 
-**Important:** Do not import more than 5,000 contacts at once from your CRM.
+> **Important:** Do not import more than 5,000 contacts at once from your CRM.
 
-**Tip:** If you imported contacts from a non-LinkedIn source (CSV, CRM), you may need to run **Enrich > Find data by LinkedIn URL** or **Find data by name** to populate LinkedIn fields. This ensures complete profiles and enables accurate scoring.
+> **Tip:** If you imported contacts from a non-LinkedIn source (CSV, CRM), you may need to run **Enrich > Find data by LinkedIn URL** or **Find data by name** to populate LinkedIn fields. This ensures complete profiles and enables accurate scoring.
 
 ## Step 2: Enrich Contacts with AI
 AI enrichment is especially valuable for contacts imported via LinkedIn search, where Sales Navigator title filtering can be imprecise. Use AI Variables to:
@@ -141,7 +141,7 @@ AI enrichment is especially valuable for contacts imported via LinkedIn search, 
 2. Click **Enrich > Enrich with AI**.
 3. Select one or more AI Variables and click **Run**.
 
-**Tip:** For credit optimization, filter your list beforehand to enrich only records where the variable column is empty.
+> **Tip:** For credit optimization, filter your list beforehand to enrich only records where the variable column is empty.
 
 ## Step 3: Enrich with Email and Phone
 To reach contacts via email campaigns, you need their professional email address. To include phone call tasks in your campaigns, you need their phone number.
@@ -149,9 +149,9 @@ To reach contacts via email campaigns, you need their professional email address
 2. Click **Enrich** and choose:
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Tool</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Description</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Cost</b></p></td></tr><tr><td><p class="no-margin"><b>Enrich Email Address</b></p></td><td><p class="no-margin">Searches for the contact's professional email. Choose <b>Fast</b> (quickest providers only) or <b>Deep</b> (all providers — slower but more thorough).</p></td><td><p class="no-margin">5 credits/result</p></td></tr><tr><td><p class="no-margin"><b>Enrich Phone Number</b></p></td><td><p class="no-margin">Searches for the contact's phone number. Supports Fast and Deep modes.</p></td><td><p class="no-margin">40 credits/result</p></td></tr><tr><td><p class="no-margin"><b>Verify Email Address</b></p></td><td><p class="no-margin">Validates whether a professional email is Verified, Invalid, or Unsure.</p></td><td><p class="no-margin">1 credit/result</p></td></tr><tr><td><p class="no-margin"><b>Verify Phone Number</b></p></td><td><p class="no-margin">Validates a phone number as Valid, Unsure, or Invalid.</p></td><td><p class="no-margin">1 credit/result (phone verification costs 3 credits)</p></td></tr></tbody></table>
 
-**Note:** "No data found" results are not billed. Additional data cleanup tools are available for free: **Extract Domain** (extracts website domain from email) and **Combine Name and Last Name** (generates a Full Name column).
+> **Note:** "No data found" results are not billed. Additional data cleanup tools are available for free: **Extract Domain** (extracts website domain from email) and **Combine Name and Last Name** (generates a Full Name column).
 
-**Tip:** After enriching with emails, run **Verify Email Address** to reduce bounce rates before launching campaigns. If you enabled "Delete non verified emails" in **Settings > General**, invalid emails will be removed automatically.
+> **Tip:** After enriching with emails, run **Verify Email Address** to reduce bounce rates before launching campaigns. If you enabled "Delete non verified emails" in **Settings > General**, invalid emails will be removed automatically.
 
 ---
 
@@ -181,9 +181,9 @@ Select contacts or companies using row checkboxes, and a bottom bar appears with
 - **Delete** — Permanently remove the records.
 - **More** — Change company association, move values between columns, clear column values, merge duplicate contacts, switch to companies/contacts view.
 
-**Tip:** Use the **All Contacts** and **All Companies** aggregate views (accessible from the list-name dropdown) to see every record across all lists in one place.
+> **Tip:** Use the **All Contacts** and **All Companies** aggregate views (accessible from the list-name dropdown) to see every record across all lists in one place.
 
-**Note:** For the complete table reference, LinkedIn fields reference, export procedures, and additional how-tos, see the **Lists** article.
+> **Note:** For the complete table reference, LinkedIn fields reference, export procedures, and additional how-tos, see the **Lists** article.
 
 ---
 
@@ -195,7 +195,7 @@ Enginy automatically scores contacts and companies based on how closely they mat
 Each score classifies the record as **High**, **Medium**, **Low**, or **Disqualified**. Hover over any score to see the specific reasons behind the rating.
 <table role="presentation"><tbody><tr><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Score</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Company Criteria</b></p></td><td style="background-color: #d7efdc80;"><p class="no-margin"><b>Contact Criteria</b></p></td></tr><tr><td><p class="no-margin"><b>High</b></p></td><td><p class="no-margin">Size matches ICP target; industry is exact or very close; location is within target region.</p></td><td><p class="no-margin">Job title matches ICP targets; location within target region; company score is High.</p></td></tr><tr><td><p class="no-margin"><b>Medium</b></p></td><td><p class="no-margin">Size is equal or larger; industry is broadly related; country matches.</p></td><td><p class="no-margin">Title similar, same country, company score Medium. OR same department different seniority, company score High.</p></td></tr><tr><td><p class="no-margin"><b>Low</b></p></td><td><p class="no-margin">Size is lower; industry does not closely match; outside target countries.</p></td><td><p class="no-margin">Title similar, company score Low. OR same department, different seniority, company score Medium.</p></td></tr><tr><td><p class="no-margin"><b>Disqualified</b></p></td><td><p class="no-margin">Matches disqualifying traits; industry clearly irrelevant; insufficient data.</p></td><td><p class="no-margin">Meets a disqualifying factor; company score is Disqualified; different department or country with low company score.</p></td></tr></tbody></table>
 
-**Important:** To access scoring, you must complete your ICP in the **AI Playbook**. If a record is missing critical fields, the status will display **NOT ENRICHED** — run **Enrich Data from LinkedIn** to populate the required fields.
+> **Important:** To access scoring, you must complete your ICP in the **AI Playbook**. If a record is missing critical fields, the status will display **NOT ENRICHED** — run **Enrich Data from LinkedIn** to populate the required fields.
 
 ---
 
