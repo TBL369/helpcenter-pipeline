@@ -40,7 +40,7 @@ Otherwise, output the final article.
 1. **# Title (H1)** — Short noun or noun phrase. Must match the section name.
 2. **Intro paragraph** — 1–2 sentences explaining the section's purpose. No heading for the intro.
 3. **`---` horizontal rule**
-4. **# Table of Contents (H1)** — Internal links to every H1 section and meaningful H2/H3/H4 subsections. Use standard Markdown anchors: `[Heading Text](#heading-text)`. Indent sub-items with 2 spaces per level (H2 = 2 spaces, H3 = 4 spaces, H4 = 6 spaces). Do NOT include the FAQs section or its individual questions in the TOC.
+4. **# Table of Contents (H1)** — Internal links to every H1 section and meaningful H2/H3/H4 subsections. Use standard Markdown anchors: `[Heading Text](#heading-text)`. Indent sub-items with 2 spaces per level (H2 = 2 spaces, H3 = 4 spaces, H4 = 6 spaces). Include FAQs as the last top-level item in the TOC (no sub-items for individual questions).
 5. **`---` horizontal rule**
 6. **Content sections** — Organized with clear headings following the hierarchy and flow described below. Place a `---` horizontal rule between every H1 section.
 7. **# FAQs (H1)** — Last section. 4–7 genuinely relevant questions using the format `### Q1: Question text?`.
@@ -137,7 +137,7 @@ Typical help-center flow within the content sections:
 - TOC links must point to headings using standard Markdown anchors: `[Heading Text](#heading-text)`.
 - Anchor slugs: lowercase, hyphens replace spaces, remove special punctuation.
 - Indent sub-items with 2 spaces per level.
-- Do NOT include the FAQs section or its individual questions in the TOC.
+- Include FAQs as the last top-level item in the TOC (no sub-items for individual questions).
 
 ### FAQs
 
@@ -173,7 +173,7 @@ Typical help-center flow within the content sections:
 - [ ] Steps are complete and runnable by a non-technical user.
 - [ ] Roles/permissions and plan/regional differences are explicit wherever needed.
 - [ ] Troubleshooting (if present) uses Symptom/Issue → Cause → Resolution in an HTML table.
-- [ ] TOC anchors work and match headings. FAQs are NOT listed in the TOC.
+- [ ] TOC anchors work and match headings. FAQs is the last top-level TOC item (no sub-items).
 - [ ] Callouts use blockquote syntax (`>`) with bold labels (`**Note:**`, `**Tip:**`, etc.).
 - [ ] ALL tables use Intercom-compatible HTML (`<table role="presentation">`), never Markdown pipe tables.
 - [ ] Headings use `#` (H1) for top-level sections, `##` (H2) for subsections, `###` (H3) for sub-subsections. `####` (H4) only when an H3 genuinely needs further breakdown.

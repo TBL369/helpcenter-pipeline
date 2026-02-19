@@ -797,15 +797,22 @@ function intercomPostProcess(html: string): string {
   );
   out = out.replace(/<\/table>/g, '</table></div>');
 
+  // 7b. Bold labels: convertir strong+newline en strong+br (antes del minificado)
+  out = out.replace(/(<strong>[^<]+<\/strong>)\n/g, '$1<br>');
+
   // 8. Minificar TODO whitespace entre tags (Intercom renderiza \n como cursor visible)
   out = out.replace(/>\s+</g, '><');
 
+  // 8b. Convertir #d7efdc80 a rgba() para compatibilidad con API de Intercom
+  out = out.replace(/#d7efdc80/g, 'rgba(215, 239, 220, 0.5)');
+
   // 9. Insertar spacers SOLO DESPUÉS de cada elemento (nunca antes, evita duplicados)
   // Entre párrafos (</p><p) pero NO dentro de listas (</p></li><li><p> ya compacto)
-  // y NO entre imagen y siguiente elemento (imagen ya pone sus propios spacers)
   out = out.replace(/(<\/p>)(<p class)/g, `$1${SPACER}$2`);
   // Entre párrafo y heading (</p><h) para FAQ y transiciones párrafo→sección
   out = out.replace(/(<\/p>)(<h[1-6] )/g, `$1${SPACER}$2`);
+  // Entre párrafo y <hr>
+  out = out.replace(/(<\/p>)(<hr>)/g, `$1${SPACER}$2`);
   // Después de <hr>
   out = out.replace(/(<hr>)/g, `$1${SPACER}`);
   // Después de table-container

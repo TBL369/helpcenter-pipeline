@@ -118,6 +118,7 @@ The Lists section is where you manage your prospect databases in Enginy. It is d
   - [Work History and Experience](#work-history-and-experience)
   - [Hiring and Growth](#hiring-and-growth)
   - [Additional Information](#additional-information)
+- [FAQs](#faqs)
 
 ---
 
