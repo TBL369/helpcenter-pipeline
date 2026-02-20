@@ -98,6 +98,29 @@ npm start
 
 Soporta búsqueda por título, IDs numéricos o URLs de Intercom.
 
+### Inter-article links
+
+Los artículos pueden referenciar otros artículos del repo usando paths locales:
+
+```
+[AI Playbook](/articles/ai-playbook/ai-playbook.md)
+```
+
+Al subir a Intercom (opción 4), el pipeline resuelve automáticamente estos links:
+
+| Estado del destino | Comportamiento |
+|---|---|
+| Publicado en Intercom | Link resuelto con URL pública (`article.url` de la API) |
+| Draft en Intercom | Texto plano + warning (URL no disponible hasta publicar) |
+| No existe, subido en el mismo batch como published | Segunda pasada automática resuelve el link |
+| No existe en Intercom | Texto plano + warning |
+
+**Archivo de estado**: Los links no resueltos se registran en `unresolved-links.json` en la raíz del repo. Al inicio de cada upload, el CLI muestra los pendientes. Cuando un link se resuelve (porque el destino fue publicado y se re-sube el artículo), la entrada se elimina automáticamente. Si no hay pendientes, el archivo se borra.
+
+**Batch con múltiples artículos**: Si se suben como `published`, el pipeline hace una segunda pasada automática para resolver links a artículos del mismo batch.
+
+**Artículo individual**: Warning con instrucción de re-subir cuando el destino esté publicado.
+
 ---
 
 ## Cloudinary — Subida de imágenes
