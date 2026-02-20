@@ -177,6 +177,12 @@ Typical help-center flow within the content sections:
 - No alt text. Place images inline where contextually relevant.
 - Preserve image references from source content.
 
+### Inter-Article Links
+
+- To reference another help center article, use a local path: `[Article Title](/articles/section/slug.md)`.
+- Do NOT use hardcoded Intercom URLs. The export pipeline resolves local paths to Intercom URLs automatically.
+- If the target article is not published in Intercom, the link renders as plain text. The pipeline tracks pending links in `unresolved-links.json`.
+
 ### Redundancy Control Without Losing Content
 
 - When OLD and NEW repeat: keep the clearest canonical explanation, then incorporate any unique details from both.

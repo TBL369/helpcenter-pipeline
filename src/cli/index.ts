@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
-import { IntercomClient, ArticleListItem } from './intercom';
+import { IntercomClient, ArticleListItem, IntercomArticle } from './intercom';
 import { NotionClient } from './notion';
 import { MarkdownExporter } from './markdown';
 import { marked } from 'marked';
@@ -842,6 +842,100 @@ function intercomPostProcess(html: string): string {
   return out.trim();
 }
 
+// ─── Inter-article link resolution ───────────────────────────────────────────
+
+interface UnresolvedLink {
+  sourceFile: string;
+  sourceIntercomId?: number;
+  targetTitle: string;
+  targetPath: string;
+  reason: 'not_found' | 'draft';
+  createdAt: string;
+}
+
+interface UnresolvedLinksFile {
+  pendingLinks: UnresolvedLink[];
+}
+
+interface LinkResolutionResult {
+  html: string;
+  unresolvedLinks: UnresolvedLink[];
+}
+
+const UNRESOLVED_LINKS_PATH = path.join(process.cwd(), 'unresolved-links.json');
+
+function readUnresolvedLinks(): UnresolvedLinksFile {
+  if (!fs.existsSync(UNRESOLVED_LINKS_PATH)) return { pendingLinks: [] };
+  return JSON.parse(fs.readFileSync(UNRESOLVED_LINKS_PATH, 'utf-8'));
+}
+
+function writeUnresolvedLinks(data: UnresolvedLinksFile): void {
+  if (data.pendingLinks.length === 0) {
+    if (fs.existsSync(UNRESOLVED_LINKS_PATH)) fs.unlinkSync(UNRESOLVED_LINKS_PATH);
+    return;
+  }
+  fs.writeFileSync(UNRESOLVED_LINKS_PATH, JSON.stringify(data, null, 2) + '\n');
+}
+
+function removeResolvedLinks(existing: UnresolvedLinksFile, resolvedFile: string): UnresolvedLinksFile {
+  return { pendingLinks: existing.pendingLinks.filter(l => l.sourceFile !== resolvedFile) };
+}
+
+async function resolveArticleLinks(
+  html: string,
+  intercomClient: IntercomClient,
+  sourceFile: string,
+): Promise<LinkResolutionResult> {
+  const localLinkRegex = /href="([^"]*\.md)"/g;
+  const matches = [...html.matchAll(localLinkRegex)];
+  const unresolvedLinks: UnresolvedLink[] = [];
+
+  if (matches.length === 0) return { html, unresolvedLinks };
+
+  const resolved = new Map<string, string | null>();
+
+  for (const match of matches) {
+    const localPath = match[1];
+    if (resolved.has(localPath)) continue;
+
+    const slug = path.basename(localPath, '.md');
+    const title = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+    const results = await intercomClient.searchArticlesByTitle(title, 5);
+    const exact = results.find(a => a.title.toLowerCase() === title.toLowerCase());
+
+    if (exact) {
+      const full = await intercomClient.getArticle(exact.id);
+      if (full.url) {
+        resolved.set(localPath, full.url);
+        console.log(`      🔗 ${title} → ${full.url}`);
+      } else {
+        resolved.set(localPath, null);
+        unresolvedLinks.push({ sourceFile, targetTitle: title, targetPath: localPath, reason: 'draft', createdAt: new Date().toISOString() });
+        console.log(`      ⚠️  "${title}" existe como draft — link convertido a texto`);
+      }
+    } else {
+      resolved.set(localPath, null);
+      unresolvedLinks.push({ sourceFile, targetTitle: title, targetPath: localPath, reason: 'not_found', createdAt: new Date().toISOString() });
+      console.log(`      ⚠️  "${title}" no encontrado en Intercom — link convertido a texto`);
+    }
+  }
+
+  let result = html;
+  for (const [localPath, url] of resolved) {
+    if (url) {
+      result = result.split(`href="${localPath}"`).join(`href="${url}" target="_blank"`);
+    } else {
+      const escaped = localPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      result = result.replace(new RegExp(`<a[^>]*href="${escaped}"[^>]*>([^<]*)</a>`, 'g'), '$1');
+    }
+  }
+
+  return { html: result, unresolvedLinks };
+}
+
+// ─── Markdown to HTML ────────────────────────────────────────────────────────
+
 /**
  * Lee un .md, extrae titulo (primer # heading) y convierte el body a HTML.
  * Preserva el TOC pero sanitiza los anchor links que Intercom no soporta.
@@ -976,43 +1070,108 @@ async function uploadToIntercomFlow(
   const stateChoice = await askQuestion(rl, '\n   ¿Estado del artículo? (draft/published, Enter=draft): ');
   const state = (stateChoice.toLowerCase() === 'published' ? 'published' : 'draft') as 'draft' | 'published';
 
+  // Mostrar links pendientes de resolver de sesiones anteriores
+  let unresolvedState = readUnresolvedLinks();
+  if (unresolvedState.pendingLinks.length > 0) {
+    console.log(`\n   📋 Links pendientes de resolver (${unresolvedState.pendingLinks.length}):`);
+    for (const link of unresolvedState.pendingLinks) {
+      const reason = link.reason === 'draft' ? 'draft' : 'no existe';
+      console.log(`   - ${link.sourceFile} → "${link.targetTitle}" (${reason})`);
+    }
+  }
+
   console.log('\n──────────────────────────────────────────────────────────');
   console.log('📤 Subiendo artículos a Intercom...\n');
 
   let successCount = 0;
   let failCount = 0;
   const errors: Array<{ file: string; error: string }> = [];
+  const uploadResults: Array<{ file: string; id: number; unresolvedLinks: UnresolvedLink[] }> = [];
 
+  // ── Primera pasada: subir todos los artículos ──
   for (let i = 0; i < selectedFiles.length; i++) {
     const file = selectedFiles[i];
     const filePath = path.join(articlesDir, file);
     const progress = `[${i + 1}/${selectedFiles.length}]`;
 
     try {
-      process.stdout.write(`   ${progress} ${file}...`);
+      console.log(`   ${progress} ${file}...`);
       const { title, html } = mdFileToHtml(filePath);
+      const { html: resolvedHtml, unresolvedLinks } = await resolveArticleLinks(html, intercomClient, file);
 
       const result = await intercomClient.createArticle({
         title,
-        body: html,
+        body: resolvedHtml,
         authorId,
         state,
       });
 
-      console.log(` ✅ ID: ${result.id} (${state})`);
+      for (const ul of unresolvedLinks) ul.sourceIntercomId = result.id;
+      uploadResults.push({ file, id: result.id, unresolvedLinks });
+
+      if (unresolvedLinks.length === 0) {
+        unresolvedState = removeResolvedLinks(unresolvedState, file);
+      }
+
+      console.log(`      ✅ ID: ${result.id} (${state})`);
       successCount++;
 
       if (i < selectedFiles.length - 1) {
         await delay(500);
       }
     } catch (error) {
-      console.log(' ❌');
-      const msg = error instanceof Error ? error.message : 'Error desconocido';
+      console.log(`      ❌ ${error instanceof Error ? error.message : 'Error desconocido'}`);
       failCount++;
-      errors.push({ file, error: msg });
+      errors.push({ file, error: error instanceof Error ? error.message : 'Error desconocido' });
     }
   }
 
+  // ── Segunda pasada: re-resolver links pendientes (solo batch + published) ──
+  const needsSecondPass = uploadResults.filter(r => r.unresolvedLinks.length > 0);
+
+  if (needsSecondPass.length > 0 && selectedFiles.length > 1 && state === 'published') {
+    intercomClient.invalidateCache();
+    console.log('\n   🔄 Segunda pasada: re-procesando links pendientes...\n');
+
+    for (const entry of needsSecondPass) {
+      const filePath = path.join(articlesDir, entry.file);
+      try {
+        console.log(`   ↻ ${entry.file}...`);
+        const { html } = mdFileToHtml(filePath);
+        const { html: resolvedHtml, unresolvedLinks } = await resolveArticleLinks(html, intercomClient, entry.file);
+        await intercomClient.updateArticle(entry.id, { body: resolvedHtml });
+
+        if (unresolvedLinks.length === 0) {
+          unresolvedState = removeResolvedLinks(unresolvedState, entry.file);
+          entry.unresolvedLinks = [];
+          console.log(`      ✅ Links resueltos`);
+        } else {
+          unresolvedState.pendingLinks = unresolvedState.pendingLinks.filter(l => l.sourceFile !== entry.file);
+          unresolvedState.pendingLinks.push(...unresolvedLinks);
+          entry.unresolvedLinks = unresolvedLinks;
+          console.log(`      ⚠️  Aún hay links sin resolver`);
+        }
+
+        await delay(300);
+      } catch (error) {
+        console.log(`      ❌ Error en segunda pasada: ${error instanceof Error ? error.message : 'Error desconocido'}`);
+      }
+    }
+  }
+
+  // ── Actualizar archivo de estado ──
+  for (const entry of uploadResults) {
+    if (entry.unresolvedLinks.length > 0) {
+      const newPending = entry.unresolvedLinks.filter(ul =>
+        !unresolvedState.pendingLinks.some(p => p.sourceFile === ul.sourceFile && p.targetPath === ul.targetPath),
+      );
+      unresolvedState.pendingLinks.push(...newPending);
+    }
+  }
+
+  writeUnresolvedLinks(unresolvedState);
+
+  // ── Resumen ──
   console.log('\n══════════════════════════════════════════════════════════');
   console.log('   RESUMEN DE SUBIDA A INTERCOM');
   console.log('══════════════════════════════════════════════════════════\n');
@@ -1023,6 +1182,16 @@ async function uploadToIntercomFlow(
   if (errors.length > 0) {
     console.log('\n   Errores:');
     errors.forEach(({ file, error }) => console.log(`   - ${file}: ${error}`));
+  }
+
+  if (unresolvedState.pendingLinks.length > 0) {
+    console.log(`\n   ⚠️  Links no resueltos (${unresolvedState.pendingLinks.length}):`);
+    for (const link of unresolvedState.pendingLinks) {
+      const reason = link.reason === 'draft' ? 'existe como draft, publicar primero' : 'no existe en Intercom';
+      console.log(`   - ${link.sourceFile} → "${link.targetTitle}" (${reason})`);
+    }
+    console.log('   💡 Cuando los destinos estén publicados, vuelve a subir estos archivos.');
+    console.log('   📁 Estado guardado en unresolved-links.json');
   }
 
   console.log('\n══════════════════════════════════════════════════════════\n');

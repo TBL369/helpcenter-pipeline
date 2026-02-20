@@ -382,6 +382,32 @@ export class IntercomClient {
   }
 
   /**
+   * Actualiza un articulo existente en Intercom.
+   */
+  async updateArticle(articleId: number, params: {
+    title?: string;
+    body?: string;
+    state?: 'published' | 'draft';
+  }): Promise<void> {
+    try {
+      await this.client.put(`/articles/${articleId}`, params);
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        this.handleAxiosError(error, `updateArticle(${articleId})`);
+      }
+      throw error;
+    }
+  }
+
+  /**
+   * Invalida el cache de articulos para forzar recarga desde la API.
+   */
+  invalidateCache(): void {
+    this.articlesCache = null;
+    this.cacheTimestamp = 0;
+  }
+
+  /**
    * Crea un nuevo articulo en Intercom (como draft por defecto).
    */
   async createArticle(params: {
